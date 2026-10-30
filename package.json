@@ -12,7 +12,9 @@
     "build:ai-chat": "pnpm --filter poc-ai-chat build",
     "build:3d-scene": "pnpm --filter poc-3d-scene build",
     "build:markdown": "pnpm --filter poc-markdown build",
+    "build:incremental": "node scripts/build-incremental.mjs",
     "build": "node scripts/build-all.mjs",
+    "preview": "node scripts/serve.mjs",
     "clean": "node scripts/clean.mjs"
   },
   "devDependencies": {}

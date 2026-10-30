@@ -1,0 +1,122 @@
+name: Deploy to GitHub Pages (Incremental Build)
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  filter:
+    name: Detect Changed Projects
+    runs-on: ubuntu-latest
+    outputs:
+      portal: ${{ steps.changes.outputs.portal }}
+      ai_chat: ${{ steps.changes.outputs.ai_chat }}
+      scene_3d: ${{ steps.changes.outputs.scene_3d }}
+      markdown: ${{ steps.changes.outputs.markdown }}
+      core: ${{ steps.changes.outputs.core }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dorny/paths-filter@v3
+        id: changes
+        with:
+          filters: |
+            portal:
+              - 'apps/portal/**'
+            ai_chat:
+              - 'apps/poc-ai-chat/**'
+            scene_3d:
+              - 'apps/poc-3d-scene/**'
+            markdown:
+              - 'apps/poc-markdown/**'
+            core:
+              - 'package.json'
+              - 'pnpm-workspace.yaml'
+              - 'pnpm.config.yaml'
+              - 'pnpm-lock.yaml'
+              - 'scripts/**'
+              - '.github/workflows/**'
+
+  build-and-deploy:
+    name: Incremental Build & Deploy
+    needs: filter
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 12
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'pnpm'
+
+      - name: Restore Previous Dist Cache
+        id: dist-cache
+        uses: actions/cache@v4
+        with:
+          path: dist
+          key: dist-cache-${{ runner.os }}-${{ github.sha }}
+          restore-keys: |
+            dist-cache-${{ runner.os }}-
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run Incremental Build
+        run: |
+          FLAGS=""
+          if [ "${{ needs.filter.outputs.core }}" = "true" ] || [ "${{ steps.dist-cache.outputs.cache-hit }}" != "true" ]; then
+            echo "Core infrastructure changed or fresh build needed: Full rebuild triggered"
+            FLAGS="--all"
+          else
+            if [ "${{ needs.filter.outputs.portal }}" = "true" ]; then FLAGS="$FLAGS --portal"; fi
+            if [ "${{ needs.filter.outputs.ai_chat }}" = "true" ]; then FLAGS="$FLAGS --ai-chat"; fi
+            if [ "${{ needs.filter.outputs.scene_3d }}" = "true" ]; then FLAGS="$FLAGS --3d-scene"; fi
+            if [ "${{ needs.filter.outputs.markdown }}" = "true" ]; then FLAGS="$FLAGS --markdown"; fi
+          fi
+
+          if [ -z "$FLAGS" ]; then
+            echo "No app changes detected. Verifying dist directory..."
+            FLAGS="--all"
+          fi
+
+          echo "Executing incremental build with flags: $FLAGS"
+          node scripts/build-incremental.mjs $FLAGS
+
+      - name: Save Updated Dist Cache
+        uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: dist
+          key: dist-cache-${{ runner.os }}-${{ github.sha }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

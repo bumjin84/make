@@ -29,7 +29,10 @@
 
 ---
 
-## 📌 Phase 3: 배포 및 지속적 아카이빙 (다음 단계 🚀)
-- [ ] GitHub Pages 활성화 및 정적 사이트 라이브 서빙 확인
+## 📌 Phase 3: GitHub Pages 스마트 배포 및 부분 빌드 (진행 중 🚀)
+- [x] 저장소 Public 전환 완료
+- [x] GitHub Pages 환경 활성화 (`https://bumjin84.github.io/make/`)
+- [x] `paths-filter` + `actions/cache` 기반 스마트 부분 빌드 파이프라인 구축 (`.github/workflows/deploy.yml`, `scripts/build-incremental.mjs`)
+- [ ] 첫 배포 파이프라인 트리거 및 정상 서빙 검증
 - [ ] 실제 작업 아카이브 및 블로그/기록 데이터 추가
 - [ ] 신규 PoC 아이디어 추가 시 사전 명세 작성 및 샌드박스 확장
