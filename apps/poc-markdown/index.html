@@ -3,15 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-    <title>Markdown Studio - Make Lab</title>
+    <title>Markdown Studio - Theme & Export Lab</title>
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body>
     <header>
-      <a href="../" class="back-btn">
-        <span>← Portal로 돌아가기</span>
-      </a>
-      <span class="title-badge">📝 Markdown Studio</span>
+      <div class="brand-section">
+        <a href="../" class="back-btn">
+          <span>← Portal</span>
+        </a>
+        <span class="title-badge">📝 Markdown Studio</span>
+      </div>
+
+      <div class="actions-section">
+        <!-- 테마 선택 드롭다운 -->
+        <select id="theme-select" class="theme-select" title="스타일 테마 선택">
+          <option value="theme-github-dark">🎨 GitHub Dark</option>
+          <option value="theme-github-light">☀️ GitHub Light</option>
+          <option value="theme-notion-clean">📑 Notion Clean</option>
+          <option value="theme-academic-sepia">📜 Academic Sepia</option>
+        </select>
+
+        <!-- 내보내기 버튼들 -->
+        <button id="btn-export-md" class="action-btn" title="마크다운 원본 파일 다운로드">
+          <span>.md 저장</span>
+        </button>
+
+        <button id="btn-export-html" class="action-btn primary" title="현재 테마 스타일이 내장된 HTML 파일 다운로드">
+          <span>.html 저장</span>
+        </button>
+
+        <button id="btn-copy-html" class="action-btn" title="렌더링된 HTML 클립보드 복사">
+          <span>HTML 복사</span>
+        </button>
+      </div>
     </header>
 
     <!-- 모바일 적응형 탭 (작은 화면에서만 노출) -->
@@ -21,37 +46,49 @@
     </div>
 
     <main class="workspace">
+      <!-- 에디터 영역 -->
       <div class="pane editor-pane" id="pane-editor">
-        <textarea id="editor" placeholder="여기에 마크다운을 입력하세요..."># 📝 Markdown Studio (PoC)
+        <textarea id="editor" placeholder="여기에 마크다운을 입력하세요..."># 📝 Markdown Studio (Theme & Export Lab)
 
-반응형 스튜디오 테스트베드입니다.
+상단 메뉴에서 **다양한 테마(GitHub, Notion, Academic)**를 실시간으로 변경해 보세요!
+작성한 문서는 원본 `.md` 파일이나 테마 스타일이 내장된 `.html` 파일로 즉시 다운로드할 수 있습니다.
 
-## 주요 특징
-- **적응형 뷰포트**: 데스크톱에서는 2열 스플릿 뷰, 모바일에서는 상단 탭 전환 뷰로 자동 전환됩니다.
-- **GFM 지원**: 체크리스트, 테이블, 코드 블록을 실시간 파싱합니다.
+---
+
+## 🎨 주요 기능
+1. **4가지 프리미엄 테마**: GitHub Dark, GitHub Light, Notion Clean, Academic Sepia
+2. **독립 실행형 HTML 내보내기**: 테마 CSS가 인라인 내장되어 외부 인터넷 없이도 언제 어디서나 동일하게 열람 가능
+3. **모바일 적응형 뷰포트**: 좁은 화면에서는 상단 탭으로 에디터와 미리보기를 1초 만에 전환
 
 ### 코드 블록 테스트
 ```javascript
-function greet(name) {
-  return `Hello, ${name} from Make!`;
+// Vite Monorepo Markdown Studio
+function exportStandaloneHTML(theme, content) {
+  return `<!DOCTYPE html><html>...<style>/* ${theme} */</style><body>${content}</body></html>`;
 }
-console.log(greet("World"));
+console.log("Export ready!");
 ```
 
-- [x] Phase 1: 아키텍처 및 기획 수립
-- [x] Phase 2: pnpm 모노레포 및 멀티 앱 스캐폴딩
-- [ ] Phase 3: GitHub Pages 자동 배포 연동
+### 테이블 테스트
+| 기능 | 지원 여부 | 설명 |
+| :--- | :---: | :--- |
+| **.md 다운로드** | ✅ 지원 | 원본 마크다운 파일 저장 |
+| **.html 다운로드** | ✅ 지원 | 테마 CSS 인라인 내장형 HTML |
+| **HTML 클립보드 복사**| ✅ 지원 | 블로그 및 노션 붙여넣기용 |
 
-> "단순한 것이 복잡한 것보다 낫다."
+> "좋은 도구는 생각을 방해하지 않고 흐름을 이어준다."
 </textarea>
       </div>
 
-      <div class="pane preview-pane" id="pane-preview" style="display: none;">
-        <div id="preview-content"></div>
+      <!-- 미리보기 영역 (선택된 테마 클래스 적용) -->
+      <div class="pane preview-pane theme-github-dark" id="pane-preview">
+        <div id="preview-content" class="markdown-body"></div>
       </div>
     </main>
+
+    <!-- 알림 토스트 -->
+    <div id="toast">복사되었습니다!</div>
 
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
-

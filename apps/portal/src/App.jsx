@@ -39,10 +39,10 @@ const POCS = [
   {
     id: 'poc-markdown',
     title: 'Markdown Studio',
-    summary: '데스크톱 스플릿 뷰 및 모바일 탭 전환 지원 경량 실시간 마크다운 파서 & 뷰어',
-    status: 'In Progress',
-    statusColor: 'bg-purple-500/10 text-purple-400 border-purple-500/30',
-    tags: ['Vanilla JS', 'Marked.js', 'Adaptive Tab', 'GFM'],
+    summary: '4종 프리미엄 테마(GitHub, Notion, Academic) 실시간 스위칭 및 독립 실행형 HTML/MD 파일 내보내기 랩',
+    status: 'Active (Live)',
+    statusColor: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30',
+    tags: ['Vanilla JS', 'Marked.js', 'Theme Switcher', 'Export HTML/MD'],
     path: './poc-markdown/',
     icon: FileText,
     accent: 'from-purple-600 to-pink-600'
@@ -51,6 +51,18 @@ const POCS = [
 
 // 실제 깃 배포 및 개발 내역 아카이브
 const ARCHIVES = [
+  {
+    date: '2026.10.30',
+    category: 'Markdown Lab',
+    title: '4종 프리미엄 테마 스위처 및 독립형 HTML/MD 내보내기 구현',
+    desc: 'GitHub Dark/Light, Notion Clean, Academic Sepia 실시간 전환 및 CSS 인라인 내장형 독립 HTML 다운로드 파이프라인 개발'
+  },
+  {
+    date: '2026.10.30',
+    category: 'AI Lab',
+    title: '세션별 독립 동시 스트리밍 및 백그라운드 답변 생성 지원',
+    desc: '전역 락을 해제하고 세션별 타이핑 맵을 분리하여 대화방 1 생성 중 대화방 2에서 동시 질문 작업 가능'
+  },
   {
     date: '2026.10.30',
     category: 'AI Lab',
@@ -86,7 +98,7 @@ const ARCHIVES = [
 export default function App() {
   const [activeCategory, setActiveCategory] = useState('ALL');
 
-  const categories = ['ALL', 'AI Lab', 'DevOps', 'Architecture', 'Core'];
+  const categories = ['ALL', 'Markdown Lab', 'AI Lab', 'DevOps', 'Architecture', 'Core'];
 
   const filteredArchives = activeCategory === 'ALL' 
     ? ARCHIVES 
