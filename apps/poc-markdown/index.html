@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>Markdown Studio - Make Lab</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="../" class="back-btn">
+        <span>← Portal로 돌아가기</span>
+      </a>
+      <span class="title-badge">📝 Markdown Studio</span>
+    </header>
+
+    <!-- 모바일 적응형 탭 (작은 화면에서만 노출) -->
+    <div class="mobile-tabs">
+      <button class="tab-btn active" id="tab-editor">에디터 (Markdown)</button>
+      <button class="tab-btn" id="tab-preview">미리보기 (Preview)</button>
+    </div>
+
+    <main class="workspace">
+      <div class="pane editor-pane" id="pane-editor">
+        <textarea id="editor" placeholder="여기에 마크다운을 입력하세요..."># 📝 Markdown Studio (PoC)
+
+반응형 스튜디오 테스트베드입니다.
+
+## 주요 특징
+- **적응형 뷰포트**: 데스크톱에서는 2열 스플릿 뷰, 모바일에서는 상단 탭 전환 뷰로 자동 전환됩니다.
+- **GFM 지원**: 체크리스트, 테이블, 코드 블록을 실시간 파싱합니다.
+
+### 코드 블록 테스트
+```javascript
+function greet(name) {
+  return `Hello, ${name} from Make!`;
+}
+console.log(greet("World"));
+```
+
+- [x] Phase 1: 아키텍처 및 기획 수립
+- [x] Phase 2: pnpm 모노레포 및 멀티 앱 스캐폴딩
+- [ ] Phase 3: GitHub Pages 자동 배포 연동
+
+> "단순한 것이 복잡한 것보다 낫다."
+</textarea>
+      </div>
+
+      <div class="pane preview-pane" id="pane-preview" style="display: none;">
+        <div id="preview-content"></div>
+      </div>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+

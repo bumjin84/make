@@ -4,36 +4,32 @@
 
 ---
 
-## 📌 Phase 1: 기반 기획 및 아키텍처 확정 (진행 중)
+## 📌 Phase 1: 기반 기획 및 아키텍처 확정 (완료 ✅)
 - [x] Git 저장소 연동 및 환경 설정 완료
 - [x] 프로젝트 목표 정의 (작업 아카이브 + PoC 테스트베드)
 - [x] 모노레포(`pnpm workspaces`) & 멀티 앱 아키텍처 수립 ([docs/PLANNING.md](file:///C:/make/docs/PLANNING.md))
+- [x] 모바일 퍼스트 & 반응형 필수 원칙 전면 도입
 - [x] 개별 사이트별 상세 명세서 작성
   - [x] [docs/apps/portal.md](file:///C:/make/docs/apps/portal.md) (메인 허브 포털)
   - [x] [docs/apps/poc-ai-chat.md](file:///C:/make/docs/apps/poc-ai-chat.md) (AI 챗 UI 샌드박스)
   - [x] [docs/apps/poc-3d-scene.md](file:///C:/make/docs/apps/poc-3d-scene.md) (3D 인터랙션 랩)
   - [x] [docs/apps/poc-markdown.md](file:///C:/make/docs/apps/poc-markdown.md) (마크다운 스튜디오)
-- [ ] 패키지 매니저 (`pnpm`) 설치 및 모노레포 루트 `pnpm-workspace.yaml` 구성
-- [ ] GitHub Pages 배포 전략 확정 (저장소 Public 전환 또는 자동 배포 Action)
 
 ---
 
-## 📌 Phase 2: 모노레포 환경 구성 및 포털(`apps/portal`) 셋업
-- [ ] 모노레포 워크스페이스 구조 (`apps/`, `package.json`) 초기화
-- [ ] `apps/portal` (메인 포털) 템플릿 생성 (Vite + React + Tailwind)
-- [ ] 메인 포털 UI 구현 (Hero, PoC 카드 갤러리, 작업 아카이브 섹션)
-- [ ] 루트 통합 빌드 스크립트 작성 (`dist/` 통합)
+## 📌 Phase 2: 모노레포 환경 구성 및 스캐폴딩 (완료 ✅)
+- [x] Node.js LTS (v26.13) 및 `pnpm` (v12.16) 환경 설치 완료
+- [x] 모노레포 루트 워크스페이스 구조 (`pnpm-workspace.yaml`, `package.json`) 구축
+- [x] `apps/portal` (메인 포털) 템플릿 및 반응형 UI 구현 (Vite + React + Tailwind CSS)
+- [x] `apps/poc-ai-chat` 구현 (스트리밍 UI, 모바일 dvh 키보드 대응, 코드 복사)
+- [x] `apps/poc-3d-scene` 구현 (Three.js WebGL 인터랙션, 터치 회전 제스처, 컨트롤러)
+- [x] `apps/poc-markdown` 구현 (Marked.js 파서, 데스크톱 스플릿 뷰 / 모바일 탭 토글 모드)
+- [x] 루트 통합 빌드 파이프라인 스크립트 (`scripts/build-all.mjs`) 검증 완료 (`dist/` 통합)
+- [x] GitHub Pages 자동 배포 워크플로우 구성 (`.github/workflows/deploy.yml`)
 
 ---
 
-## 📌 Phase 3: 개별 PoC 샌드박스 구현
-- [ ] `apps/poc-ai-chat` 구현 (대화형 스트리밍 UI)
-- [ ] `apps/poc-3d-scene` 구현 (Three.js 3D 오브젝트 조작)
-- [ ] `apps/poc-markdown` 구현 (실시간 마크다운 스플릿 뷰 에디터)
-- [ ] 각 PoC 상단에 포털 복귀 링크/글로벌 네비게이션 연동
-
----
-
-## 📌 Phase 4: GitHub Pages 배포 및 지속적 아카이빙
-- [ ] GitHub Actions 워크플로우를 통한 자동 빌드 및 배포 검증
-- [ ] 추가 아이디어 및 작업 내역 지속 등록
+## 📌 Phase 3: 배포 및 지속적 아카이빙 (다음 단계 🚀)
+- [ ] GitHub Pages 활성화 및 정적 사이트 라이브 서빙 확인
+- [ ] 실제 작업 아카이브 및 블로그/기록 데이터 추가
+- [ ] 신규 PoC 아이디어 추가 시 사전 명세 작성 및 샌드박스 확장

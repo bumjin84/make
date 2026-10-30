@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>3D Scene Lab - Make Lab</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <a href="../" class="back-btn">
+        <span>← Portal로 돌아가기</span>
+      </a>
+      <span class="badge">🎨 3D Scene Lab (WebGL)</span>
+    </div>
+
+    <div id="canvas-container"></div>
+
+    <div class="control-panel">
+      <label>
+        형태:
+        <select id="geo-select">
+          <option value="torusKnot">Torus Knot</option>
+          <option value="icosahedron">Icosahedron</option>
+          <option value="box">Cube</option>
+        </select>
+      </label>
+      <label>
+        와이어프레임:
+        <input type="checkbox" id="wireframe-toggle" />
+      </label>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+

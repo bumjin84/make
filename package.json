@@ -1,0 +1,22 @@
+{
+  "name": "make-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Monorepo PoC Testbed & Work Archive",
+  "scripts": {
+    "dev:portal": "pnpm --filter portal dev",
+    "dev:ai-chat": "pnpm --filter poc-ai-chat dev",
+    "dev:3d-scene": "pnpm --filter poc-3d-scene dev",
+    "dev:markdown": "pnpm --filter poc-markdown dev",
+    "build:portal": "pnpm --filter portal build",
+    "build:ai-chat": "pnpm --filter poc-ai-chat build",
+    "build:3d-scene": "pnpm --filter poc-3d-scene build",
+    "build:markdown": "pnpm --filter poc-markdown build",
+    "build": "node scripts/build-all.mjs"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
