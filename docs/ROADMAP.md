@@ -29,11 +29,22 @@
 
 ---
 
-## 📌 Phase 3: GitHub Pages 스마트 배포 및 부분 빌드 (진행 중 🚀)
+## 📌 Phase 3: GitHub Pages 스마트 배포 및 부분 빌드 (완료 ✅)
 - [x] 저장소 Public 전환 완료
 - [x] GitHub Pages 환경 활성화 (`https://bumjin84.github.io/make/`)
 - [x] `paths-filter` + `actions/cache` 기반 스마트 부분 빌드 파이프라인 구축 (`.github/workflows/deploy.yml`, `scripts/build-incremental.mjs`)
 - [x] `poc-ai-chat` 실시간 Gemini 스트리밍 및 멀티 세션(대화방 관리) 구현 완료
 - [x] 메인 포털 Work Archives 실시간 배포 내역 동기화 및 카테고리 필터링 구현
+- [x] `poc-markdown` 4종 프리미엄 테마 스위처 및 독립 HTML/MD 파일 내보내기 구현
 - [x] Git 커밋 메시지 한글화 표준 적용
-- [ ] 신규 PoC 아이디어 추가 시 사전 명세 작성 및 샌드박스 확장
+
+---
+
+## 📌 Phase 4: 아키텍처 린트(Lint) 강제화 & 주식 스크리너 랩 구축 (진행 중 🚀)
+- [x] 공통 컴포넌트 아키텍처 표준 컨벤션 명문화 ([docs/PLANNING.md](file:///C:/make/docs/PLANNING.md))
+- [x] 주식 스마트 스크리너 상세 명세서 작성 ([docs/apps/poc-stock-screener.md](file:///C:/make/docs/apps/poc-stock-screener.md))
+- [ ] 아키텍처 구조 린터 스크립트 작성 (`scripts/lint-architecture.mjs`)
+- [ ] Git Pre-commit Hook 등록 (규칙 위반 시 커밋 강제 차단)
+- [ ] 기존 React 앱 컴포넌트 분리 리팩토링 (`apps/portal`, `apps/poc-ai-chat`)
+- [ ] `apps/poc-stock-screener` 스캐폴딩 및 4대 전략 추천 / 비교 랩 개발
+- [ ] 모노레포 통합 빌드 및 GitHub Pages 배포 검증

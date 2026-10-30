@@ -8,96 +8,96 @@
 
 본 프로젝트는 **`pnpm Workspaces`** 기반의 모노레포 구조로 설계되어, 각 테스트베드 사이트가 독립적인 기술 스택과 빌드 라이프사이클을 가집니다.
 
-```
+```text
 make/ (Monorepo Root)
 ├── apps/
-│   ├── portal/          # [메인 허브] 작업 아카이브 및 PoC 카드 쇼케이스 (Vite + React + Tailwind)
-│   ├── poc-ai-chat/     # [독립 PoC 1] AI 채팅 UI 및 스트리밍 실험 (React + Tailwind)
-│   ├── poc-3d-scene/    # [독립 PoC 2] Three.js 인터랙티브 3D 그래픽 실험 (Three.js / Canvas)
-│   └── poc-markdown/    # [독립 PoC 3] 실시간 마크다운 파서 및 뷰어 실험 (Vanilla / Marked)
-├── docs/                # 전체 프로젝트 및 사이트별 기획/명세 문서
-│   ├── PLANNING.md      # 본 통합 아키텍처 기획서
-│   ├── ROADMAP.md       # 마일스톤 및 진행 현황
-│   └── apps/            # 각 사이트별 상세 명세 문서
-│       ├── portal.md
-│       ├── poc-ai-chat.md
-│       ├── poc-3d-scene.md
-│       └── poc-markdown.md
-└── dist/                # [통합 빌드 산출물] GitHub Pages 단일 배포 루트
+│   ├── portal/              # [메인 허브] 작업 아카이브 및 PoC 카드 쇼케이스
+│   ├── poc-ai-chat/         # [독립 PoC 1] 실시간 Gemini 대화 및 멀티 세션 AI 챗
+│   ├── poc-3d-scene/        # [독립 PoC 2] Three.js 인터랙티브 3D 그래픽 랩
+│   ├── poc-markdown/        # [독립 PoC 3] 4종 테마 및 독립 HTML/MD 내보내기 스튜디오
+│   └── poc-stock-screener/  # [독립 PoC 4] 미국/국내 주식 스마트 스크리너 & 비교 분석 랩
+├── docs/                    # 전체 프로젝트 및 사이트별 기획/명세 문서
+│   ├── PLANNING.md          # 본 통합 아키텍처 및 린트 규정 기획서
+│   ├── ROADMAP.md           # 마일스톤 및 진행 현황
+│   └── apps/                # 각 사이트별 상세 명세 문서
+├── scripts/                 # 통합 빌드, 린트 및 서버 스크립트
+│   ├── build-all.mjs        # 전체 통합 빌드
+│   ├── build-incremental.mjs# 스마트 부분 빌드 파이프라인
+│   ├── lint-architecture.mjs# [신규] 아키텍처 구조 검증 린터
+│   └── serve.mjs            # 로컬 통합 미리보기 서버
+└── dist/                    # [통합 빌드 산출물] GitHub Pages 단일 배포 루트
 ```
 
 ---
 
-## 2. 핵심 기술 스택 및 선정 이유
+## 2. 공통 프론트엔드 아키텍처 표준 컨벤션 (React Apps) 🏛️
 
-| 구분 | 도구 | 선정 이유 |
-| :--- | :--- | :--- |
-| **패키지 매니저** | **pnpm Workspaces** | 하드링크 기반 패키지 공유로 디스크 절약, 초고속 설치, 특정 앱 단독 실행(`pnpm --filter poc-ai-chat dev`) 용이 |
-| **빌드 엔진** | **Vite** | 각기 다른 프레임워크(React, Vue, Vanilla 등)를 써도 `vite build`라는 표준화된 인터페이스로 일관되게 번들링 가능 |
-| **스타일링** | **Tailwind CSS** | 별도 CSS 번들링 복잡도 없이 유틸리티 클래스로 초고속 프로토타이핑 및 강력한 반응형 지원 |
-| **호스팅 / 배포** | **GitHub Pages** (or Cloudflare Pages) | 정적 사이트 기반 제로 서버 유지비, GitHub Actions로 통합 자동 빌드 |
+모노레포 내 모든 React 기반 앱은 코드 비대화를 방지하고 유지보수성을 극대화하기 위해 **표준화된 컴포넌트/로직 분리 구조**를 의무적으로 준수합니다.
+
+```text
+apps/{app-name}/src/
+├── components/          # [필수] 역할별 분리된 UI 컴포넌트
+│   ├── layout/          # 헤더, 푸터, 네비게이션
+│   ├── common/          # 모달, 뱃지, 탭 버튼 등 원자 컴포넌트
+│   └── {domain}/        # 앱 고유 비즈니스 도메인 UI (테이블, 카드, 차트 등)
+├── hooks/               # [필수] 비즈니스 로직 및 상태 관리 커스텀 훅 (UI와 계산 분리)
+├── utils/               # [필수] 순수 함수, 포맷터, 계산 알고리즘
+├── data/                # [선택] 정적 스냅샷 데이터셋 (JSON)
+├── App.jsx              # [필수] 컴포넌트 조립만 담당하는 씬(Scene) 오케스트레이터 (< 130줄 제한)
+└── main.jsx             # 진입점
+```
+
+### 핵심 분리 원칙:
+1. **Fat App.jsx 금지**: `App.jsx`가 130줄을 초과하여 모든 상태와 모달을 독점하는 단일 파일 패턴을 엄격히 금지합니다.
+2. **비즈니스 로직 격리 (`hooks/`)**: 데이터 필터링, 정렬, API 호출 등의 상태 로직은 커스텀 훅(`use...`)으로 분리하여 순수 UI와 섞이지 않도록 합니다.
+3. **순수 함수 분리 (`utils/`)**: 통화/날짜 포맷팅, 수치 계산 알고리즘은 순수 자바스크립트 함수로 분리합니다.
 
 ---
 
-## 3. 핵심 기본 원칙 (Core Principles) 📱
+## 3. 구조적 린트(Lint) & Git Pre-commit 커밋 차단 규정 🛡️
 
-모든 사이트(포털 및 개별 PoC 전체)는 아래의 기본 원칙을 필수 준수하여 개발됩니다:
+코드 컨벤션이 문서로만 끝나지 않고 **물리적으로 강제**되도록 자동 검증 파이프라인을 운영합니다.
+
+```mermaid
+flowchart LR
+    A["git commit 실행"] --> B["Git Hook (.git/hooks/pre-commit)"]
+    B --> C["아키텍처 린터 (scripts/lint-architecture.mjs)"]
+    C -->|규칙 위반 시| D["❌ 커밋 즉시 차단 (Commit Aborted)"]
+    C -->|검증 통과 시| E["✅ 커밋 정상 완료"]
+```
+
+* **검증 규칙 1 (필수 디렉토리)**: React 앱 내에 `components/`와 `utils/`(또는 `hooks/`) 디렉토리가 존재하는가?
+* **검증 규칙 2 (파일 크기 상한)**: `App.jsx` 파일이 컴포넌트 분리 없이 130줄을 초과하지 않는가?
+* **위반 시 조치**: 터미널에 위반된 파일과 사유를 출력하고 `exit code 1`로 커밋을 즉시 취소합니다.
+
+---
+
+## 4. 핵심 기본 원칙 (Core Principles) 📱
 
 1. **모바일 퍼스트 & 전면 반응형 (Responsive by Default)**
-   * 모바일(360px~), 태블릿(768px~), 데스크톱(1024px~) 모든 뷰포트에 유연하게 대응
-   * 모바일 전용 UI 패턴 적용:
-     * 포털: 카드 1열 그리드 및 모바일 네비게이션
-     * AI Chat: 모바일 가상 키보드 호출 시 하단 입력창 고정 및 뷰포트 높이(`dvh`) 대응
-     * 3D Scene: 싱글 터치 회전, 핀치 투 줌(Pinch-to-zoom) 모바일 제스처 지원
-     * Markdown: 좁은 화면에서는 2열 스플릿 뷰 대신 '에디터 / 프리뷰' 탭 토글 모드로 자동 전환
+   * 모바일(360px~), 태블릿(768px~), 데스크톱(1024px~) 모든 뷰포트에 유연하게 적응
+   * 모바일 전용 뷰: 복잡한 재무 테이블 대신 '스마트 요약 카드' 및 드로어 모달 제공
 2. **독립성과 일관성의 균형**
-   * 각 PoC는 다른 사이트에 영향을 주지 않고 단독으로 실행/빌드될 수 있어야 함
-   * 모든 PoC 상단에는 메인 포털(`/make/`)로 언제든 1클릭 복귀할 수 있는 일관된 네비게이션 바 포함
-3. **가벼운 정적 번들**
-   * 불필요한 런타임 오버헤드를 줄이고, 정적 파일만으로 완결 동작하는 클라이언트 사이드 기술 채택
+   * 각 앱은 다른 앱에 영향 없이 단독 빌드/실행 가능
+   * 모든 앱 상단에 메인 포털(`/make/`) 복귀 네비게이션 제공
+3. **Vite 기반 표준 빌드 파이프라인**
+   * 상대 경로(`base: './'`) 적용으로 로컬/GitHub Pages 무결성 보장
 
 ---
 
-## 4. 사이트별 역할 및 서브경로 매핑
+## 5. 사이트별 역할 및 서브경로 매핑
 
 | 사이트 이름 | 서브 경로 (URL) | 기술 스택 | 핵심 목적 & 반응형 특징 | 상세 명세 |
 | :--- | :--- | :--- | :--- | :---: |
-| **Portal (Hub)** | `/make/` (Root) | Vite + React + Tailwind | 작업 아카이브 검색, PoC 갤러리 쇼케이스 (반응형 카드 그리드) | [명세서](file:///C:/make/docs/apps/portal.md) |
-| **PoC: AI Chat** | `/make/poc-ai-chat/` | React + Tailwind | 대화형 UI, 텍스트 스트리밍 (모바일 키보드 최적화) | [명세서](file:///C:/make/docs/apps/poc-ai-chat.md) |
-| **PoC: 3D Scene** | `/make/poc-3d-scene/` | Three.js + Vite | 3D 모델 렌더링, 조명/카메라 조작 (터치 제스처 지원) | [명세서](file:///C:/make/docs/apps/poc-3d-scene.md) |
-| **PoC: Markdown** | `/make/poc-markdown/` | Vanilla JS + Marked.js | 실시간 마크다운 파서 및 뷰어 (모바일 스플릿/탭 뷰) | [명세서](file:///C:/make/docs/apps/poc-markdown.md) |
+| **Portal (Hub)** | `/make/` (Root) | Vite + React + Tailwind | 작업 아카이브 검색, PoC 갤러리 쇼케이스 | [명세서](file:///C:/make/docs/apps/portal.md) |
+| **PoC: AI Chat** | `/make/poc-ai-chat/` | React + Tailwind | 멀티 세션 대화방, Gemini 2.5 실시간 스트리밍 | [명세서](file:///C:/make/docs/apps/poc-ai-chat.md) |
+| **PoC: 3D Scene** | `/make/poc-3d-scene/` | Three.js + Vite | 3D 모델 렌더링, 터치 제스처 WebGL 랩 | [명세서](file:///C:/make/docs/apps/poc-3d-scene.md) |
+| **PoC: Markdown** | `/make/poc-markdown/` | Vanilla JS + Marked.js | 4종 테마 스위칭, 독립 HTML/MD 내보내기 | [명세서](file:///C:/make/docs/apps/poc-markdown.md) |
+| **PoC: Stock Screener** | `/make/poc-stock-screener/` | React + Recharts + Tailwind | 미국/국내 주식 스마트 스크리너 & 맞대결 비교 랩 | [명세서](file:///C:/make/docs/apps/poc-stock-screener.md) |
 
 ---
 
-## 5. 통합 빌드 및 GitHub Pages 배포 전략
+## 6. 통합 빌드 및 GitHub Pages 스마트 배포 전략
 
-각 사이트는 각자의 빌드 명령어(`build`)를 실행하여 산출물을 생성하며, 루트 빌드 스크립트가 이를 하나의 `dist/` 폴더로 조합합니다.
-
-```mermaid
-flowchart TD
-    RootBuild["pnpm build (루트 통합 빌드)"] --> B1["apps/portal 빌드"]
-    RootBuild --> B2["apps/poc-ai-chat 빌드"]
-    RootBuild --> B3["apps/poc-3d-scene 빌드"]
-    RootBuild --> B4["apps/poc-markdown 빌드"]
-
-    B1 --> D1["dist/ (메인 포털)"]
-    B2 --> D2["dist/poc-ai-chat/"]
-    B3 --> D3["dist/poc-3d-scene/"]
-    B4 --> D4["dist/poc-markdown/"]
-
-    D1 & D2 & D3 & D4 --> Deploy["GitHub Pages 단일 배포 (dist/)"]
-```
-
-* **Vite `base` 설정 원칙**:
-  * Portal: `base: '/make/'`
-  * PoC AI Chat: `base: '/make/poc-ai-chat/'`
-  * PoC 3D Scene: `base: '/make/poc-3d-scene/'`
-  * PoC Markdown: `base: '/make/poc-markdown/'`
-
----
-
-## 6. 지속적 문서 및 개발 사이클 규칙
-
-1. **사전 문서화**: 신규 PoC 생성 전 `docs/apps/poc-{name}.md`를 먼저 작성하여 목적, 기능, 모바일 UI 정의
-2. **독립 구현**: 타 PoC에 영향 없이 `apps/poc-{name}/` 내에서 독립 개발
-3. **로드맵 갱신**: 개발 완료 시 `docs/ROADMAP.md` 상태 업데이트 및 커밋
+* **`dorny/paths-filter` 기반 부분 빌드**: 수정된 앱 폴더만 30초 내로 단독 빌드하고, 나머지 사이트는 이전 캐시를 재사용하여 통합 배포합니다.
+* **한글 커밋 표준**: 모든 커밋은 명확한 한글 메시지로 기록합니다.
