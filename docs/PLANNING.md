@@ -1,74 +1,84 @@
-# 📌 Project: Make (PoC Testbed & Work Archive)
+# 📌 Project: Make (Monorepo PoC Testbed & Work Archive)
 
-> **"작업 기록을 아카이빙하고, 다양한 기술 아이디어를 빠르게 실험(PoC)하는 개인 테스트베드 정적 사이트"**
-
----
-
-## 1. 프로젝트 개요 및 목표
-
-### 1.1 핵심 목적
-1. **작업 아카이브 (Work Archive)**: 진행한 작업, 프로젝트, 연구 결과물을 카드/문서 형태로 체계적으로 정리
-2. **PoC 테스트베드 (PoC Playground)**: 새로운 기술, 라이브러리, UI 인터랙션, 아이디어를 빠르게 프로토타이핑하고 직접 동작시켜볼 수 있는 실험실 환경 구축
-3. **독립적이고 확장 가능한 구조**: 새로운 실험(PoC)이 추가되어도 기존 기능에 영향을 주지 않는 모듈형 아키텍처
+> **"하나의 저장소 안에서 다양한 독립 웹 애플리케이션을 실험(PoC)하고, 작업 기록을 아카이빙하는 멀티 앱(Multi-App) 정적 플랫폼"**
 
 ---
 
-## 2. 요구사항 정의 (Functional & Non-Functional)
+## 1. 아키텍처 비전: Monorepo & Multi-App
 
-### 2.1 기능적 요구사항
-* **메인 대시보드 (Hub)**
-  * **Work Log Section**: 작업 내역을 타임라인 또는 카드 형태로 탐색 (태그, 카테고리 필터링)
-  * **PoC Playground Section**: 진행 중인 실험/데모 목록 표시 (상태 뱃지: `아이디어`, `실험 중`, `완료`)
-* **PoC 쇼케이스/샌드박스 뷰어**
-  * 각 PoC별 독립된 실행 화면 제공
-  * PoC에 대한 배경 설명, 사용 기술, 배운 점(Learnings)을 마크다운/텍스트로 함께 렌더링
-* **문서 기반 관리 (Markdown-driven)**
-  * 새로운 작업 기록이나 PoC 문서를 마크다운 파일 추가만으로 손쉽게 사이트에 반영 가능하도록 설계
-
-### 2.2 비기능적 요구사항
-* **정적 사이트(Static Site) 호스팅**: GitHub Pages 또는 호스팅 플랫폼을 통한 간편한 배포 및 제로 서버 유지비
-* **반응형 웹 (Responsive)**: 데스크톱 및 모바일 환경 최적화
-* **성능 및 확장성**: 가볍고 빠른 로딩, 새로운 프레임워크나 라이브러리를 쉽게 임베딩할 수 있는 유연성
-
----
-
-## 3. 화면 구성 및 사용자 흐름 (UI/UX Draft)
+본 프로젝트는 **`pnpm Workspaces`** 기반의 모노레포 구조로 설계되어, 각 테스트베드 사이트가 독립적인 기술 스택과 빌드 라이프사이클을 가집니다.
 
 ```
-[ 메인 홈 (Home) ]
- ├── [Header] 로고, 네비게이션 (Works | PoC Playground | About)
- ├── [Hero] 테스트베드 소개 & 최근 업데이트 요약
- ├── [Section 1: PoC Lab] 인터랙티브 실험실 목록 (카드 클릭 시 데모 페이지 이동)
- ├── [Section 2: Work Archive] 작업 정리 목록 (태그 필터, 검색)
- └── [Footer] GitHub 링크, 프로필 정보
-
-[ PoC 상세 페이지 (/poc/{id}) ]
- ├── [상단] 데모 제목, 태그, 상태(WIP, Done), 관련 GitHub 링크
- ├── [중앙] 인터랙티브 실험 화면 (인터랙션/캔버스/API 연동 등 실행 영역)
- └── [하단] 실험 노트 (기획 의도, 구현 포인트, 마크다운 문서)
+make/ (Monorepo Root)
+├── apps/
+│   ├── portal/          # [메인 허브] 작업 아카이브 및 PoC 카드 쇼케이스 (Vite + React + Tailwind)
+│   ├── poc-ai-chat/     # [독립 PoC 1] AI 채팅 UI 및 스트리밍 실험 (React + Tailwind)
+│   ├── poc-3d-scene/    # [독립 PoC 2] Three.js 인터랙티브 3D 그래픽 실험 (Three.js / Canvas)
+│   └── poc-markdown/    # [독립 PoC 3] 실시간 마크다운 파서 및 뷰어 실험 (Vanilla / Marked)
+├── docs/                # 전체 프로젝트 및 사이트별 기획/명세 문서
+│   ├── PLANNING.md      # 본 통합 아키텍처 기획서
+│   ├── ROADMAP.md       # 마일스톤 및 진행 현황
+│   └── apps/            # 각 사이트별 상세 명세 문서
+│       ├── portal.md
+│       ├── poc-ai-chat.md
+│       ├── poc-3d-scene.md
+│       └── poc-markdown.md
+└── dist/                # [통합 빌드 산출물] GitHub Pages 단일 배포 루트
 ```
 
 ---
 
-## 4. 권장 기술 스택 비교 분석
+## 2. 핵심 기술 스택 및 선정 이유
 
-| 스택 후보 | 장점 | 단점 | 적합도 |
-| :--- | :--- | :--- | :---: |
-| **A. Astro + Tailwind CSS** | 마크다운 문서 관리 + React/Vue 등 다중 프레임워크 컴포넌트를 자유롭게 임베딩 가능. 정적 빌드 속도 및 번들 최적화 최상. | Astro 고유의 라우팅/문법 학습 필요. | ⭐⭐⭐⭐⭐ (최적) |
-| **B. Vite + React + Tailwind** | 가장 대중적이고 인터랙티브한 SPA PoC를 빠르게 구현하기에 매우 유리함. 컴포넌트 생태계 방대. | 순수 마크다운 아카이빙 처리 시 파서/플러그인 설정 필요. | ⭐⭐⭐⭐ (추천) |
-| **C. Next.js (SSG)** | 풍부한 기능, 정적 내보내기(`output: export`) 지원. | 단순 PoC 테스트베드 대비 보일러플레이트와 설정이 다소 무거움. | ⭐⭐⭐ |
+| 구분 | 도구 | 선정 이유 |
+| :--- | :--- | :--- |
+| **패키지 매니저** | **pnpm Workspaces** | 하드링크 기반 패키지 공유로 디스크 절약, 초고속 설치, 특정 앱 단독 실행(`pnpm --filter poc-ai-chat dev`) 용이 |
+| **빌드 엔진** | **Vite** | 극도로 빠른 HMR 및 빌드 속도, React/Vue/Vanilla 등 멀티 프레임워크 호환, 서브경로(`base`) 설정 직관성 |
+| **스타일링** | **Tailwind CSS** | 별도 CSS 번들링 복잡도 없이 유틸리티 클래스로 초고속 프로토타이핑 |
+| **호스팅 / 배포** | **GitHub Pages** (or Cloudflare Pages) | 정적 사이트 기반 제로 서버 유지비, GitHub Actions로 통합 자동 빌드 |
 
 ---
 
-## 5. 지속적 기획 및 개발 반영 프로세스
+## 3. 사이트별 역할 및 서브경로 매핑
+
+| 사이트 이름 | 서브 경로 (URL) | 기술 스택 | 핵심 목적 | 상세 명세 |
+| :--- | :--- | :--- | :--- | :---: |
+| **Portal (Hub)** | `/make/` (Root) | Vite + React + Tailwind | 작업 아카이브 검색, PoC 갤러리 네비게이션, 프로필 | [명세서](file:///C:/make/docs/apps/portal.md) |
+| **PoC: AI Chat** | `/make/poc-ai-chat/` | React + Tailwind | 대화형 UI, 텍스트 스트리밍, 메시지 롤링 인터랙션 | [명세서](file:///C:/make/docs/apps/poc-ai-chat.md) |
+| **PoC: 3D Scene** | `/make/poc-3d-scene/` | Three.js + Vite | 3D 모델 렌더링, 조명/카메라 인터랙션, 성능 측정 | [명세서](file:///C:/make/docs/apps/poc-3d-scene.md) |
+| **PoC: Markdown** | `/make/poc-markdown/` | Vanilla JS + Marked.js | 마크다운 실시간 파싱, 코드 하이라이팅, 다크모드 뷰어 | [명세서](file:///C:/make/docs/apps/poc-markdown.md) |
+
+---
+
+## 4. 통합 빌드 및 GitHub Pages 배포 전략
+
+각 사이트는 각자의 빌드 명령어(`build`)를 실행하여 산출물을 생성하며, 루트 빌드 스크립트가 이를 하나의 `dist/` 폴더로 조합합니다.
 
 ```mermaid
-flowchart LR
-    A[아이디어/기획] --> B[docs/PLANNING.md 업데이트]
-    B --> C[PoC 구현/문서 작성]
-    C --> D[docs/ROADMAP.md 상태 갱신]
-    D --> E[Git 커밋 & 배포]
+flowchart TD
+    RootBuild["pnpm build (루트 통합 빌드)"] --> B1["apps/portal 빌드"]
+    RootBuild --> B2["apps/poc-ai-chat 빌드"]
+    RootBuild --> B3["apps/poc-3d-scene 빌드"]
+    RootBuild --> B4["apps/poc-markdown 빌드"]
+
+    B1 --> D1["dist/ (메인 포털)"]
+    B2 --> D2["dist/poc-ai-chat/"]
+    B3 --> D3["dist/poc-3d-scene/"]
+    B4 --> D4["dist/poc-markdown/"]
+
+    D1 & D2 & D3 & D4 --> Deploy["GitHub Pages 단일 배포 (dist/)"]
 ```
 
-1. 새로운 실험이나 작업이 생기면 먼저 `docs/PLANNING.md` 및 `docs/ROADMAP.md`에 명세를 추가
-2. 개발/테스트 완료 후 관련 문서 및 체인지로그를 동기화하여 커밋
+* **Vite `base` 설정 원칙**:
+  * Portal: `base: '/make/'`
+  * PoC AI Chat: `base: '/make/poc-ai-chat/'`
+  * PoC 3D Scene: `base: '/make/poc-3d-scene/'`
+  * PoC Markdown: `base: '/make/poc-markdown/'`
+
+---
+
+## 5. 지속적 문서 및 개발 사이클 규칙
+
+1. **사전 문서화**: 신규 PoC 생성 전 `docs/apps/poc-{name}.md`를 먼저 작성하여 목적과 기능 정의
+2. **독립 구현**: 타 PoC에 영향 없이 `apps/poc-{name}/` 내에서 독립 개발
+3. **로드맵 갱신**: 개발 완료 시 `docs/ROADMAP.md` 상태 업데이트 및 커밋
