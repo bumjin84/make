@@ -220,8 +220,14 @@ header {
 /* 4. Preview Pane & Themes */
 .preview-pane {
   height: 100%;
+  min-height: 0;
+  min-width: 0;
   overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   transition: background-color 0.2s, color 0.2s;
+  padding-bottom: 40px; /* 마지막 텍스트 하단 여유 여백 */
 }
 
 .markdown-body {
@@ -229,6 +235,8 @@ header {
   margin: 0 auto;
   font-size: 14px;
   line-height: 1.7;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
 
 /* ==================== THEMES ==================== */
@@ -316,11 +324,11 @@ header {
 .markdown-body p { margin-bottom: 12px; }
 .markdown-body ul, .markdown-body ol { padding-left: 24px; margin-bottom: 12px; }
 .markdown-body li { margin-bottom: 4px; }
-.markdown-body pre { padding: 14px; border-radius: 8px; overflow-x: auto; margin-bottom: 14px; }
+.markdown-body pre { padding: 14px; border-radius: 8px; overflow-x: auto; margin-bottom: 14px; max-width: 100%; }
 .markdown-body code { padding: 2px 6px; border-radius: 4px; font-size: 0.88em; }
 .markdown-body pre code { background: none; border: none; padding: 0; }
 .markdown-body blockquote { padding: 8px 16px; border-left: 4px solid; margin: 12px 0; }
-.markdown-body table { width: 100%; border-collapse: collapse; margin-bottom: 14px; }
+.markdown-body table { width: 100%; border-collapse: collapse; margin-bottom: 14px; display: block; overflow-x: auto; max-width: 100%; }
 .markdown-body table th, .markdown-body table td { border: 1px solid; padding: 8px 12px; }
 
 /* 5. Desktop Split View (>=768px) */
