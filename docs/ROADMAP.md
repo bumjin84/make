@@ -33,6 +33,7 @@
 - [x] 저장소 Public 전환 완료
 - [x] GitHub Pages 환경 활성화 (`https://bumjin84.github.io/make/`)
 - [x] `paths-filter` + `actions/cache` 기반 스마트 부분 빌드 파이프라인 구축 (`.github/workflows/deploy.yml`, `scripts/build-incremental.mjs`)
-- [ ] 첫 배포 파이프라인 트리거 및 정상 서빙 검증
-- [ ] 실제 작업 아카이브 및 블로그/기록 데이터 추가
+- [x] `poc-ai-chat` 실시간 Gemini 스트리밍 및 멀티 세션(대화방 관리) 구현 완료
+- [x] 메인 포털 Work Archives 실시간 배포 내역 동기화 및 카테고리 필터링 구현
+- [x] Git 커밋 메시지 한글화 표준 적용
 - [ ] 신규 PoC 아이디어 추가 시 사전 명세 작성 및 샌드박스 확장

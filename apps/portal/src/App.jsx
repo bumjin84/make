@@ -17,10 +17,10 @@ const POCS = [
   {
     id: 'poc-ai-chat',
     title: 'AI Chat Interface',
-    summary: '실시간 토큰 스트리밍과 모바일 가상 키보드 최적화가 적용된 대화형 챗봇 UI',
-    status: 'In Progress',
-    statusColor: 'bg-amber-500/10 text-amber-400 border-amber-500/30',
-    tags: ['React', 'Tailwind', 'AI UI', 'Mobile dvh'],
+    summary: '실시간 토큰 스트리밍과 모바일 가상 키보드 최적화, 독립 멀티 세션 대화방이 적용된 Gemini 챗봇 UI',
+    status: 'Active (Live)',
+    statusColor: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30',
+    tags: ['React', 'Gemini 2.5', 'Multi-Session', 'Mobile dvh'],
     path: './poc-ai-chat/',
     icon: Bot,
     accent: 'from-blue-600 to-indigo-600'
@@ -49,34 +49,53 @@ const POCS = [
   }
 ];
 
+// 실제 깃 배포 및 개발 내역 아카이브
 const ARCHIVES = [
   {
-    date: '2026.10',
-    category: 'Architecture',
-    title: 'Monorepo & Multi-App 기반 PoC 테스트베드 아키텍처 수립',
-    desc: 'pnpm Workspaces와 Vite를 연계하여 독립 빌드와 통합 GitHub Pages 서빙 파이프라인 설계'
+    date: '2026.10.30',
+    category: 'AI Lab',
+    title: '멀티 세션(대화방 관리) 시스템 및 문맥 격리 아키텍처 구현',
+    desc: '세션별 독립 대화방 개설, 첫 질문 기반 자동 제목 생성, 세션당 최신 30개 메시지 롤링 및 문맥 완벽 격리'
   },
   {
-    date: '2026.10',
+    date: '2026.10.30',
+    category: 'AI Lab',
+    title: 'Google Gemini 2.5 Flash 실시간 스트리밍 & API Key 매니저 도입',
+    desc: '정적 클라이언트 환경에서 브라우저 직접 fetch 기반 SSE 스트리밍 구현 및 localStorage 보안 키 매니저 연동'
+  },
+  {
+    date: '2026.10.30',
     category: 'DevOps',
-    title: 'GitHub CLI 연동 및 자동화 파이프라인 구성',
-    desc: '인증 토큰 및 Git Credential Helper 설정을 통한 원클릭 리포지토리 자동 생성 및 푸시 구축'
+    title: 'paths-filter 기반 스마트 부분 빌드(Incremental Build) 파이프라인 구축',
+    desc: '수정된 앱만 30초 내로 단독 빌드하고, 나머지 사이트는 이전 캐시를 재사용하는 초고속 CI/CD 배포 구성'
   },
   {
-    date: '2026.10',
+    date: '2026.10.30',
+    category: 'Architecture',
+    title: 'Vite + pnpm Workspaces 기반 모노레포 구축 & 4개 독립 앱 스캐폴딩',
+    desc: '포털 및 3개의 독립 PoC(AI Chat, 3D Scene, Markdown)를 완벽히 격리된 멀티 앱 구조로 번들링'
+  },
+  {
+    date: '2026.10.30',
     category: 'Core',
-    title: 'Mobile-First & 전면 반응형 설계 원칙 적용',
-    desc: '모바일 뷰포트(dvh), 터치 제스처, 적응형 탭 레이아웃을 전 PoC 기본 사양으로 표준화'
+    title: '모바일 퍼스트(Mobile-First) & 전면 반응형 설계 원칙 확립',
+    desc: '동적 뷰포트(dvh), 모바일 터치 제스처, 적응형 탭 레이아웃을 모든 사이트의 기본 사양으로 표준화'
   }
 ];
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState('all');
+  const [activeCategory, setActiveCategory] = useState('ALL');
+
+  const categories = ['ALL', 'AI Lab', 'DevOps', 'Architecture', 'Core'];
+
+  const filteredArchives = activeCategory === 'ALL' 
+    ? ARCHIVES 
+    : ARCHIVES.filter(a => a.category === activeCategory);
 
   return (
     <div className="min-h-screen flex flex-col bg-slate-950 text-slate-100">
       {/* Header */}
-      <header className="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-850 border-slate-800/80 px-4 sm:px-8 py-3.5 flex items-center justify-between">
+      <header className="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 px-4 sm:px-8 py-3.5 flex items-center justify-between">
         <div className="flex items-center gap-2.5">
           <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center shadow-lg shadow-blue-500/20">
             <Layers className="w-5 h-5 text-white" />
@@ -163,7 +182,7 @@ export default function App() {
             <span className="text-xs text-slate-500 font-mono">Total {POCS.length} Sandboxes</span>
           </div>
 
-          {/* Cards Grid: Mobile 1-col, Tablet 2-col, Desktop 3-col */}
+          {/* Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {POCS.map((poc) => {
               const Icon = poc.icon;
@@ -217,17 +236,36 @@ export default function App() {
 
         {/* Work Archive Section */}
         <section id="archives" className="space-y-6">
-          <div className="border-b border-slate-800 pb-4">
-            <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-white flex items-center gap-2">
-              <span>📚 Work Archives</span>
-            </h3>
-            <p className="text-xs sm:text-sm text-slate-400 mt-1">
-              플랫폼 개발 및 연구 작업 내역 타임라인입니다.
-            </p>
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b border-slate-800 pb-4">
+            <div>
+              <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-white flex items-center gap-2">
+                <span>📚 Work Archives</span>
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-400 mt-1">
+                깃 배포와 함께 지속적으로 누적되는 개발 및 연구 기록입니다.
+              </p>
+            </div>
+
+            {/* Category Filter Chips */}
+            <div className="flex items-center gap-1.5 overflow-x-auto pb-1 sm:pb-0">
+              {categories.map(cat => (
+                <button
+                  key={cat}
+                  onClick={() => setActiveCategory(cat)}
+                  className={`text-xs px-2.5 py-1 rounded-lg border transition-colors shrink-0 ${
+                    activeCategory === cat
+                      ? 'bg-blue-600 border-blue-500 text-white font-medium'
+                      : 'bg-slate-900 border-slate-800 text-slate-400 hover:text-slate-200 hover:bg-slate-850'
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
+            </div>
           </div>
 
           <div className="space-y-3">
-            {ARCHIVES.map((item, idx) => (
+            {filteredArchives.map((item, idx) => (
               <div 
                 key={idx}
                 className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-4 sm:p-5 rounded-2xl bg-slate-900/60 border border-slate-800/90 hover:bg-slate-900 transition-colors"
@@ -245,7 +283,7 @@ export default function App() {
                   <h4 className="text-sm sm:text-base font-semibold text-white">
                     {item.title}
                   </h4>
-                  <p className="text-xs sm:text-sm text-slate-400">
+                  <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
@@ -259,10 +297,9 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-slate-850 border-slate-800/80 py-6 px-4 text-center text-xs text-slate-500">
+      <footer className="border-t border-slate-800/80 py-6 px-4 text-center text-xs text-slate-500">
         <p>© 2026 Park Beom Jin. Built with Vite, pnpm Workspaces & Tailwind CSS.</p>
       </footer>
     </div>
   );
 }
-
