@@ -3,7 +3,7 @@
     "ticker": "005930",
     "name": "삼성전자",
     "sector": "반도체/스마트폰",
-    "price": 222500,
+    "price": 220500,
     "marketCap": "347조원",
     "pe": 13.8,
     "forwardPe": 10.2,
@@ -147,7 +147,7 @@
         225000,
         245000,
         230500,
-        222500
+        220500
       ],
       "volumes": [
         27825493,
@@ -209,26 +209,26 @@
         14196879,
         17840544,
         24975596,
-        19158007
+        19485781
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 222500,
-      "ma5": 227300,
-      "ma20": 236000,
-      "ma60": 251300,
-      "ma120": 273591.67,
+      "currentPrice": 220500,
+      "ma5": 226900,
+      "ma20": 235900,
+      "ma60": 251266.67,
+      "ma120": 273575,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -5.7
+      "disparity20": -6.5
     }
   },
   {
     "ticker": "000660",
     "name": "SK하이닉스",
     "sector": "AI 메모리/HBM",
-    "price": 1414000,
+    "price": 1391000,
     "marketCap": "140조원",
     "pe": 8.5,
     "forwardPe": 5.4,
@@ -372,7 +372,7 @@
         1374000,
         1508000,
         1516000,
-        1414000
+        1391000
       ],
       "volumes": [
         5432833,
@@ -434,26 +434,26 @@
         3136495,
         4244800,
         4549384,
-        3659906
+        3769922
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 1414000,
-      "ma5": 1420400,
-      "ma20": 1461250,
-      "ma60": 1609133.33,
-      "ma120": 1857750,
+      "currentPrice": 1391000,
+      "ma5": 1415800,
+      "ma20": 1460100,
+      "ma60": 1608750,
+      "ma120": 1857558.33,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -3.2
+      "disparity20": -4.7
     }
   },
   {
     "ticker": "373220",
     "name": "LG에너지솔루션",
     "sector": "2차전지/배터리",
-    "price": 357000,
+    "price": 352500,
     "marketCap": "96조원",
     "pe": 78,
     "forwardPe": 48,
@@ -597,7 +597,7 @@
         385500,
         373500,
         355000,
-        357000
+        352500
       ],
       "volumes": [
         279360,
@@ -659,26 +659,26 @@
         334767,
         427142,
         903683,
-        423700
+        429980
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 357000,
-      "ma5": 369500,
-      "ma20": 390300,
-      "ma60": 368058.33,
-      "ma120": 374608.33,
+      "currentPrice": 352500,
+      "ma5": 368600,
+      "ma20": 390075,
+      "ma60": 367983.33,
+      "ma120": 374570.83,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "혼조/횡보 (Neutral)",
-      "disparity20": -8.5
+      "disparity20": -9.6
     }
   },
   {
     "ticker": "207940",
     "name": "삼성바이오로직스",
     "sector": "바이오/CDMO",
-    "price": 1440000,
+    "price": 1432000,
     "marketCap": "74조원",
     "pe": 64,
     "forwardPe": 52,
@@ -822,7 +822,7 @@
         1376000,
         1371000,
         1368000,
-        1440000
+        1432000
       ],
       "volumes": [
         47478,
@@ -884,26 +884,26 @@
         90466,
         50178,
         42227,
-        99492
+        100349
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 1440000,
-      "ma5": 1400800,
-      "ma20": 1335900.35,
-      "ma60": 1426852.02,
-      "ma120": 1403977.22,
+      "currentPrice": 1432000,
+      "ma5": 1399200,
+      "ma20": 1335500.35,
+      "ma60": 1426718.68,
+      "ma120": 1403910.55,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "혼조/횡보 (Neutral)",
-      "disparity20": 7.8
+      "disparity20": 7.2
     }
   },
   {
     "ticker": "005380",
     "name": "현대차",
     "sector": "완성차/모빌리티",
-    "price": 279000,
+    "price": 278500,
     "marketCap": "49조원",
     "pe": 4.8,
     "forwardPe": 4.2,
@@ -1047,7 +1047,7 @@
         291500,
         297000,
         292000,
-        279000
+        278500
       ],
       "volumes": [
         826843,
@@ -1109,26 +1109,26 @@
         706604,
         420188,
         884595,
-        597912
+        609371
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 279000,
-      "ma5": 289700,
-      "ma20": 311725,
-      "ma60": 364716.67,
-      "ma120": 459041.67,
+      "currentPrice": 278500,
+      "ma5": 289600,
+      "ma20": 311700,
+      "ma60": 364708.33,
+      "ma120": 459037.5,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -10.5
+      "disparity20": -10.7
     }
   },
   {
     "ticker": "000270",
     "name": "기아",
     "sector": "완성차/모빌리티",
-    "price": 95300,
+    "price": 94800,
     "marketCap": "38조원",
     "pe": 4.2,
     "forwardPe": 3.8,
@@ -1272,7 +1272,7 @@
         106700,
         107500,
         108600,
-        95300
+        94800
       ],
       "volumes": [
         686065,
@@ -1334,26 +1334,26 @@
         624212,
         546576,
         913734,
-        2174000
+        2226819
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 95300,
-      "ma5": 104760,
-      "ma20": 108515,
-      "ma60": 121438.33,
-      "ma120": 137286.67,
+      "currentPrice": 94800,
+      "ma5": 104660,
+      "ma20": 108490,
+      "ma60": 121430,
+      "ma120": 137282.5,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -12.2
+      "disparity20": -12.6
     }
   },
   {
     "ticker": "105560",
     "name": "KB금융",
     "sector": "금융지주/은행",
-    "price": 155200,
+    "price": 154600,
     "marketCap": "37조원",
     "pe": 6.5,
     "forwardPe": 5.8,
@@ -1497,7 +1497,7 @@
         147900,
         153800,
         157000,
-        155200
+        154600
       ],
       "volumes": [
         921537,
@@ -1559,26 +1559,26 @@
         1078365,
         985276,
         891093,
-        1085461
+        1089583
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 155200,
-      "ma5": 152420,
-      "ma20": 159685,
-      "ma60": 167621.67,
-      "ma120": 165113.33,
+      "currentPrice": 154600,
+      "ma5": 152300,
+      "ma20": 159655,
+      "ma60": 167611.67,
+      "ma120": 165108.33,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -2.8
+      "disparity20": -3.2
     }
   },
   {
     "ticker": "055550",
     "name": "신한지주",
     "sector": "금융지주/은행",
-    "price": 89400,
+    "price": 89200,
     "marketCap": "28조원",
     "pe": 6,
     "forwardPe": 5.2,
@@ -1722,7 +1722,7 @@
         86100,
         87600,
         89300,
-        89400
+        89200
       ],
       "volumes": [
         991006,
@@ -1784,26 +1784,26 @@
         1570708,
         1304639,
         1264506,
-        1313822
+        1318124
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 89400,
-      "ma5": 87760,
-      "ma20": 94680,
-      "ma60": 104088.33,
-      "ma120": 102055.83,
+      "currentPrice": 89200,
+      "ma5": 87720,
+      "ma20": 94670,
+      "ma60": 104085,
+      "ma120": 102054.17,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -5.6
+      "disparity20": -5.8
     }
   },
   {
     "ticker": "068270",
     "name": "셀트리온",
     "sector": "바이오시밀러",
-    "price": 190500,
+    "price": 190200,
     "marketCap": "41조원",
     "pe": 48,
     "forwardPe": 28.5,
@@ -1947,7 +1947,7 @@
         188900,
         189900,
         190600,
-        190500
+        190200
       ],
       "volumes": [
         451402,
@@ -2009,26 +2009,26 @@
         433983,
         418176,
         372797,
-        516058
+        522562
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 190500,
-      "ma5": 189980,
-      "ma20": 187445,
-      "ma60": 187825,
-      "ma120": 182285.15,
+      "currentPrice": 190200,
+      "ma5": 189920,
+      "ma20": 187430,
+      "ma60": 187820,
+      "ma120": 182282.65,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "혼조/횡보 (Neutral)",
-      "disparity20": 1.6
+      "disparity20": 1.5
     }
   },
   {
     "ticker": "035420",
     "name": "NAVER",
     "sector": "인터넷/플랫폼",
-    "price": 171800,
+    "price": 170800,
     "marketCap": "27조원",
     "pe": 16.8,
     "forwardPe": 13.5,
@@ -2172,7 +2172,7 @@
         181400,
         178400,
         175100,
-        171800
+        170800
       ],
       "volumes": [
         662318,
@@ -2234,26 +2234,26 @@
         722561,
         1128218,
         689230,
-        597584
+        626177
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 171800,
-      "ma5": 176220,
-      "ma20": 180175,
-      "ma60": 201218.33,
-      "ma120": 207046.67,
+      "currentPrice": 170800,
+      "ma5": 176020,
+      "ma20": 180125,
+      "ma60": 201201.67,
+      "ma120": 207038.33,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -4.6
+      "disparity20": -5.2
     }
   },
   {
     "ticker": "003230",
     "name": "삼양식품",
     "sector": "음식료/글로벌수출",
-    "price": 1128000,
+    "price": 1129000,
     "marketCap": "4.3조원",
     "pe": 21.5,
     "forwardPe": 14.2,
@@ -2397,7 +2397,7 @@
         1130000,
         1183000,
         1146000,
-        1128000
+        1129000
       ],
       "volumes": [
         43339,
@@ -2459,26 +2459,26 @@
         23491,
         34288,
         40175,
-        40083
+        40401
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 1128000,
-      "ma5": 1141600,
-      "ma20": 1187250,
-      "ma60": 1274316.67,
-      "ma120": 1229750,
+      "currentPrice": 1129000,
+      "ma5": 1141800,
+      "ma20": 1187300,
+      "ma60": 1274333.33,
+      "ma120": 1229758.33,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -5
+      "disparity20": -4.9
     }
   },
   {
     "ticker": "196170",
     "name": "알테오젠",
     "sector": "바이오플랫폼/SC제형",
-    "price": 210000,
+    "price": 209000,
     "marketCap": "20.5조원",
     "pe": 95,
     "forwardPe": 42,
@@ -2622,7 +2622,7 @@
         219000,
         223500,
         224000,
-        210000
+        209000
       ],
       "volumes": [
         392061,
@@ -2684,26 +2684,26 @@
         232496,
         236390,
         236336,
-        324450
+        331500
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 210000,
-      "ma5": 218900,
-      "ma20": 232600,
-      "ma60": 269363.35,
-      "ma120": 263962.25,
+      "currentPrice": 209000,
+      "ma5": 218700,
+      "ma20": 232550,
+      "ma60": 269346.68,
+      "ma120": 263953.92,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -9.7
+      "disparity20": -10.1
     }
   },
   {
     "ticker": "267260",
     "name": "HD현대일렉트릭",
     "sector": "전력기기/변압기",
-    "price": 421000,
+    "price": 418500,
     "marketCap": "11.6조원",
     "pe": 24.5,
     "forwardPe": 16.8,
@@ -2847,7 +2847,7 @@
         454000,
         466500,
         440000,
-        421000
+        418500
       ],
       "volumes": [
         130244,
@@ -2909,26 +2909,26 @@
         188703,
         204559,
         176351,
-        174711
+        177257
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 421000,
-      "ma5": 445000,
-      "ma20": 530900,
-      "ma60": 669783.33,
-      "ma120": 831708.33,
+      "currentPrice": 418500,
+      "ma5": 444500,
+      "ma20": 530775,
+      "ma60": 669741.67,
+      "ma120": 831687.5,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -20.7
+      "disparity20": -21.2
     }
   },
   {
     "ticker": "012450",
     "name": "한화에어로스페이스",
     "sector": "방산/우주항공",
-    "price": 689000,
+    "price": 682000,
     "marketCap": "18.2조원",
     "pe": 22,
     "forwardPe": 14.5,
@@ -3072,7 +3072,7 @@
         773000,
         786000,
         739000,
-        689000
+        682000
       ],
       "volumes": [
         177064,
@@ -3134,26 +3134,26 @@
         124652,
         124980,
         193463,
-        401943
+        404756
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 689000,
-      "ma5": 748000,
-      "ma20": 855150,
-      "ma60": 1005583.33,
-      "ma120": 1048908.33,
+      "currentPrice": 682000,
+      "ma5": 746600,
+      "ma20": 854800,
+      "ma60": 1005466.67,
+      "ma120": 1048850,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -19.4
+      "disparity20": -20.2
     }
   },
   {
     "ticker": "010120",
     "name": "LS ELECTRIC",
     "sector": "전력인프라/스마트그리드",
-    "price": 148300,
+    "price": 146900,
     "marketCap": "4.9조원",
     "pe": 19.8,
     "forwardPe": 13.8,
@@ -3297,7 +3297,7 @@
         160300,
         166400,
         157500,
-        148300
+        146900
       ],
       "volumes": [
         890344,
@@ -3359,26 +3359,26 @@
         376610,
         423458,
         547548,
-        496507
+        513769
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 148300,
-      "ma5": 157000,
-      "ma20": 173365,
-      "ma60": 193373.33,
-      "ma120": 213236.67,
+      "currentPrice": 146900,
+      "ma5": 156720,
+      "ma20": 173295,
+      "ma60": 193350,
+      "ma120": 213225,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -14.5
+      "disparity20": -15.2
     }
   },
   {
     "ticker": "086790",
     "name": "하나금융지주",
     "sector": "금융지주/은행",
-    "price": 119800,
+    "price": 119700,
     "marketCap": "18.1조원",
     "pe": 5.2,
     "forwardPe": 4.5,
@@ -3522,7 +3522,7 @@
         113100,
         115500,
         120300,
-        119800
+        119700
       ],
       "volumes": [
         591005,
@@ -3584,15 +3584,15 @@
         707962,
         622755,
         695943,
-        507955
+        509399
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 119800,
-      "ma5": 116400,
-      "ma20": 122070,
-      "ma60": 129541.67,
-      "ma120": 126160,
+      "currentPrice": 119700,
+      "ma5": 116380,
+      "ma20": 122065,
+      "ma60": 129540,
+      "ma120": 126159.17,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
@@ -3603,7 +3603,7 @@
     "ticker": "316140",
     "name": "우리금융지주",
     "sector": "금융지주/은행",
-    "price": 30700,
+    "price": 30750,
     "marketCap": "12.2조원",
     "pe": 4.5,
     "forwardPe": 3.9,
@@ -3747,7 +3747,7 @@
         29050,
         29750,
         31150,
-        30700
+        30750
       ],
       "volumes": [
         1828005,
@@ -3809,26 +3809,26 @@
         3057840,
         1285300,
         2308225,
-        2340174
+        2350838
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 30700,
-      "ma5": 30000,
-      "ma20": 31542.5,
-      "ma60": 33329.17,
-      "ma120": 32108.75,
+      "currentPrice": 30750,
+      "ma5": 30010,
+      "ma20": 31545,
+      "ma60": 33330,
+      "ma120": 32109.17,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -2.7
+      "disparity20": -2.5
     }
   },
   {
     "ticker": "033780",
     "name": "KT&G",
     "sector": "필수소비재/담배",
-    "price": 195900,
+    "price": 196100,
     "marketCap": "14.1조원",
     "pe": 14.5,
     "forwardPe": 12.8,
@@ -3972,7 +3972,7 @@
         186600,
         187100,
         193200,
-        195900
+        196100
       ],
       "volumes": [
         311905,
@@ -4034,26 +4034,26 @@
         290288,
         205059,
         337856,
-        259132
+        261042
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 195900,
-      "ma5": 190520,
-      "ma20": 186115,
-      "ma60": 178673.33,
-      "ma120": 178905,
+      "currentPrice": 196100,
+      "ma5": 190560,
+      "ma20": 186125,
+      "ma60": 178676.67,
+      "ma120": 178906.67,
       "isBullishAlignment": false,
       "isShortTermBullish": true,
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
-      "disparity20": 5.3
+      "disparity20": 5.4
     }
   },
   {
     "ticker": "000810",
     "name": "삼성화재",
     "sector": "손해보험",
-    "price": 656000,
+    "price": 655000,
     "marketCap": "15.8조원",
     "pe": 7.8,
     "forwardPe": 6.8,
@@ -4197,7 +4197,7 @@
         597000,
         629000,
         653000,
-        656000
+        655000
       ],
       "volumes": [
         64081,
@@ -4259,26 +4259,26 @@
         107163,
         106953,
         127664,
-        93793
+        94047
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 656000,
-      "ma5": 627000,
-      "ma20": 612600,
-      "ma60": 637600,
-      "ma120": 627254.17,
+      "currentPrice": 655000,
+      "ma5": 626800,
+      "ma20": 612550,
+      "ma60": 637583.33,
+      "ma120": 627245.83,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "혼조/횡보 (Neutral)",
-      "disparity20": 7.1
+      "disparity20": 6.9
     }
   },
   {
     "ticker": "138040",
     "name": "메리츠금융지주",
     "sector": "금융지주",
-    "price": 132400,
+    "price": 131700,
     "marketCap": "20.4조원",
     "pe": 8.8,
     "forwardPe": 7.5,
@@ -4422,7 +4422,7 @@
         123100,
         123000,
         132000,
-        132400
+        131700
       ],
       "volumes": [
         207835,
@@ -4484,26 +4484,26 @@
         442767,
         264085,
         238514,
-        261250
+        261352
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 132400,
-      "ma5": 127040,
-      "ma20": 128840,
-      "ma60": 125965,
-      "ma120": 118284.17,
+      "currentPrice": 131700,
+      "ma5": 126900,
+      "ma20": 128805,
+      "ma60": 125953.33,
+      "ma120": 118278.33,
       "isBullishAlignment": true,
       "isShortTermBullish": true,
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
-      "disparity20": 2.8
+      "disparity20": 2.2
     }
   },
   {
     "ticker": "034020",
     "name": "두산에너빌리티",
     "sector": "원전/가스터빈",
-    "price": 54200,
+    "price": 53600,
     "marketCap": "13.9조원",
     "pe": 32,
     "forwardPe": 22,
@@ -4647,7 +4647,7 @@
         59500,
         62000,
         56700,
-        54200
+        53600
       ],
       "volumes": [
         1762521,
@@ -4709,26 +4709,26 @@
         1371125,
         1677778,
         8171098,
-        2494089
+        2602113
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 54200,
-      "ma5": 58020,
-      "ma20": 67015,
-      "ma60": 76776.67,
-      "ma120": 84640.83,
+      "currentPrice": 53600,
+      "ma5": 57900,
+      "ma20": 66985,
+      "ma60": 76766.67,
+      "ma120": 84635.83,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -19.1
+      "disparity20": -20
     }
   },
   {
     "ticker": "259960",
     "name": "크래프톤",
     "sector": "게임/엔터",
-    "price": 180700,
+    "price": 181300,
     "marketCap": "16.1조원",
     "pe": 16.2,
     "forwardPe": 13.8,
@@ -4872,7 +4872,7 @@
         182400,
         182800,
         181600,
-        180700
+        181300
       ],
       "volumes": [
         128355,
@@ -4934,26 +4934,26 @@
         55557,
         45429,
         72085,
-        72880
+        73245
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 180700,
-      "ma5": 181900,
-      "ma20": 190605,
-      "ma60": 209890,
-      "ma120": 228582.5,
+      "currentPrice": 181300,
+      "ma5": 182020,
+      "ma20": 190635,
+      "ma60": 209900,
+      "ma120": 228587.5,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -5.2
+      "disparity20": -4.9
     }
   },
   {
     "ticker": "012330",
     "name": "현대모비스",
     "sector": "자동차부품",
-    "price": 331000,
+    "price": 330000,
     "marketCap": "22.8조원",
     "pe": 6.2,
     "forwardPe": 5.5,
@@ -5097,7 +5097,7 @@
         333500,
         353000,
         355000,
-        331000
+        330000
       ],
       "volumes": [
         328332,
@@ -5159,26 +5159,26 @@
         119453,
         234021,
         217929,
-        219038
+        221896
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 331000,
-      "ma5": 340000,
-      "ma20": 351700,
-      "ma60": 415041.67,
-      "ma120": 486041.67,
+      "currentPrice": 330000,
+      "ma5": 339800,
+      "ma20": 351650,
+      "ma60": 415025,
+      "ma120": 486033.33,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -5.9
+      "disparity20": -6.2
     }
   },
   {
     "ticker": "028260",
     "name": "삼성물산",
     "sector": "지주사/상사/바이오",
-    "price": 307500,
+    "price": 307000,
     "marketCap": "24.2조원",
     "pe": 10.5,
     "forwardPe": 9.2,
@@ -5322,7 +5322,7 @@
         305500,
         324500,
         324000,
-        307500
+        307000
       ],
       "volumes": [
         299582,
@@ -5384,19 +5384,19 @@
         315067,
         426062,
         425963,
-        315679
+        318634
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 307500,
-      "ma5": 311100,
-      "ma20": 305800,
-      "ma60": 343025,
-      "ma120": 379220.83,
+      "currentPrice": 307000,
+      "ma5": 311000,
+      "ma20": 305775,
+      "ma60": 343016.67,
+      "ma120": 379216.67,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "혼조/횡보 (Neutral)",
-      "disparity20": 0.6
+      "disparity20": 0.4
     }
   },
   {
@@ -5609,7 +5609,7 @@
         172169,
         142278,
         202804,
-        162937
+        167947
       ]
     },
     "trendAnalysis": {
@@ -5628,7 +5628,7 @@
     "ticker": "035720",
     "name": "카카오",
     "sector": "인터넷/플랫폼",
-    "price": 29350,
+    "price": 29200,
     "marketCap": "16.2조원",
     "pe": 28,
     "forwardPe": 18.5,
@@ -5772,7 +5772,7 @@
         29700,
         29900,
         29450,
-        29350
+        29200
       ],
       "volumes": [
         1702786,
@@ -5834,26 +5834,26 @@
         1112452,
         1398079,
         1078673,
-        1202236
+        1235336
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 29350,
-      "ma5": 29590,
-      "ma20": 31277.5,
-      "ma60": 34620.83,
-      "ma120": 36619.58,
+      "currentPrice": 29200,
+      "ma5": 29560,
+      "ma20": 31270,
+      "ma60": 34618.33,
+      "ma120": 36618.33,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -6.2
+      "disparity20": -6.6
     }
   },
   {
     "ticker": "247540",
     "name": "에코프로비엠",
     "sector": "양극재/2차전지",
-    "price": 90300,
+    "price": 89800,
     "marketCap": "15.8조원",
     "pe": 65,
     "forwardPe": 38,
@@ -5997,7 +5997,7 @@
         95400,
         97300,
         92100,
-        90300
+        89800
       ],
       "volumes": [
         659878,
@@ -6059,26 +6059,26 @@
         470651,
         384931,
         433050,
-        348237
+        358681
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 90300,
-      "ma5": 93020,
-      "ma20": 107490,
-      "ma60": 108092.62,
-      "ma120": 132630.96,
+      "currentPrice": 89800,
+      "ma5": 92920,
+      "ma20": 107465,
+      "ma60": 108084.28,
+      "ma120": 132626.79,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -16
+      "disparity20": -16.4
     }
   },
   {
     "ticker": "015760",
     "name": "한국전력",
     "sector": "전력/유틸리티",
-    "price": 28300,
+    "price": 28250,
     "marketCap": "14.4조원",
     "pe": 4.8,
     "forwardPe": 3.8,
@@ -6222,7 +6222,7 @@
         27850,
         28650,
         28300,
-        28300
+        28250
       ],
       "volumes": [
         1146002,
@@ -6284,26 +6284,26 @@
         1485300,
         1032107,
         1195707,
-        884557
+        892775
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 28300,
-      "ma5": 28230,
-      "ma20": 28850,
-      "ma60": 31420.83,
-      "ma120": 34564.58,
+      "currentPrice": 28250,
+      "ma5": 28220,
+      "ma20": 28847.5,
+      "ma60": 31420,
+      "ma120": 34564.17,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -1.9
+      "disparity20": -2.1
     }
   },
   {
     "ticker": "051910",
     "name": "LG화학",
     "sector": "석유화학/양극재",
-    "price": 233000,
+    "price": 230500,
     "marketCap": "22.0조원",
     "pe": 16.5,
     "forwardPe": 12.8,
@@ -6447,7 +6447,7 @@
         230500,
         243500,
         234000,
-        233000
+        230500
       ],
       "volumes": [
         263827,
@@ -6509,26 +6509,26 @@
         199559,
         239802,
         329157,
-        184978
+        186663
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 233000,
-      "ma5": 233100,
-      "ma20": 252675,
-      "ma60": 263483.33,
-      "ma120": 289995.83,
+      "currentPrice": 230500,
+      "ma5": 232600,
+      "ma20": 252550,
+      "ma60": 263441.67,
+      "ma120": 289975,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
-      "disparity20": -7.8
+      "disparity20": -8.7
     }
   },
   {
     "ticker": "003670",
     "name": "포스코퓨처엠",
     "sector": "양극재/음극재",
-    "price": 161800,
+    "price": 160200,
     "marketCap": "16.8조원",
     "pe": 72,
     "forwardPe": 44,
@@ -6672,7 +6672,7 @@
         161600,
         168100,
         162100,
-        161800
+        160200
       ],
       "volumes": [
         295681,
@@ -6734,19 +6734,19 @@
         294723,
         254966,
         239896,
-        266713
+        272466
       ]
     },
     "trendAnalysis": {
-      "currentPrice": 161800,
-      "ma5": 161960,
-      "ma20": 176260,
-      "ma60": 174441.67,
-      "ma120": 183772.5,
+      "currentPrice": 160200,
+      "ma5": 161640,
+      "ma20": 176180,
+      "ma60": 174415,
+      "ma120": 183759.17,
       "isBullishAlignment": false,
       "isShortTermBullish": false,
       "trendStatus": "혼조/횡보 (Neutral)",
-      "disparity20": -8.2
+      "disparity20": -9.1
     }
   }
 ]
