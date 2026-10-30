@@ -1,0 +1,3 @@
+﻿# make
+
+Project repository initialized.
