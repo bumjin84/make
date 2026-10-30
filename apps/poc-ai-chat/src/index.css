@@ -4,6 +4,38 @@
   html, body {
     height: 100%;
     overscroll-behavior: none;
+    background-color: #020617; /* slate-950 */
+    color: #f8fafc; /* slate-50 */
+  }
+
+  /* 표준 스크롤바 스타일링 (Firefox, Modern Chrome/Edge/Safari) */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #334155 transparent;
+  }
+
+  /* WebKit 브라우저 커스텀 스크롤바 */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #334155; /* slate-700 */
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #475569; /* slate-600 */
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: transparent;
   }
 }
+
 

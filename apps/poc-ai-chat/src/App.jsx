@@ -379,13 +379,13 @@ export default function App() {
                 )}
               </button>
             </div>
-            <pre className="p-3 text-emerald-300 overflow-x-auto whitespace-pre">
+            <pre className="p-3 text-emerald-300 overflow-x-auto whitespace-pre max-w-full">
               <code>{code}</code>
             </pre>
           </div>
         );
       }
-      return <span key={idx} className="whitespace-pre-wrap">{part}</span>;
+      return <span key={idx} className="whitespace-pre-wrap break-words">{part}</span>;
     });
   };
 
@@ -521,7 +521,8 @@ export default function App() {
               }`}
             >
               <Key className="w-3 h-3" />
-              <span>{apiKey ? 'Gemini 2.5 Live' : 'Mock Mode (키 등록)'}</span>
+              <span className="hidden sm:inline">{apiKey ? 'Gemini 2.5 Live' : 'Mock Mode (키 등록)'}</span>
+              <span className="sm:hidden">{apiKey ? 'Gemini Live' : 'Mock'}</span>
             </button>
 
             <button
@@ -537,7 +538,7 @@ export default function App() {
         {/* API Key Modal */}
         {showKeyModal && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm">
-            <div className="w-full max-w-md bg-slate-900 border border-slate-800 rounded-2xl p-5 sm:p-6 shadow-2xl space-y-4">
+            <div className="w-full max-w-md bg-slate-900 border border-slate-800 rounded-2xl p-5 sm:p-6 shadow-2xl space-y-4 max-h-[90dvh] overflow-y-auto">
               <div className="flex items-center justify-between border-b border-slate-800 pb-3">
                 <div className="flex items-center gap-2 text-white font-bold text-sm sm:text-base">
                   <Key className="w-4 h-4 text-blue-400" />
@@ -687,7 +688,7 @@ export default function App() {
         </div>
 
         {/* Input Area */}
-        <footer className="shrink-0 p-3 sm:p-4 bg-slate-900/95 border-t border-slate-800 max-w-3xl w-full mx-auto">
+        <footer className="shrink-0 p-3 sm:p-4 pb-[max(12px,env(safe-area-inset-bottom))] bg-slate-900/95 border-t border-slate-800 max-w-3xl w-full mx-auto">
           {errorMessage && (
             <div className="mb-2.5 px-3 py-1.5 rounded-lg bg-rose-500/10 border border-rose-500/20 text-rose-400 text-xs flex items-center gap-1.5">
               <AlertCircle className="w-3.5 h-3.5 shrink-0" />

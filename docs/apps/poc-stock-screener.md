@@ -89,3 +89,4 @@ apps/poc-stock-screener/src/
 1. **커스텀 필터 슬라이더 빌더**: 사용자가 직접 PER, ROE, 3개월 상승률 수치를 슬라이더로 조절.
 2. **나만의 전략 저장 (My Strategy)**: 커스텀 필터 조건을 `localStorage`에 영구 보존.
 3. **실시간 API 연동 모드**: 사용자 개인 API Key를 입력받아 실시간 호가/컨센서스 업데이트.
+
