@@ -12,11 +12,8 @@
     "build:ai-chat": "pnpm --filter poc-ai-chat build",
     "build:3d-scene": "pnpm --filter poc-3d-scene build",
     "build:markdown": "pnpm --filter poc-markdown build",
-    "build": "node scripts/build-all.mjs"
+    "build": "node scripts/build-all.mjs",
+    "clean": "node scripts/clean.mjs"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "esbuild"
-    ]
-  }
+  "devDependencies": {}
 }
