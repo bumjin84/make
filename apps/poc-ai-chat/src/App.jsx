@@ -20,7 +20,8 @@ import {
   Menu,
   Plus,
   MessageSquare,
-  ChevronLeft
+  ChevronLeft,
+  Loader2
 } from 'lucide-react';
 
 const MAX_HISTORY = 30; // 세션당 최대 보관 메시지 수
@@ -35,7 +36,10 @@ export default function App() {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmChange, setShowConfirmChange] = useState(false);
 
-  // 2. 멀티 세션 상태 관리
+  // 2. 세션별 독립 타이핑 상태 매핑 (예: { "session-1": true, "session-2": true })
+  const [typingMap, setTypingMap] = useState({});
+
+  // 3. 멀티 세션 상태 관리
   const createDefaultSession = (hasKey) => ({
     id: `session-${Date.now()}`,
     title: '새로운 대화',
@@ -72,45 +76,51 @@ export default function App() {
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [input, setInput] = useState('');
-  const [isTyping, setIsTyping] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   const [copiedId, setCopiedId] = useState(null);
   const chatEndRef = useRef(null);
 
-  // 현재 활성 세션
+  // 현재 활성 세션 및 타이핑 여부
   const currentSession = useMemo(() => {
     return sessions.find(s => s.id === activeSessionId) || sessions[0] || createDefaultSession(!!apiKey);
   }, [sessions, activeSessionId, apiKey]);
 
-  // 세션 데이터 로컬 스토리지 자동 저장
-  useEffect(() => {
-    if (!isTyping) {
-      try {
-        localStorage.setItem('gemini_chat_sessions', JSON.stringify(sessions));
-      } catch (e) {
-        console.error('Failed to save sessions:', e);
-      }
-    }
-  }, [sessions, isTyping]);
+  const isCurrentSessionTyping = !!typingMap[currentSession.id];
 
+  // 세션 데이터 로컬 스토리지 자동 저장 (진행 중인 백그라운드 스트리밍 반영)
+  useEffect(() => {
+    try {
+      localStorage.setItem('gemini_chat_sessions', JSON.stringify(sessions));
+    } catch (e) {
+      console.error('Failed to save sessions:', e);
+    }
+  }, [sessions]);
+
+  // 대화 스크롤
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [currentSession?.messages, isTyping]);
+  }, [currentSession?.messages, isCurrentSessionTyping]);
 
   // 새 대화 세션 생성
   const handleNewSession = () => {
     const newSession = createDefaultSession(!!apiKey);
     setSessions(prev => [newSession, ...prev]);
     setActiveSessionId(newSession.id);
-    setIsSidebarOpen(false); // 모바일에서 선택 후 닫기
+    setIsSidebarOpen(false);
     setErrorMessage('');
   };
 
   // 세션 삭제
   const handleDeleteSession = (sessionId, e) => {
     e.stopPropagation();
+    // 현재 세션 타이핑 맵에서도 제거
+    setTypingMap(prev => {
+      const next = { ...prev };
+      delete next[sessionId];
+      return next;
+    });
+
     if (sessions.length === 1) {
-      // 1개만 남았을 때는 빈 세션으로 리셋
       const reset = createDefaultSession(!!apiKey);
       setSessions([reset]);
       setActiveSessionId(reset.id);
@@ -146,6 +156,7 @@ export default function App() {
       const freshSession = createDefaultSession(!!newKey);
       setSessions([freshSession]);
       setActiveSessionId(freshSession.id);
+      setTypingMap({});
     }
 
     setShowConfirmChange(false);
@@ -158,24 +169,23 @@ export default function App() {
     applyKeySave('', false);
   };
 
-  // 메시지 전송 핸들러 (현재 세션의 맥락만 전송)
+  // 메시지 전송 핸들러 (세션별 독립 비동기 스트리밍)
   const handleSend = async () => {
-    if (!input.trim() || isTyping) return;
+    if (!input.trim() || isCurrentSessionTyping) return;
 
     const userText = input.trim();
+    const targetSessionId = currentSession.id; // 전송 대상 세션 ID 고정
     const userMsg = { id: Date.now(), role: 'user', content: userText };
     const sessionMessages = currentSession.messages || [];
 
-    // 대화방 제목 자동 생성 (첫 사용자 질문 시)
     const isFirstQuestion = sessionMessages.filter(m => m.role === 'user').length === 0;
     const newTitle = isFirstQuestion ? userText.slice(0, 24) : currentSession.title;
 
-    // 슬라이딩 윈도우 적용
     const updatedMessages = [...sessionMessages.slice(-(MAX_HISTORY - 1)), userMsg];
 
-    // 세션 상태 업데이트
+    // 해당 세션 메시지 즉시 업데이트 및 타이핑 상태 켜기
     setSessions(prev => prev.map(s => {
-      if (s.id === currentSession.id) {
+      if (s.id === targetSessionId) {
         return {
           ...s,
           title: newTitle,
@@ -187,16 +197,16 @@ export default function App() {
     }));
 
     setInput('');
-    setIsTyping(true);
     setErrorMessage('');
+    // 해당 세션 단독 타이핑 활성화
+    setTypingMap(prev => ({ ...prev, [targetSessionId]: true }));
 
     // 1. 실제 Gemini API 스트리밍 호출
     if (apiKey) {
       const assistantMsgId = Date.now() + 1;
       
-      // 어시스턴트 메시지 빈 상태로 추가
       setSessions(prev => prev.map(s => {
-        if (s.id === currentSession.id) {
+        if (s.id === targetSessionId) {
           return {
             ...s,
             messages: [...updatedMessages, { id: assistantMsgId, role: 'assistant', content: '' }]
@@ -206,7 +216,6 @@ export default function App() {
       }));
 
       try {
-        // 현재 세션의 대화 내역만 포맷팅하여 전송
         const contents = updatedMessages
           .filter(m => m.role === 'user' || m.role === 'assistant')
           .map(m => ({
@@ -256,9 +265,9 @@ export default function App() {
                 const chunk = parsed.candidates?.[0]?.content?.parts?.[0]?.text || '';
                 accumulatedText += chunk;
 
-                // 현재 세션의 assistant 메시지 실시간 갱신
+                // 백그라운드에서도 targetSessionId에 정확히 누적
                 setSessions(prev => prev.map(s => {
-                  if (s.id === currentSession.id) {
+                  if (s.id === targetSessionId) {
                     return {
                       ...s,
                       messages: s.messages.map(m => 
@@ -276,7 +285,7 @@ export default function App() {
         console.error('Gemini API Error:', err);
         setErrorMessage(err.message || 'Gemini API 호출 중 오류가 발생했습니다.');
         setSessions(prev => prev.map(s => {
-          if (s.id === currentSession.id) {
+          if (s.id === targetSessionId) {
             return {
               ...s,
               messages: s.messages.map(m => 
@@ -289,14 +298,19 @@ export default function App() {
           return s;
         }));
       } finally {
-        setIsTyping(false);
+        // 해당 세션 타이핑 종료
+        setTypingMap(prev => {
+          const next = { ...prev };
+          delete next[targetSessionId];
+          return next;
+        });
       }
     } 
     // 2. Mock 모드 시뮬레이션
     else {
       setTimeout(() => {
         setSessions(prev => prev.map(s => {
-          if (s.id === currentSession.id) {
+          if (s.id === targetSessionId) {
             return {
               ...s,
               messages: [
@@ -304,15 +318,19 @@ export default function App() {
                 {
                   id: Date.now() + 1,
                   role: 'assistant',
-                  content: `[Mock 응답] "${userText}"에 대한 답변입니다.\n\n각 대화 세션은 완벽하게 격리되어 서로의 내용을 공유하지 않습니다. 실제 LLM과 대화하려면 **🔑 키 버튼**을 눌러주세요!`
+                  content: `[Mock 응답] "${userText}"에 대한 답변입니다.\n\n각 대화방은 독립적으로 동시에 질문을 보낼 수 있습니다. 실제 LLM과 대화하려면 **🔑 키 버튼**을 눌러주세요!`
                 }
               ]
             };
           }
           return s;
         }));
-        setIsTyping(false);
-      }, 600);
+        setTypingMap(prev => {
+          const next = { ...prev };
+          delete next[targetSessionId];
+          return next;
+        });
+      }, 700);
     }
   };
 
@@ -381,7 +399,7 @@ export default function App() {
         />
       )}
 
-      {/* 2. Sessions Sidebar (Desktop & Mobile Drawer) */}
+      {/* 2. Sessions Sidebar */}
       <aside className={`
         fixed md:static inset-y-0 left-0 z-40 w-64 sm:w-72 bg-slate-900 border-r border-slate-800 flex flex-col transition-transform duration-200 ease-in-out
         ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'}
@@ -411,6 +429,8 @@ export default function App() {
 
           {sessions.map(s => {
             const isActive = s.id === activeSessionId;
+            const isTyping = !!typingMap[s.id];
+
             return (
               <div
                 key={s.id}
@@ -422,18 +442,30 @@ export default function App() {
                 }`}
               >
                 <div className="flex items-center gap-2.5 min-w-0 flex-1">
-                  <MessageSquare className={`w-3.5 h-3.5 shrink-0 ${isActive ? 'text-blue-400' : 'text-slate-500'}`} />
+                  {isTyping ? (
+                    <div className="relative flex items-center justify-center w-3.5 h-3.5 shrink-0">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                    </div>
+                  ) : (
+                    <MessageSquare className={`w-3.5 h-3.5 shrink-0 ${isActive ? 'text-blue-400' : 'text-slate-500'}`} />
+                  )}
                   <span className="truncate">{s.title || '새로운 대화'}</span>
                 </div>
 
-                <button
-                  type="button"
-                  onClick={(e) => handleDeleteSession(s.id, e)}
-                  className={`opacity-0 group-hover:opacity-100 p-1 hover:text-rose-400 text-slate-500 rounded transition-opacity ${isActive ? 'opacity-100' : ''}`}
-                  title="대화방 삭제"
-                >
-                  <Trash2 className="w-3.5 h-3.5" />
-                </button>
+                <div className="flex items-center gap-1.5">
+                  {isTyping && (
+                    <span className="text-[10px] text-blue-400 font-normal shrink-0">생성중</span>
+                  )}
+                  <button
+                    type="button"
+                    onClick={(e) => handleDeleteSession(s.id, e)}
+                    className={`opacity-0 group-hover:opacity-100 p-1 hover:text-rose-400 text-slate-500 rounded transition-opacity ${isActive ? 'opacity-100' : ''}`}
+                    title="대화방 삭제"
+                  >
+                    <Trash2 className="w-3.5 h-3.5" />
+                  </button>
+                </div>
               </div>
             );
           })}
@@ -441,7 +473,7 @@ export default function App() {
 
         {/* Sidebar Footer */}
         <div className="p-3 border-t border-slate-800 text-[11px] text-slate-500 flex items-center justify-between">
-          <span>각 대화방은 독립 문맥 유지</span>
+          <span>동시 독립 스트리밍 지원</span>
           <span className="font-mono">max {MAX_HISTORY}</span>
         </div>
       </aside>
@@ -451,7 +483,6 @@ export default function App() {
         {/* Top Header */}
         <header className="h-14 shrink-0 bg-slate-900/90 border-b border-slate-800 px-3 sm:px-4 flex items-center justify-between z-10 backdrop-blur">
           <div className="flex items-center gap-2">
-            {/* Sidebar Toggle Button */}
             <button
               onClick={() => setIsSidebarOpen(true)}
               className="md:hidden p-2 text-slate-300 hover:text-white rounded-lg hover:bg-slate-800"
@@ -470,6 +501,12 @@ export default function App() {
 
             <div className="hidden sm:flex items-center gap-2 max-w-[200px] md:max-w-xs truncate text-xs text-slate-400 font-medium pl-2 border-l border-slate-800">
               <span className="truncate text-slate-300">{currentSession?.title}</span>
+              {isCurrentSessionTyping && (
+                <span className="inline-flex items-center gap-1 text-[10px] text-blue-400 bg-blue-500/10 px-1.5 py-0.5 rounded border border-blue-500/20 shrink-0">
+                  <Loader2 className="w-2.5 h-2.5 animate-spin" />
+                  <span>응답 작성 중</span>
+                </span>
+              )}
             </div>
           </div>
 
@@ -640,7 +677,7 @@ export default function App() {
             </div>
           ))}
 
-          {isTyping && (
+          {isCurrentSessionTyping && (
             <div className="flex items-center gap-2 text-xs text-slate-400 pl-11">
               <span className="w-2 h-2 rounded-full bg-blue-400 animate-ping" />
               <span className="animate-pulse">Gemini가 실시간 응답을 생성하고 있습니다...</span>
@@ -662,7 +699,7 @@ export default function App() {
             onSubmit={(e) => { e.preventDefault(); handleSend(); }}
             className="flex items-center gap-2"
           >
-            {/* Key Button (원터치 키 관리) */}
+            {/* Key Button */}
             <button
               type="button"
               onClick={() => { setTempKey(apiKey); setShowKeyModal(true); }}
@@ -676,19 +713,26 @@ export default function App() {
               <Key className="w-4 h-4" />
             </button>
 
-            {/* Text Input */}
+            {/* Text Input (현재 세션이 타이핑 중일 때만 비활성화) */}
             <input
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder={apiKey ? `[${currentSession?.title}]에 질문하기...` : "질문을 입력하세요 (키 미등록 시 Mock)"}
-              className="flex-1 bg-slate-950 border border-slate-800 text-white text-xs sm:text-sm rounded-xl px-3.5 py-3 focus:outline-none focus:border-blue-500 placeholder:text-slate-500"
+              disabled={isCurrentSessionTyping}
+              placeholder={
+                isCurrentSessionTyping 
+                  ? "현재 대화방에서 답변을 생성 중입니다..." 
+                  : apiKey 
+                    ? `[${currentSession?.title}]에 질문하기...` 
+                    : "질문을 입력하세요 (키 미등록 시 Mock)"
+              }
+              className="flex-1 bg-slate-950 border border-slate-800 text-white text-xs sm:text-sm rounded-xl px-3.5 py-3 focus:outline-none focus:border-blue-500 placeholder:text-slate-500 disabled:opacity-50"
             />
 
             {/* Send Button */}
             <button
               type="submit"
-              disabled={!input.trim() || isTyping}
+              disabled={!input.trim() || isCurrentSessionTyping}
               className="bg-blue-600 hover:bg-blue-500 disabled:opacity-40 text-white p-3 rounded-xl transition-all shrink-0 active:scale-95 shadow-md shadow-blue-600/20"
             >
               <Send className="w-4 h-4" />
