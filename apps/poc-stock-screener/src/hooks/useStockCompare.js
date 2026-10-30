@@ -64,19 +64,62 @@ export function useStockCompare(stocks) {
         valB: `${b.return3M > 0 ? '+' : ''}${b.return3M.toFixed(1)}%`,
         winner: a.return3M > b.return3M ? a.ticker : b.return3M > a.return3M ? b.ticker : 'draw',
         desc: '최근 3개월 시장 자금 유입 및 주가 탄력'
+      },
+      {
+        name: '이평선 추세 (정배열 판정)',
+        valA: a.trendAnalysis?.trendStatus ? a.trendAnalysis.trendStatus.split(' ')[0] : '데이터 없음',
+        valB: b.trendAnalysis?.trendStatus ? b.trendAnalysis.trendStatus.split(' ')[0] : '데이터 없음',
+        winner: a.trendAnalysis?.isBullishAlignment && !b.trendAnalysis?.isBullishAlignment
+          ? a.ticker
+          : b.trendAnalysis?.isBullishAlignment && !a.trendAnalysis?.isBullishAlignment
+          ? b.ticker
+          : a.trendAnalysis?.isShortTermBullish && !b.trendAnalysis?.isShortTermBullish
+          ? a.ticker
+          : b.trendAnalysis?.isShortTermBullish && !a.trendAnalysis?.isShortTermBullish
+          ? b.ticker
+          : 'draw',
+        desc: '일별 20일선 > 60일선 > 120일선 정배열 추세 우위'
       }
     ];
 
     const winsA = categories.filter(c => c.winner === a.ticker).length;
     const winsB = categories.filter(c => c.winner === b.ticker).length;
 
-    // 차트용 정규화 궤적 데이터 (6개 포인트)
-    const labels = ['3M 전', '2.5M 전', '2M 전', '1.5M 전', '1M 전', '현재'];
-    const chartData = labels.map((label, idx) => ({
-      date: label,
-      [a.ticker]: a.sparkline ? a.sparkline[idx] : 100,
-      [b.ticker]: b.sparkline ? b.sparkline[idx] : 100,
-    }));
+    // 실제 60일 일별 데이터 기반 기준 100 정규화 시계열 생성
+    let chartData = [];
+    if (a.daily?.closes && b.daily?.closes && a.daily.closes.length > 0 && b.daily.closes.length > 0) {
+      const len = Math.min(a.daily.closes.length, b.daily.closes.length);
+      const dates = a.daily.dates.slice(-len);
+      const closesA = a.daily.closes.slice(-len);
+      const closesB = b.daily.closes.slice(-len);
+      const baseA = closesA[0] || 1;
+      const baseB = closesB[0] || 1;
+
+      // 60일 전체 또는 보기 좋게 10~15개 샘플링 지점 생성
+      const step = Math.max(1, Math.floor(len / 20));
+      for (let i = 0; i < len; i += step) {
+        chartData.push({
+          date: dates[i] ? dates[i].slice(5) : `${i}일`, // MM-DD
+          [a.ticker]: Number(((closesA[i] / baseA) * 100).toFixed(1)),
+          [b.ticker]: Number(((closesB[i] / baseB) * 100).toFixed(1)),
+        });
+      }
+      // 마지막 날짜(현재) 포함
+      if (chartData[chartData.length - 1].date !== dates[len - 1].slice(5)) {
+        chartData.push({
+          date: dates[len - 1].slice(5),
+          [a.ticker]: Number(((closesA[len - 1] / baseA) * 100).toFixed(1)),
+          [b.ticker]: Number(((closesB[len - 1] / baseB) * 100).toFixed(1)),
+        });
+      }
+    } else {
+      const labels = ['3M 전', '2.5M 전', '2M 전', '1.5M 전', '1M 전', '현재'];
+      chartData = labels.map((label, idx) => ({
+        date: label,
+        [a.ticker]: a.sparkline ? a.sparkline[idx] : 100,
+        [b.ticker]: b.sparkline ? b.sparkline[idx] : 100,
+      }));
+    }
 
     return {
       stockA: a,
@@ -97,3 +140,4 @@ export function useStockCompare(stocks) {
     isCompareReady: comparedStocks.length === 2
   };
 }
+

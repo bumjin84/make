@@ -90,3 +90,4 @@ if (hasError) {
   console.log('✨ [Architecture Linter Passed] All React apps satisfy strict component modularization conventions!\n');
   process.exit(0);
 }
+

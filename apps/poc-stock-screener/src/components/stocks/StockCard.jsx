@@ -60,6 +60,21 @@ export default function StockCard({ stock, isCompared, onToggleCompare, market }
           <MetricBadge label="배당률" value={stock.dividendYield} type="ratio" />
         </div>
 
+        {/* 정배열 추세 분석 (Daily Moving Averages) */}
+        {stock.trendAnalysis && (
+          <div className="my-2 p-2 rounded-xl bg-slate-950/60 border border-slate-800/80 flex items-center justify-between text-[11px]">
+            <div className="flex items-center gap-1.5">
+              <span className="font-semibold text-slate-300">
+                {stock.trendAnalysis.trendStatus}
+              </span>
+            </div>
+            <div className="font-mono text-slate-400 text-[10px] space-x-1.5">
+              <span>MA20: <strong className="text-slate-200">{formatPrice(stock.trendAnalysis.ma20, market)}</strong></span>
+              <span>MA60: <strong className="text-slate-200">{formatPrice(stock.trendAnalysis.ma60, market)}</strong></span>
+            </div>
+          </div>
+        )}
+
         {/* 부합 전략 뱃지 목록 */}
         {stock.matchedStrategies && stock.matchedStrategies.length > 0 && (
           <div className="flex flex-wrap gap-1.5 mt-2">
@@ -82,3 +97,4 @@ export default function StockCard({ stock, isCompared, onToggleCompare, market }
     </div>
   );
 }
+

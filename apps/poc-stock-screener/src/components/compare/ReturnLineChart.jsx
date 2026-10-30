@@ -57,3 +57,4 @@ export default function ReturnLineChart({ chartData, stockA, stockB }) {
     </div>
   );
 }
+

@@ -51,3 +51,4 @@ export function useStockFilter(stocks) {
     filteredCount: filteredStocks.length
   };
 }
+

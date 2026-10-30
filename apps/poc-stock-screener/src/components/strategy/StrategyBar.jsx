@@ -62,3 +62,4 @@ export default function StrategyBar({ selectedStrategy, onSelectStrategy, filter
     </div>
   );
 }
+

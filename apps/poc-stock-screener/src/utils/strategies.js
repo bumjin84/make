@@ -12,6 +12,15 @@ export const STRATEGIES = {
     description: '선별된 30개 우량 핵심 종목 전체 리스트',
     filter: () => true
   },
+  bullish: {
+    id: 'bullish',
+    name: '🔥 정배열 상승추세주',
+    shortName: '정배열 주도주',
+    icon: 'TrendingUp',
+    badgeClass: 'bg-rose-500/10 text-rose-300 border-rose-500/30',
+    description: '일별 종가 기준 20일선 > 60일선 > 120일선 정배열 상태로 기관 수급이 유입 중인 초강세주',
+    filter: (stock) => (stock.trendAnalysis?.isBullishAlignment || stock.trendAnalysis?.isShortTermBullish)
+  },
   buffett: {
     id: 'buffett',
     name: '워런 버핏 우량주',
@@ -57,9 +66,11 @@ export const STRATEGY_LIST = Object.values(STRATEGIES);
  */
 export function getMatchingStrategies(stock) {
   const matches = [];
+  if (STRATEGIES.bullish.filter(stock)) matches.push('bullish');
   if (STRATEGIES.buffett.filter(stock)) matches.push('buffett');
   if (STRATEGIES.growth.filter(stock)) matches.push('growth');
   if (STRATEGIES.momentum.filter(stock)) matches.push('momentum');
   if (STRATEGIES.dividend.filter(stock)) matches.push('dividend');
   return matches;
 }
+

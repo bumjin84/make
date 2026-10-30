@@ -37,3 +37,4 @@ export function getReturnBgClass(value) {
   if (num < 0) return 'bg-sky-500/10 text-sky-400 border-sky-500/20';
   return 'bg-slate-800 text-slate-400 border-slate-700';
 }
+

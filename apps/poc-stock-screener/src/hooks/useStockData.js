@@ -13,3 +13,4 @@ export function useStockData(market = 'us') {
     }));
   }, [market]);
 }
+

@@ -21,3 +21,4 @@ export default function MetricBadge({ label, value, type = 'percent' }) {
     </div>
   );
 }
+

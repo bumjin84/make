@@ -55,6 +55,7 @@ export default function StockTable({
                 <ArrowUpDown className="w-3 h-3 text-slate-500" />
               </div>
             </th>
+            <th className="py-3 px-3">추세 / 정배열</th>
             <th className="py-3 px-3">부합 전략</th>
             <th className="py-3 px-3 min-w-[220px]">추천 사유 요약</th>
           </tr>
@@ -128,6 +129,17 @@ export default function StockTable({
                   {stock.dividendYield > 0 ? `${stock.dividendYield.toFixed(2)}%` : '-'}
                 </td>
 
+                {/* 추세 / 정배열 상태 */}
+                <td className="py-3 px-3 whitespace-nowrap">
+                  {stock.trendAnalysis ? (
+                    <span className="inline-block text-[11px] font-semibold text-slate-200">
+                      {stock.trendAnalysis.trendStatus}
+                    </span>
+                  ) : (
+                    <span className="text-slate-500">-</span>
+                  )}
+                </td>
+
                 {/* 부합 전략 태그 */}
                 <td className="py-3 px-3">
                   <div className="flex flex-wrap gap-1 max-w-[160px]">
@@ -149,3 +161,4 @@ export default function StockTable({
     </div>
   );
 }
+
