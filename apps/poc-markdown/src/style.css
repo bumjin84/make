@@ -170,25 +170,38 @@ header {
   flex: 1;
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 100%;
+  height: 100%;
+  min-height: 0;
   overflow: hidden;
 }
 
 .pane {
   height: 100%;
+  min-height: 0;
   overflow-y: auto;
   padding: 20px;
   overscroll-behavior: contain;
 }
 
-/* 에디터 전용 컨테이너: 이중 스크롤 방지를 위해 바깥 스크롤/여백 원천 차단 */
+/* 에디터 전용 컨테이너: 절대 밖으로 튀어나가거나 스크롤되지 않도록 엄격 격리 */
 .editor-pane {
   padding: 0 !important;
   overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: 100% !important;
+  min-height: 0 !important;
+  max-height: 100% !important;
+  contain: strict; /* 브라우저 렌더러 레벨에서 레이아웃/페인트/크기를 완전히 격리 */
 }
 
 #editor {
+  display: block;
+  flex: 1;
   width: 100%;
   height: 100%;
+  min-height: 0;
   box-sizing: border-box;
   padding: 20px;
   background: transparent;
@@ -314,8 +327,8 @@ header {
 @media (min-width: 768px) {
   .mobile-tabs { display: none; }
   .workspace { grid-template-columns: 1fr 1fr; }
-  .editor-pane { border-right: 1px solid #1e293b; }
-  .pane { display: block !important; }
+  .editor-pane { border-right: 1px solid #1e293b; display: flex !important; }
+  .preview-pane { display: block !important; }
 }
 
 /* 6. Mobile Optimization (<768px) */

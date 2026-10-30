@@ -158,13 +158,13 @@ function downloadBlob(blob, filename) {
 function setupMobileTabs() {
   const isMobile = window.innerWidth < 768;
   if (!isMobile) {
-    paneEditor.style.display = 'block';
+    paneEditor.style.display = 'flex';
     panePreview.style.display = 'block';
     return;
   }
   // 모바일에서는 현재 활성화된 탭만 노출
   if (tabEditor.classList.contains('active')) {
-    paneEditor.style.display = 'block';
+    paneEditor.style.display = 'flex';
     panePreview.style.display = 'none';
   } else {
     paneEditor.style.display = 'none';
@@ -175,7 +175,7 @@ function setupMobileTabs() {
 tabEditor.addEventListener('click', () => {
   tabEditor.classList.add('active');
   tabPreview.classList.remove('active');
-  paneEditor.style.display = 'block';
+  paneEditor.style.display = 'flex';
   panePreview.style.display = 'none';
 });
 
@@ -189,3 +189,9 @@ tabPreview.addEventListener('click', () => {
 
 window.addEventListener('resize', setupMobileTabs);
 setupMobileTabs();
+
+// 8. 바깥 컨테이너(paneEditor)의 비정상적 스크롤 원천 차단 (0으로 강제 고정)
+paneEditor.addEventListener('scroll', () => {
+  if (paneEditor.scrollTop !== 0) paneEditor.scrollTop = 0;
+  if (paneEditor.scrollLeft !== 0) paneEditor.scrollLeft = 0;
+}, { passive: true });
