@@ -14,56 +14,100 @@ import {
   EyeOff, 
   ExternalLink, 
   AlertCircle,
-  X
+  X,
+  HelpCircle,
+  Trash2
 } from 'lucide-react';
 
+const MAX_HISTORY = 30; // 렌더링 성능 및 토큰 최적화를 위한 최대 보관 메시지 수
+
 export default function App() {
-  // API Key 상태 (로컬 스토리지 보관)
+  // 1. API Key 상태
   const [apiKey, setApiKey] = useState(() => {
     return localStorage.getItem('gemini_api_key') || '';
   });
   const [tempKey, setTempKey] = useState(apiKey);
   const [showKeyModal, setShowKeyModal] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmChange, setShowConfirmChange] = useState(false);
 
-  // 대화 메시지 상태
-  const [messages, setMessages] = useState([
-    {
-      id: 1,
-      role: 'assistant',
-      content: apiKey 
-        ? '안녕하세요! **Google Gemini 2.5 Flash** 실시간 대화 모드가 활성화되어 있습니다. 무엇이든 질문해 보세요!'
-        : '안녕하세요! **AI Chat Sandbox**입니다.\nGemini API Key를 등록하시면 실제 LLM과 실시간 스트리밍 대화를 나눌 수 있습니다. (키가 없어도 Mock 대화가 가능합니다)'
+  const getDefaultMessage = (hasKey) => ({
+    id: 1,
+    role: 'assistant',
+    content: hasKey 
+      ? '안녕하세요! **Google Gemini 2.5 Flash** 실시간 대화 모드입니다. 무엇이든 질문해 보세요!'
+      : '안녕하세요! **AI Chat Sandbox**입니다.\nGemini API Key를 등록하시면 실제 LLM과 실시간 스트리밍 대화를 나눌 수 있습니다. (키가 없어도 Mock 대화가 가능합니다)'
+  });
+
+  // 2. 대화 메시지 상태 (localStorage 복원)
+  const [messages, setMessages] = useState(() => {
+    try {
+      const saved = localStorage.getItem('gemini_chat_history');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (Array.isArray(parsed) && parsed.length > 0) {
+          return parsed.slice(-MAX_HISTORY);
+        }
+      }
+    } catch (e) {
+      console.error('Failed to load chat history:', e);
     }
-  ]);
+    const keyExists = !!localStorage.getItem('gemini_api_key');
+    return [getDefaultMessage(keyExists)];
+  });
+
   const [input, setInput] = useState('');
   const [isTyping, setIsTyping] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   const [copiedId, setCopiedId] = useState(null);
   const chatEndRef = useRef(null);
 
+  // 대화 변경 시 로컬 스토리지에 슬라이딩 윈도우로 저장
   useEffect(() => {
+    if (!isTyping) {
+      try {
+        const sliced = messages.slice(-MAX_HISTORY);
+        localStorage.setItem('gemini_chat_history', JSON.stringify(sliced));
+      } catch (e) {
+        console.error('Failed to save chat history:', e);
+      }
+    }
     chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages, isTyping]);
 
-  // API Key 저장 / 삭제 핸들러
-  const handleSaveKey = () => {
+  // 키 저장 시도 (변경 여부 감지)
+  const handleAttemptSaveKey = () => {
     const cleanKey = tempKey.trim();
-    setApiKey(cleanKey);
-    if (cleanKey) {
-      localStorage.setItem('gemini_api_key', cleanKey);
+    // 기존 키와 달라졌고, 대화 내역이 1개 이상 존재할 때 확인 창 띄우기
+    if (cleanKey !== apiKey && messages.length > 1) {
+      setShowConfirmChange(true);
+      return;
+    }
+    applyKeySave(cleanKey, false);
+  };
+
+  const applyKeySave = (newKey, shouldResetHistory) => {
+    setApiKey(newKey);
+    if (newKey) {
+      localStorage.setItem('gemini_api_key', newKey);
     } else {
       localStorage.removeItem('gemini_api_key');
     }
+
+    if (shouldResetHistory) {
+      const resetMsg = [getDefaultMessage(!!newKey)];
+      setMessages(resetMsg);
+      localStorage.setItem('gemini_chat_history', JSON.stringify(resetMsg));
+    }
+
+    setShowConfirmChange(false);
     setShowKeyModal(false);
     setErrorMessage('');
   };
 
   const handleRemoveKey = () => {
-    setApiKey('');
     setTempKey('');
-    localStorage.removeItem('gemini_api_key');
-    setShowKeyModal(false);
+    applyKeySave('', false);
   };
 
   // 메시지 전송 핸들러
@@ -72,20 +116,19 @@ export default function App() {
 
     const userText = input.trim();
     const userMsg = { id: Date.now(), role: 'user', content: userText };
-    const updatedMessages = [...messages, userMsg];
+    // 슬라이딩 윈도우 적용
+    const updatedMessages = [...messages.slice(-(MAX_HISTORY - 1)), userMsg];
     setMessages(updatedMessages);
     setInput('');
     setIsTyping(true);
     setErrorMessage('');
 
-    // 1. API Key가 있는 경우 -> 실제 Gemini SSE 스트리밍 호출
+    // 1. 실제 Gemini SSE 스트리밍 호출
     if (apiKey) {
       const assistantMsgId = Date.now() + 1;
-      // 어시스턴트 메시지 빈 상태로 생성
       setMessages(prev => [...prev, { id: assistantMsgId, role: 'assistant', content: '' }]);
 
       try {
-        // Gemini 히스토리 포맷 변환 (user, model)
         const contents = updatedMessages
           .filter(m => m.role === 'user' || m.role === 'assistant')
           .map(m => ({
@@ -124,7 +167,7 @@ export default function App() {
 
           buffer += decoder.decode(value, { stream: true });
           const lines = buffer.split('\n');
-          buffer = lines.pop() || ''; // 남은 미완성 청크 보관
+          buffer = lines.pop() || '';
 
           for (const line of lines) {
             const trimmed = line.trim();
@@ -135,13 +178,10 @@ export default function App() {
                 const chunk = parsed.candidates?.[0]?.content?.parts?.[0]?.text || '';
                 accumulatedText += chunk;
                 
-                // 실시간 텍스트 갱신
                 setMessages(prev => 
                   prev.map(m => m.id === assistantMsgId ? { ...m, content: accumulatedText } : m)
                 );
-              } catch (e) {
-                // 파싱 에러 무시하고 다음 청크 진행
-              }
+              } catch (e) {}
             }
           }
         }
@@ -158,10 +198,10 @@ export default function App() {
         setIsTyping(false);
       }
     } 
-    // 2. API Key가 없는 경우 -> Mock 시뮬레이션
+    // 2. API Key 없는 경우 Mock 시뮬레이션
     else {
       setTimeout(() => {
-        const sampleCode = `// [Mock] Gemini 2.5 Flash API 연동 준비 완료\n// 상단이나 입력창의 🔑 버튼으로 API 키를 등록하면 실제 응답을 받습니다.`;
+        const sampleCode = `// [Mock] Gemini 2.5 Flash 연동 준비 완료\n// 🔑 키를 등록하면 실제 응답을 받습니다.`;
         setMessages(prev => [
           ...prev, 
           {
@@ -183,19 +223,15 @@ export default function App() {
   };
 
   const resetChat = () => {
-    setMessages([
-      {
-        id: 1,
-        role: 'assistant',
-        content: apiKey 
-          ? '새로운 대화 세션이 시작되었습니다. 무엇이든 질문해 주세요!' 
-          : '대화가 초기화되었습니다. API Key를 등록하시면 실시간 Gemini와 대화할 수 있습니다.',
-      }
-    ]);
+    if (messages.length > 1 && !window.confirm('대화 기록을 모두 초기화하시겠습니까?')) {
+      return;
+    }
+    const resetMsg = [getDefaultMessage(!!apiKey)];
+    setMessages(resetMsg);
+    localStorage.setItem('gemini_chat_history', JSON.stringify(resetMsg));
     setErrorMessage('');
   };
 
-  // 텍스트 내 코드 블록 분리 렌더러
   const renderMessageContent = (content) => {
     const parts = content.split(/(```[\s\S]*?```)/g);
     return parts.map((part, idx) => {
@@ -273,7 +309,7 @@ export default function App() {
         </div>
       </header>
 
-      {/* API Key Modal / Popover */}
+      {/* API Key Modal */}
       {showKeyModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm">
           <div className="w-full max-w-md bg-slate-900 border border-slate-800 rounded-2xl p-5 sm:p-6 shadow-2xl space-y-4">
@@ -299,7 +335,7 @@ export default function App() {
                   rel="noreferrer"
                   className="text-blue-400 hover:underline flex items-center gap-1"
                 >
-                  <span>키 무료 발급받기</span>
+                  <span>키 무료 발급</span>
                   <ExternalLink className="w-3 h-3" />
                 </a>
               </div>
@@ -324,7 +360,7 @@ export default function App() {
               <div className="flex items-start gap-2 p-3 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-300 text-[11px] leading-relaxed">
                 <ShieldCheck className="w-4 h-4 shrink-0 text-blue-400 mt-0.5" />
                 <p>
-                  입력하신 API Key는 백엔드 서버로 전송되지 않으며, 오직 본인 브라우저의 <strong>localStorage</strong>에만 안전하게 보관됩니다.
+                  키는 외부 서버로 전송되지 않고 본인 브라우저의 <strong>localStorage</strong>에만 안전하게 보관됩니다. 대화는 최신 {MAX_HISTORY}개까지 자동 보존됩니다.
                 </p>
               </div>
             </div>
@@ -334,9 +370,10 @@ export default function App() {
                 <button
                   type="button"
                   onClick={handleRemoveKey}
-                  className="text-xs text-rose-400 hover:text-rose-300 underline underline-offset-2"
+                  className="text-xs text-rose-400 hover:text-rose-300 flex items-center gap-1"
                 >
-                  키 삭제하기
+                  <Trash2 className="w-3.5 h-3.5" />
+                  <span>키 삭제</span>
                 </button>
               ) : <div />}
 
@@ -350,12 +387,43 @@ export default function App() {
                 </button>
                 <button
                   type="button"
-                  onClick={handleSaveKey}
+                  onClick={handleAttemptSaveKey}
                   className="px-4 py-2 rounded-xl text-xs font-semibold bg-blue-600 hover:bg-blue-500 text-white shadow-lg shadow-blue-600/20 active:scale-95 transition-all"
                 >
                   저장 및 적용
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Key Change Confirmation Modal */}
+      {showConfirmChange && (
+        <div className="fixed inset-0 z-60 flex items-center justify-center p-4 bg-slate-950/85 backdrop-blur-sm">
+          <div className="w-full max-w-sm bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-2xl space-y-3.5">
+            <div className="flex items-center gap-2.5 text-amber-400 font-bold text-sm">
+              <HelpCircle className="w-5 h-5 shrink-0" />
+              <span>API Key가 변경되었습니다</span>
+            </div>
+            <p className="text-xs text-slate-300 leading-relaxed">
+              새로운 API Key가 감지되었습니다. 이전 대화 기록을 초기화하고 깨끗한 새 세션으로 시작할까요, 아니면 대화를 유지할까요?
+            </p>
+            <div className="flex flex-col gap-2 pt-2">
+              <button
+                type="button"
+                onClick={() => applyKeySave(tempKey.trim(), true)}
+                className="w-full py-2 px-3 rounded-xl text-xs font-semibold bg-rose-600 hover:bg-rose-500 text-white transition-colors"
+              >
+                이전 대화 초기화하고 저장
+              </button>
+              <button
+                type="button"
+                onClick={() => applyKeySave(tempKey.trim(), false)}
+                className="w-full py-2 px-3 rounded-xl text-xs font-medium bg-slate-800 hover:bg-slate-700 text-slate-200 transition-colors"
+              >
+                대화 유지하고 저장
+              </button>
             </div>
           </div>
         </div>
@@ -393,7 +461,7 @@ export default function App() {
         <div ref={chatEndRef} />
       </div>
 
-      {/* Input Area (Mobile Viewport & Keyboard Optimized) */}
+      {/* Input Area */}
       <footer className="shrink-0 p-3 sm:p-4 bg-slate-900/95 border-t border-slate-800 max-w-3xl w-full mx-auto">
         {errorMessage && (
           <div className="mb-2.5 px-3 py-1.5 rounded-lg bg-rose-500/10 border border-rose-500/20 text-rose-400 text-xs flex items-center gap-1.5">
@@ -406,7 +474,7 @@ export default function App() {
           onSubmit={(e) => { e.preventDefault(); handleSend(); }}
           className="flex items-center gap-2"
         >
-          {/* Key Button (입력창 좌측 원터치 키 관리) */}
+          {/* Key Button (좌측 원터치 키 관리) */}
           <button
             type="button"
             onClick={() => { setTempKey(apiKey); setShowKeyModal(true); }}
