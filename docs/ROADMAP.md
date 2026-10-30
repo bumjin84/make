@@ -40,11 +40,11 @@
 
 ---
 
-## 📌 Phase 4: 아키텍처 린트(Lint) 강제화 & 주식 스크리너 랩 구축 (진행 중 🚀)
+## 📌 Phase 4: 아키텍처 린트(Lint) 강제화 & 주식 스크리너 랩 구축 (완료 ✅)
 - [x] 공통 컴포넌트 아키텍처 표준 컨벤션 명문화 ([docs/PLANNING.md](file:///C:/make/docs/PLANNING.md))
 - [x] 주식 스마트 스크리너 상세 명세서 작성 ([docs/apps/poc-stock-screener.md](file:///C:/make/docs/apps/poc-stock-screener.md))
-- [ ] 아키텍처 구조 린터 스크립트 작성 (`scripts/lint-architecture.mjs`)
-- [ ] Git Pre-commit Hook 등록 (규칙 위반 시 커밋 강제 차단)
-- [ ] 기존 React 앱 컴포넌트 분리 리팩토링 (`apps/portal`, `apps/poc-ai-chat`)
-- [ ] `apps/poc-stock-screener` 스캐폴딩 및 4대 전략 추천 / 비교 랩 개발
-- [ ] 모노레포 통합 빌드 및 GitHub Pages 배포 검증
+- [x] 아키텍처 구조 린터 스크립트 작성 (`scripts/lint-architecture.mjs`)
+- [x] Git Pre-commit Hook 등록 (규칙 위반 시 커밋 강제 차단)
+- [x] 기존 React 앱 컴포넌트 분리 리팩토링 (`apps/portal`, `apps/poc-ai-chat`)
+- [x] `apps/poc-stock-screener` 스캐폴딩 및 4대 전략 추천 / 비교 랩 개발
+- [x] 모노레포 통합 빌드 및 GitHub Pages 배포 검증

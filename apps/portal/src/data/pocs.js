@@ -4,10 +4,10 @@ export const POCS = [
   {
     id: 'poc-stock-screener',
     title: 'Stock Screener & Compare',
-    summary: '워런 버핏 우량주, 고성장주, 추세주 4대 전략 원클릭 추천 및 1:1 맞대결 정규화 수익률 비교 랩',
-    status: 'In Development',
-    statusColor: 'bg-blue-500/10 text-blue-400 border-blue-500/30',
-    tags: ['React 19', 'Recharts', '4 Strategies', 'Compare Drawer'],
+    summary: '미국장/국내장 4대 투자 전략(버핏 해자주, 고성장, 모멘텀, 고배당) 원클릭 추천 및 1:1 맞대결 정규화 수익률 비교 랩',
+    status: 'Active (Live)',
+    statusColor: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30',
+    tags: ['React 19', 'Recharts', '4 Strategies', 'Compare Drawer', 'Dual Market'],
     path: './poc-stock-screener/',
     icon: TrendingUp,
     accent: 'from-amber-500 to-rose-600'

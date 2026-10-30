@@ -11,7 +11,7 @@ const distDir = path.join(rootDir, 'dist');
 console.log('🚀 [Build All] Starting monorepo build pipeline...');
 
 // 1. 개별 앱 빌드 실행
-const apps = ['portal', 'poc-ai-chat', 'poc-3d-scene', 'poc-markdown'];
+const apps = ['portal', 'poc-ai-chat', 'poc-3d-scene', 'poc-markdown', 'poc-stock-screener'];
 for (const app of apps) {
   console.log(`\n📦 Building app: ${app}...`);
   execSync(`pnpm --filter ${app} build`, {
@@ -36,7 +36,7 @@ if (fs.existsSync(portalDist)) {
 }
 
 // 4. 개별 PoC 산출물을 dist/poc-* 서브 디렉토리에 복사
-const pocs = ['poc-ai-chat', 'poc-3d-scene', 'poc-markdown'];
+const pocs = ['poc-ai-chat', 'poc-3d-scene', 'poc-markdown', 'poc-stock-screener'];
 for (const poc of pocs) {
   const pocDist = path.join(rootDir, 'apps', 'poc', 'dist'); // check path
   const source = path.join(rootDir, 'apps', poc, 'dist');

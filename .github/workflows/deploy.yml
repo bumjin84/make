@@ -24,6 +24,7 @@ jobs:
       ai_chat: ${{ steps.changes.outputs.ai_chat }}
       scene_3d: ${{ steps.changes.outputs.scene_3d }}
       markdown: ${{ steps.changes.outputs.markdown }}
+      stock_screener: ${{ steps.changes.outputs.stock_screener }}
       core: ${{ steps.changes.outputs.core }}
     steps:
       - uses: actions/checkout@v4
@@ -39,6 +40,8 @@ jobs:
               - 'apps/poc-3d-scene/**'
             markdown:
               - 'apps/poc-markdown/**'
+            stock_screener:
+              - 'apps/poc-stock-screener/**'
             core:
               - 'package.json'
               - 'pnpm-workspace.yaml'
@@ -92,6 +95,7 @@ jobs:
             if [ "${{ needs.filter.outputs.ai_chat }}" = "true" ]; then FLAGS="$FLAGS --ai-chat"; fi
             if [ "${{ needs.filter.outputs.scene_3d }}" = "true" ]; then FLAGS="$FLAGS --3d-scene"; fi
             if [ "${{ needs.filter.outputs.markdown }}" = "true" ]; then FLAGS="$FLAGS --markdown"; fi
+            if [ "${{ needs.filter.outputs.stock_screener }}" = "true" ]; then FLAGS="$FLAGS --stock-screener"; fi
           fi
 
           if [ -z "$FLAGS" ]; then

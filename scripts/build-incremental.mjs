@@ -21,6 +21,7 @@ const targets = {
   'poc-ai-chat': isAll || args.includes('--ai-chat'),
   'poc-3d-scene': isAll || args.includes('--3d-scene'),
   'poc-markdown': isAll || args.includes('--markdown'),
+  'poc-stock-screener': isAll || args.includes('--stock-screener'),
 };
 
 console.log('Build matrix:', targets);
@@ -56,7 +57,8 @@ if (targets.portal) {
 const pocs = [
   { id: 'poc-ai-chat', key: 'poc-ai-chat' },
   { id: 'poc-3d-scene', key: 'poc-3d-scene' },
-  { id: 'poc-markdown', key: 'poc-markdown' }
+  { id: 'poc-markdown', key: 'poc-markdown' },
+  { id: 'poc-stock-screener', key: 'poc-stock-screener' }
 ];
 
 for (const poc of pocs) {

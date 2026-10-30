@@ -1,6 +1,12 @@
 export const ARCHIVES = [
   {
     date: '2026.10.30',
+    category: 'Finance Lab',
+    title: '스마트 주식 스크리너 & 1:1 맞대결 비교 분석 랩(PoC #5) 런칭',
+    desc: '미국장/국내장 60개 우량주 대상 4대 투자전략(버핏, 고성장, 모멘텀, 배당) 원클릭 발굴, 기준 100 정규화 수익률 차트 및 승패 판정 스코어카드 구현'
+  },
+  {
+    date: '2026.10.30',
     category: 'Architecture',
     title: '공통 컴포넌트 아키텍처 표준 및 Git Pre-commit 커밋 차단 린터 구축',
     desc: 'Fat Component(App.jsx) 비대화 차단, components/hooks/utils 필수 분리 강제화 및 위반 시 커밋 자동 거부 파이프라인 연동'
