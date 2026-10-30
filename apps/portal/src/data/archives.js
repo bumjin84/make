@@ -1,6 +1,12 @@
 export const ARCHIVES = [
   {
     date: '2026.10.30',
+    category: 'Automation',
+    title: 'GitHub Actions 기반 1일 4회 자동 크론 스케줄러 & 즉시 수동 갱신 파이프라인 구축',
+    desc: '평일 06:15, 12:15, 16:15, 23:15 KST 정기 자동 수집 및 웹 UI 수동 실행 지원, 프론트엔드 실시간 데이터 기준 시점 뱃지 연동'
+  },
+  {
+    date: '2026.10.30',
     category: 'Data Pipeline',
     title: '야후 파이낸스 & 네이버 금융 연동 일별 시세 수집기 및 이평선 정배열 분석기 구현',
     desc: '최근 60영업일 일별 종가·거래량 원천 데이터 실시간 수집, MA5/20/60/120 이동평균선 연산 및 완전 정배열(Strong Bull) 자동 판정 엔진 구축'

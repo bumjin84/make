@@ -8,6 +8,7 @@ const rootDir = path.resolve(__dirname, '..');
 
 const usDataPath = path.join(rootDir, 'apps', 'poc-stock-screener', 'src', 'data', 'stocks-us.json');
 const krDataPath = path.join(rootDir, 'apps', 'poc-stock-screener', 'src', 'data', 'stocks-kr.json');
+const metadataPath = path.join(rootDir, 'apps', 'poc-stock-screener', 'src', 'data', 'metadata.json');
 
 // 이동평균선(Moving Average) 계산 헬퍼
 function calculateMA(closes, period) {
@@ -148,10 +149,13 @@ async function fetchKRDailyData(ticker) {
 
 async function main() {
   console.log('🚀 [Daily Stock Data Pipeline] Starting data enrichment for trend analysis...\n');
+  let usCount = 0;
+  let krCount = 0;
 
   // 1. 미국장 주식 데이터 업데이트
   if (fs.existsSync(usDataPath)) {
     const usStocks = JSON.parse(fs.readFileSync(usDataPath, 'utf8'));
+    usCount = usStocks.length;
     console.log(`📦 [US Market] Enriching ${usStocks.length} stocks with daily history & MA alignment...`);
 
     for (let i = 0; i < usStocks.length; i++) {
@@ -160,7 +164,6 @@ async function main() {
       const daily = await fetchUSDailyData(stock.ticker);
 
       if (daily && daily.closes.length > 0) {
-        // 최근 60영업일로 컴팩트하게 슬라이싱
         const sliceCount = Math.min(daily.closes.length, 60);
         stock.daily = {
           dates: daily.dates.slice(-sliceCount),
@@ -168,7 +171,6 @@ async function main() {
           volumes: daily.volumes.slice(-sliceCount),
         };
 
-        // 최신 종가 및 기술적 추세/정배열 지표 계산
         const trend = analyzeTrend(daily);
         stock.price = trend.currentPrice;
         stock.trendAnalysis = trend;
@@ -177,7 +179,6 @@ async function main() {
         console.log('⏩ Kept fallback');
       }
 
-      // API Rate Limit 배려 (150ms 딜레이)
       await new Promise(r => setTimeout(r, 150));
     }
 
@@ -188,6 +189,7 @@ async function main() {
   // 2. 국내장 주식 데이터 업데이트
   if (fs.existsSync(krDataPath)) {
     const krStocks = JSON.parse(fs.readFileSync(krDataPath, 'utf8'));
+    krCount = krStocks.length;
     console.log(`📦 [KR Market] Enriching ${krStocks.length} stocks with daily history & MA alignment...`);
 
     for (let i = 0; i < krStocks.length; i++) {
@@ -217,6 +219,22 @@ async function main() {
     fs.writeFileSync(krDataPath, JSON.stringify(krStocks, null, 2), 'utf8');
     console.log(`✨ Successfully updated [KR Market] data at ${krDataPath}\n`);
   }
+
+  // 3. 메타데이터 갱신 (수집 시각 KST 포맷)
+  const now = new Date();
+  const kstDate = new Date(now.getTime() + (9 * 60 * 60 * 1000));
+  const formattedKst = kstDate.toISOString().replace('T', ' ').slice(0, 16).replace(/-/g, '.') + ' KST';
+
+  const metadata = {
+    lastUpdated: formattedKst,
+    usCount,
+    krCount,
+    cronSchedule: '하루 4회 (06:15, 12:15, 16:15, 23:15 KST)',
+    status: 'Operational'
+  };
+
+  fs.writeFileSync(metadataPath, JSON.stringify(metadata, null, 2), 'utf8');
+  console.log(`📝 [Metadata] Saved timestamp: ${formattedKst} to ${metadataPath}`);
 
   console.log('🎉 [Pipeline Complete] All stocks now contain 60-day daily series and moving average alignment data!');
 }

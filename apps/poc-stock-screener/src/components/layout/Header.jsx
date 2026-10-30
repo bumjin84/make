@@ -1,5 +1,6 @@
 import React from 'react';
-import { TrendingUp, ArrowLeft, BarChart2 } from 'lucide-react';
+import { TrendingUp, ArrowLeft, Clock } from 'lucide-react';
+import metadata from '../../data/metadata.json';
 
 export default function Header() {
   return (
@@ -34,13 +35,23 @@ export default function Header() {
         </div>
 
         <div className="flex items-center gap-2">
-          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-800/80 border border-slate-700/60 text-slate-300 text-xs">
-            <BarChart2 className="w-3.5 h-3.5 text-emerald-400" />
-            <span className="font-medium text-[11px]">실시간 전략 시뮬레이션</span>
+          {/* 최근 데이터 갱신 시점 뱃지 */}
+          <div
+            className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-800/90 border border-emerald-500/30 text-emerald-300 text-xs shadow-sm shadow-emerald-950/20"
+            title={`수집 주기: ${metadata.cronSchedule}`}
+          >
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <Clock className="w-3 h-3 text-emerald-400 ml-0.5" />
+            <span className="font-mono text-[11px] font-medium hidden sm:inline">기준:</span>
+            <span className="font-mono text-[11px] font-bold text-white">
+              {metadata.lastUpdated || '최신'}
+            </span>
           </div>
         </div>
       </div>
     </header>
   );
 }
-

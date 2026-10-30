@@ -5,6 +5,10 @@ on:
     branches:
       - main
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Stock Data Daily Cron"]
+    types:
+      - completed
 
 permissions:
   contents: read

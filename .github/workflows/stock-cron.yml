@@ -1,0 +1,61 @@
+name: Stock Data Daily Cron
+
+on:
+  schedule:
+    # 한국 시간(KST) 기준 월~금(영업일) 하루 4회 실행
+    # 06:15 KST (21:15 UTC 전날) - 미국장 마감 직후
+    # 12:15 KST (03:15 UTC) - 국내장 전장 마감
+    # 16:15 KST (07:15 UTC) - 국내장 마감 직후
+    # 23:15 KST (14:15 UTC) - 미국장 개장 초반
+    - cron: '15 21,3,7,14 * * 1-5'
+  workflow_dispatch: # 언제든 GitHub 웹 콘솔에서 'Run workflow' 버튼으로 직접 즉시 수집 가능
+
+permissions:
+  contents: write
+
+concurrency:
+  group: 'stock-data-cron'
+  cancel-in-progress: true
+
+jobs:
+  update-stock-data:
+    name: Fetch & Update Stock Daily Data
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 12
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'pnpm'
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run Stock Data Enrichment Pipeline
+        run: node scripts/fetch-stock-data.mjs
+
+      - name: Commit and Push Updated Stock Data
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # 변경 사항이 있을 때만 커밋
+          if [ -n "$(git status --porcelain apps/poc-stock-screener/src/data/)" ]; then
+            echo "📈 New daily price or trend changes detected. Committing..."
+            git add apps/poc-stock-screener/src/data/
+            git commit -m "데이터: 주식 일별 시세 및 이평선 정배열 자동 갱신 [cron/manual]"
+            git push origin main
+            echo "✅ Successfully pushed updated stock datasets."
+          else
+            echo "☕ No data changes detected. Skipping commit."
+          fi
