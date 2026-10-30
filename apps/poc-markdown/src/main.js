@@ -158,32 +158,35 @@ function downloadBlob(blob, filename) {
 function setupMobileTabs() {
   const isMobile = window.innerWidth < 768;
   if (!isMobile) {
-    paneEditor.style.display = 'flex';
-    panePreview.style.display = 'block';
+    paneEditor.classList.remove('is-hidden');
+    panePreview.classList.remove('is-hidden');
+    paneEditor.style.display = '';
+    panePreview.style.display = '';
     return;
   }
   // 모바일에서는 현재 활성화된 탭만 노출
   if (tabEditor.classList.contains('active')) {
-    paneEditor.style.display = 'flex';
-    panePreview.style.display = 'none';
+    paneEditor.classList.remove('is-hidden');
+    panePreview.classList.add('is-hidden');
   } else {
-    paneEditor.style.display = 'none';
-    panePreview.style.display = 'block';
+    paneEditor.classList.add('is-hidden');
+    panePreview.classList.remove('is-hidden');
+    render();
   }
 }
 
 tabEditor.addEventListener('click', () => {
   tabEditor.classList.add('active');
   tabPreview.classList.remove('active');
-  paneEditor.style.display = 'flex';
-  panePreview.style.display = 'none';
+  paneEditor.classList.remove('is-hidden');
+  panePreview.classList.add('is-hidden');
 });
 
 tabPreview.addEventListener('click', () => {
   tabPreview.classList.add('active');
   tabEditor.classList.remove('active');
-  paneEditor.style.display = 'none';
-  panePreview.style.display = 'block';
+  paneEditor.classList.add('is-hidden');
+  panePreview.classList.remove('is-hidden');
   render();
 });
 

@@ -188,11 +188,11 @@ header {
 .editor-pane {
   padding: 0 !important;
   overflow: hidden !important;
-  display: flex !important;
-  flex-direction: column !important;
-  height: 100% !important;
-  min-height: 0 !important;
-  max-height: 100% !important;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+  max-height: 100%;
   contain: strict; /* 브라우저 렌더러 레벨에서 레이아웃/페인트/크기를 완전히 격리 */
 }
 
@@ -333,7 +333,7 @@ header {
 
 /* 5. Desktop Split View (>=768px) */
 @media (min-width: 768px) {
-  .mobile-tabs { display: none; }
+  .mobile-tabs { display: none !important; }
   .workspace { grid-template-columns: 1fr 1fr; }
   .editor-pane { border-right: 1px solid #1e293b; display: flex !important; }
   .preview-pane { display: block !important; }
@@ -341,6 +341,10 @@ header {
 
 /* 6. Mobile Optimization (<768px) */
 @media (max-width: 767px) {
+  .pane.is-hidden {
+    display: none !important;
+  }
+
   header {
     padding: env(safe-area-inset-top, 6px) 8px 6px 8px;
     gap: 6px;
