@@ -54,10 +54,13 @@ export default function ModelSelector({ selectedModel, onSelectModel, disabled =
         <ChevronDown className={`w-3.5 h-3.5 text-slate-400 shrink-0 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`} />
       </button>
 
-      {/* 모델 선택 드롭다운 팝업 */}
+      {/* 모델 선택 드롭다운 팝업 (말주머니) */}
       {isOpen && (
-        <div className="absolute left-0 sm:left-auto sm:right-0 mt-2 w-72 sm:w-80 rounded-2xl bg-slate-900 border border-slate-800 shadow-2xl shadow-black/80 z-50 p-1.5 backdrop-blur-xl animate-in fade-in zoom-in-95 duration-150">
-          <div className="px-3 py-2 border-b border-slate-800/80 mb-1">
+        <div className="fixed sm:absolute top-14 sm:top-full left-3 sm:left-0 right-3 sm:right-auto mt-1 sm:mt-2 sm:w-80 rounded-2xl bg-slate-900 border border-slate-800 shadow-2xl shadow-black/80 z-50 p-1.5 backdrop-blur-xl animate-in fade-in zoom-in-95 duration-150">
+          {/* 말주머니 상단 꼬리 팁 (데스크톱) */}
+          <div className="hidden sm:block absolute -top-1.5 left-6 w-3 h-3 bg-slate-900 border-t border-l border-slate-800 rotate-45" />
+
+          <div className="relative px-3 py-2 border-b border-slate-800/80 mb-1">
             <p className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">
               Gemini AI 모델 선택
             </p>
@@ -106,3 +109,4 @@ export default function ModelSelector({ selectedModel, onSelectModel, disabled =
     </div>
   );
 }
+

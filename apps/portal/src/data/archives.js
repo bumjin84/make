@@ -2,6 +2,12 @@ export const ARCHIVES = [
   {
     date: '2026.11.02',
     category: 'AI Chat Enhancement',
+    title: 'Gemini 모델 선택기 팝업 UI/UX 최적화 (말주머니 정렬 & 모바일 반응형)',
+    desc: '상단 헤더 모델 셀렉터 드롭다운이 화면 좌측으로 쏠리던 정렬을 버튼 기준 좌측(sm:left-0)으로 바로잡고, 말주머니 꼬리 팁 및 모바일 여백(left-3/right-3) 완벽 지원'
+  },
+  {
+    date: '2026.11.02',
+    category: 'AI Chat Enhancement',
     title: 'Gemini 모델 선택기(2.5 Flash, 2.5 Pro, 2.0 Flash, 1.5 계열) 및 동적 스트리밍 연동',
     desc: '상단 헤더에 드롭다운 형태의 모델 셀렉터를 탑재하여 실시간 추론 모델(Gemini 2.5 Flash, 2.5 Pro, 2.0 Flash, 1.5 Flash/Pro)을 원클릭 전환하고 로컬 스토리지에 영구 보존'
   },
