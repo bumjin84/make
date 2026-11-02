@@ -56,14 +56,16 @@ export default function ModelSelector({ selectedModel, onSelectModel, disabled =
 
       {/* 모델 선택 드롭다운 팝업 (말주머니) */}
       {isOpen && (
-        <div className="fixed sm:absolute top-14 sm:top-full left-3 sm:left-0 right-3 sm:right-auto mt-1 sm:mt-2 sm:w-80 rounded-2xl bg-slate-900 border border-slate-800 shadow-2xl shadow-black/80 z-50 p-1.5 backdrop-blur-xl animate-in fade-in zoom-in-95 duration-150">
-          {/* 말주머니 상단 꼬리 팁 (데스크톱) */}
-          <div className="hidden sm:block absolute -top-1.5 left-6 w-3 h-3 bg-slate-900 border-t border-l border-slate-800 rotate-45" />
+        <div className="fixed sm:absolute top-14 sm:top-full left-3 sm:left-1/2 sm:-translate-x-1/2 right-3 sm:right-auto mt-2 sm:mt-2.5 sm:w-84 rounded-2xl bg-slate-900/95 border border-slate-700/80 shadow-2xl shadow-black/90 ring-1 ring-white/10 z-50 p-2 backdrop-blur-2xl animate-in fade-in zoom-in-95 duration-150">
+          {/* 말주머니 상단 꼬리 팁 (버튼 정중앙과 완벽 정렬) */}
+          <div className="hidden sm:block absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 bg-slate-900 border-t border-l border-slate-700/80 rotate-45" />
 
-          <div className="relative px-3 py-2 border-b border-slate-800/80 mb-1">
-            <p className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider">
-              Gemini AI 모델 선택
+          <div className="relative px-3 py-2 border-b border-slate-800 mb-1.5 flex items-center justify-between">
+            <p className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+              <Sparkles className="w-3 h-3 text-blue-400" />
+              <span>Gemini AI 모델 선택</span>
             </p>
+            <span className="text-[10px] text-slate-500 font-mono">5개 모델</span>
           </div>
 
           <div className="space-y-1">
