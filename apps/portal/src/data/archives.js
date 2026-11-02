@@ -1,6 +1,12 @@
 export const ARCHIVES = [
   {
     date: '2026.11.02',
+    category: 'AI Chat Enhancement',
+    title: 'Gemini 모델 선택기(2.5 Flash, 2.5 Pro, 2.0 Flash, 1.5 계열) 및 동적 스트리밍 연동',
+    desc: '상단 헤더에 드롭다운 형태의 모델 셀렉터를 탑재하여 실시간 추론 모델(Gemini 2.5 Flash, 2.5 Pro, 2.0 Flash, 1.5 Flash/Pro)을 원클릭 전환하고 로컬 스토리지에 영구 보존'
+  },
+  {
+    date: '2026.11.02',
     category: 'Product Expansion',
     title: 'ETF 리그 탭 신설 & 절세 전용 2대 추천 전략(연금저축 과세이연, ISA 배당 비과세) 구축',
     desc: '국내 상장 42개 대표 ETF 전용 탐색 리그를 신설하고, 장기 복리 지수 및 안전자산 중심의 연금저축 PICK, 배당소득세(15.4%) 비과세를 공략하는 ISA 절세 PICK 2대 전략 신설'

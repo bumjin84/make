@@ -10,6 +10,8 @@ import ConfirmModal from './components/modals/ConfirmModal';
 export default function App() {
   const {
     apiKey,
+    selectedModel,
+    setSelectedModel,
     tempKey,
     setTempKey,
     showKeyModal,
@@ -63,6 +65,8 @@ export default function App() {
           apiKey={apiKey}
           title={currentSession.title}
           isTyping={isCurrentTyping}
+          selectedModel={selectedModel}
+          onSelectModel={setSelectedModel}
           onOpenSidebar={() => setIsSidebarOpen(true)}
           onOpenKeyModal={() => { setTempKey(apiKey); setShowKeyModal(true); }}
           onResetSession={handleNewSession}

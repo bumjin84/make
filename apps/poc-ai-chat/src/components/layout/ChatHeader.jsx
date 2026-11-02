@@ -1,17 +1,20 @@
 import React from 'react';
 import { ArrowLeft, Menu, Key, RefreshCw, Loader2 } from 'lucide-react';
+import ModelSelector from './ModelSelector';
 
 export default function ChatHeader({
   apiKey,
   title,
   isTyping,
+  selectedModel,
+  onSelectModel,
   onOpenSidebar,
   onOpenKeyModal,
   onResetSession
 }) {
   return (
     <header className="h-14 shrink-0 bg-slate-900/90 border-b border-slate-800 px-3 sm:px-4 flex items-center justify-between z-10 backdrop-blur">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1.5 sm:gap-2">
         <button
           onClick={onOpenSidebar}
           className="md:hidden p-2 text-slate-300 hover:text-white rounded-lg hover:bg-slate-800"
@@ -28,18 +31,25 @@ export default function ChatHeader({
           <span className="hidden sm:inline">Portal</span>
         </a>
 
-        <div className="hidden sm:flex items-center gap-2 max-w-[200px] md:max-w-xs truncate text-xs text-slate-400 font-medium pl-2 border-l border-slate-800">
+        {/* AI 모델 셀렉터 드롭다운 */}
+        <ModelSelector
+          selectedModel={selectedModel}
+          onSelectModel={onSelectModel}
+          disabled={isTyping}
+        />
+
+        <div className="hidden lg:flex items-center gap-2 max-w-[160px] truncate text-xs text-slate-400 font-medium pl-2 border-l border-slate-800">
           <span className="truncate text-slate-300">{title}</span>
           {isTyping && (
             <span className="inline-flex items-center gap-1 text-[10px] text-blue-400 bg-blue-500/10 px-1.5 py-0.5 rounded border border-blue-500/20 shrink-0">
               <Loader2 className="w-2.5 h-2.5 animate-spin" />
-              <span>응답 작성 중</span>
+              <span>생성 중</span>
             </span>
           )}
         </div>
       </div>
 
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1.5 sm:gap-2">
         <button
           onClick={onOpenKeyModal}
           className={`flex items-center gap-1.5 text-[11px] sm:text-xs font-medium px-2.5 py-1 rounded-full border transition-all active:scale-95 ${
@@ -49,7 +59,7 @@ export default function ChatHeader({
           }`}
         >
           <Key className="w-3 h-3" />
-          <span>{apiKey ? 'Gemini 2.5 Live' : 'Mock Mode (키 등록)'}</span>
+          <span>{apiKey ? 'API Live' : 'Mock 모드 (키 등록)'}</span>
         </button>
 
         <button

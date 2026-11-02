@@ -1,31 +1,36 @@
 import { useState, useEffect, useMemo } from 'react';
 import { streamGeminiChat } from '../utils/geminiApi';
+import { DEFAULT_MODEL, getModelInfo } from '../utils/geminiModels';
 
 const MAX_HISTORY = 30;
 
 export function useGeminiChat() {
   const [apiKey, setApiKey] = useState(() => localStorage.getItem('gemini_api_key') || '');
+  const [selectedModel, setSelectedModel] = useState(() => localStorage.getItem('gemini_chat_model') || DEFAULT_MODEL);
   const [tempKey, setTempKey] = useState(apiKey);
   const [showKeyModal, setShowKeyModal] = useState(false);
   const [showConfirmChange, setShowConfirmChange] = useState(false);
   const [typingMap, setTypingMap] = useState({});
   const [errorMessage, setErrorMessage] = useState('');
 
-  const createDefaultSession = (hasKey) => ({
-    id: `session-${Date.now()}`,
-    title: '새로운 대화',
-    createdAt: Date.now(),
-    updatedAt: Date.now(),
-    messages: [
-      {
-        id: 1,
-        role: 'assistant',
-        content: hasKey 
-          ? '안녕하세요! **Google Gemini 2.5 Flash** 실시간 대화 모드입니다. 무엇이든 질문해 보세요!'
-          : '안녕하세요! **AI Chat Sandbox**입니다.\nGemini API Key를 등록하시면 실제 LLM과 실시간 스트리밍 대화를 나눌 수 있습니다. (키 미등록 시 Mock 모드)'
-      }
-    ]
-  });
+  const createDefaultSession = (hasKey, modelId = selectedModel) => {
+    const model = getModelInfo(modelId);
+    return {
+      id: `session-${Date.now()}`,
+      title: '새로운 대화',
+      createdAt: Date.now(),
+      updatedAt: Date.now(),
+      messages: [
+        {
+          id: 1,
+          role: 'assistant',
+          content: hasKey 
+            ? `안녕하세요! **${model.name}** 실시간 대화 모드입니다. 무엇이든 질문해 보세요!`
+            : '안녕하세요! **AI Chat Sandbox**입니다.\nGemini API Key를 등록하시면 실제 LLM과 실시간 스트리밍 대화를 나눌 수 있습니다. (키 미등록 시 Mock 모드)'
+        }
+      ]
+    };
+  };
 
   const [sessions, setSessions] = useState(() => {
     try {
@@ -99,6 +104,7 @@ export function useGeminiChat() {
       try {
         await streamGeminiChat({
           apiKey,
+          model: selectedModel,
           messages: updatedMessages,
           onChunk: (accumulated) => {
             setSessions(prev => prev.map(s => s.id === targetSessionId ? {
@@ -129,7 +135,7 @@ export function useGeminiChat() {
             {
               id: Date.now() + 1,
               role: 'assistant',
-              content: `[Mock 응답] "${text}"에 대한 답변입니다.\n실제 LLM과 대화하려면 **🔑 키 버튼**을 눌러주세요!`
+              content: `[Mock 응답 - ${getModelInfo(selectedModel).name}] "${text}"에 대한 답변입니다.\n실제 LLM과 대화하려면 **🔑 키 버튼**을 눌러주세요!`
             }
           ]
         } : s));
@@ -140,6 +146,13 @@ export function useGeminiChat() {
         });
       }, 700);
     }
+  };
+
+  const handleSelectModel = (modelId) => {
+    setSelectedModel(modelId);
+    try {
+      localStorage.setItem('gemini_chat_model', modelId);
+    } catch (e) {}
   };
 
   const applyKeySave = (newKey, shouldReset) => {
@@ -159,6 +172,8 @@ export function useGeminiChat() {
 
   return {
     apiKey,
+    selectedModel,
+    setSelectedModel: handleSelectModel,
     tempKey,
     setTempKey,
     showKeyModal,

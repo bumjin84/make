@@ -1,4 +1,4 @@
-export async function streamGeminiChat({ apiKey, messages, onChunk, onError }) {
+export async function streamGeminiChat({ apiKey, model = 'gemini-2.5-flash', messages, onChunk, onError }) {
   const contents = messages
     .filter(m => m.role === 'user' || m.role === 'assistant')
     .map(m => ({
@@ -7,7 +7,7 @@ export async function streamGeminiChat({ apiKey, messages, onChunk, onError }) {
     }));
 
   const response = await fetch(
-    `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:streamGenerateContent?alt=sse&key=${apiKey}`,
+    `https://generativelanguage.googleapis.com/v1beta/models/${model}:streamGenerateContent?alt=sse&key=${apiKey}`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
