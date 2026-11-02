@@ -121,10 +121,16 @@ export function useGeminiChat() {
           }
         });
       } catch (err) {
-        setErrorMessage(err.message || 'Gemini API 호출 오류');
+        let errorText = err.message || 'Gemini API 호출 오류';
+        if (errorText.includes('Quota exceeded') || errorText.includes('limit: 0') || errorText.includes('free_tier')) {
+          errorText = `⚠️ [할당량 안내] 현재 선택된 모델('${getModelInfo(selectedModel).name}')은 Google 무료 API 계정에서 호출 제한(limit: 0)이 적용되어 있습니다.\n무료 티어가 지원되는 **'Gemini 2.5 Flash'** 또는 **'Gemini 2.0 Flash'**로 모델을 변경해 보세요!`;
+        } else {
+          errorText = `⚠️ 오류: ${errorText}`;
+        }
+        setErrorMessage(errorText);
         setSessions(prev => prev.map(s => s.id === targetSessionId ? {
           ...s,
-          messages: s.messages.map(m => m.id === assistantMsgId ? { ...m, content: `⚠️ 오류: ${err.message}` } : m)
+          messages: s.messages.map(m => m.id === assistantMsgId ? { ...m, content: errorText } : m)
         } : s));
       } finally {
         setTypingMap(prev => {
