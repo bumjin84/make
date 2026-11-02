@@ -8,9 +8,10 @@ import CompareModal from './components/compare/CompareModal';
 import { useStockData } from './hooks/useStockData';
 import { useStockFilter } from './hooks/useStockFilter';
 import { useStockCompare } from './hooks/useStockCompare';
+import metadata from './data/metadata.json';
 
 export default function App() {
-  const [market, setMarket] = useState('us'); // 'us' | 'kr'
+  const [market, setMarket] = useState('sp500'); // 'sp500' | 'kospi' | 'kosdaq'
   const stocks = useStockData(market);
 
   const {
@@ -40,14 +41,24 @@ export default function App() {
     clearCompare();
   };
 
+  const marketCounts = {
+    sp500: metadata.sp500Count || 493,
+    kospi: metadata.kospiCount || 200,
+    kosdaq: metadata.kosdaqCount || 150
+  };
+
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col pb-32">
       <Header />
 
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-6">
-        {/* 시장 전환기 */}
+        {/* 3대 시장 전환기 (S&P 500 / 코스피 200 / 코스닥 150) */}
         <div className="flex justify-center sm:justify-start">
-          <MarketSelector market={market} onChange={handleMarketChange} />
+          <MarketSelector
+            market={market}
+            onChange={handleMarketChange}
+            counts={marketCounts}
+          />
         </div>
 
         {/* 4대 추천 전략 탭 및 설명 */}
@@ -57,12 +68,12 @@ export default function App() {
           filteredCount={filteredCount}
         />
 
-        {/* 종목 리스트 (그리드 카드 & 테이블 뷰) */}
+        {/* 종목 리스트 (24개 단위 페이징 & 반응형 카드/테이블 뷰) */}
         <StockList
           stocks={filteredStocks}
           selectedTickers={selectedTickers}
           onToggleCompare={toggleStock}
-          market={market}
+          market={market === 'sp500' ? 'us' : 'kr'}
           searchQuery={searchQuery}
           onSearchChange={setSearchQuery}
           sortBy={sortBy}

@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
-import { Search, LayoutGrid, Table as TableIcon } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Search, LayoutGrid, Table as TableIcon, ChevronDown } from 'lucide-react';
 import StockCard from './StockCard';
 import StockTable from './StockTable';
+
+const PAGE_SIZE = 24;
 
 export default function StockList({
   stocks,
@@ -14,6 +16,19 @@ export default function StockList({
   onSortChange
 }) {
   const [viewMode, setViewMode] = useState('grid'); // 'grid' | 'table'
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+
+  // 검색어나 정렬 기준이 바뀌면 첫 페이지(24개)로 리셋
+  useEffect(() => {
+    setVisibleCount(PAGE_SIZE);
+  }, [stocks, searchQuery, sortBy]);
+
+  const displayedStocks = stocks.slice(0, visibleCount);
+  const hasMore = visibleCount < stocks.length;
+
+  const handleLoadMore = () => {
+    setVisibleCount(prev => prev + PAGE_SIZE);
+  };
 
   return (
     <div className="space-y-4">
@@ -81,27 +96,42 @@ export default function StockList({
         </div>
       ) : viewMode === 'grid' ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {stocks.map((stock) => (
+          {displayedStocks.map((stock) => (
             <StockCard
               key={stock.ticker}
               stock={stock}
               isCompared={selectedTickers.includes(stock.ticker)}
               onToggleCompare={onToggleCompare}
-              market={market}
+              market={stock.market}
             />
           ))}
         </div>
       ) : (
         <StockTable
-          stocks={stocks}
+          stocks={displayedStocks}
           selectedTickers={selectedTickers}
           onToggleCompare={onToggleCompare}
-          market={market}
+          market={displayedStocks[0]?.market || 'us'}
           sortBy={sortBy}
           onSortChange={onSortChange}
         />
       )}
+
+      {/* 더보기 (Show More) 페이징 컨트롤 */}
+      {hasMore && (
+        <div className="pt-4 pb-8 flex flex-col items-center gap-2">
+          <button
+            onClick={handleLoadMore}
+            className="flex items-center gap-2 px-6 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-xs sm:text-sm font-bold text-slate-200 hover:text-white transition-all shadow-md active:scale-95"
+          >
+            <span>더 많은 종목 보기 (+{PAGE_SIZE}개)</span>
+            <ChevronDown className="w-4 h-4 text-emerald-400" />
+          </button>
+          <span className="text-[11px] text-slate-500 font-mono">
+            {displayedStocks.length} / {stocks.length}개 종목 표시 중
+          </span>
+        </div>
+      )}
     </div>
   );
 }
-

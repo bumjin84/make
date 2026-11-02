@@ -1,7 +1,11 @@
 {
-  "lastUpdated": "2026.10.31 09:48 KST",
-  "usCount": 30,
-  "krCount": 30,
+  "lastUpdated": "2026.11.02 09:44 KST",
+  "totalCount": 843,
+  "usCount": 493,
+  "krCount": 350,
+  "kospiCount": 200,
+  "kosdaqCount": 150,
+  "sp500Count": 493,
   "cronSchedule": "하루 4회 (06:15, 12:15, 16:15, 23:15 KST)",
   "status": "Operational"
 }

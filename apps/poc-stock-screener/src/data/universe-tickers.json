@@ -1,0 +1,5770 @@
+{
+  "totalCount": 843,
+  "kospiCount": 200,
+  "kosdaqCount": 150,
+  "sp500Count": 493,
+  "kospi": [
+    {
+      "ticker": "005930",
+      "name": "삼성전자",
+      "market": "kospi",
+      "price": 221000,
+      "marketCap": "1,292조 276억원",
+      "changeRate": -1.78
+    },
+    {
+      "ticker": "000660",
+      "name": "SK하이닉스",
+      "market": "kospi",
+      "price": 1419000,
+      "marketCap": "1,036조 5,687억원",
+      "changeRate": 0.07
+    },
+    {
+      "ticker": "005935",
+      "name": "삼성전자우",
+      "market": "kospi",
+      "price": 172200,
+      "marketCap": "138조 1,683억원",
+      "changeRate": -1.09
+    },
+    {
+      "ticker": "402340",
+      "name": "SK스퀘어",
+      "market": "kospi",
+      "price": 891000,
+      "marketCap": "117조 5,443억원",
+      "changeRate": -0.67
+    },
+    {
+      "ticker": "009150",
+      "name": "삼성전기",
+      "market": "kospi",
+      "price": 1188000,
+      "marketCap": "88조 7,361억원",
+      "changeRate": -0.67
+    },
+    {
+      "ticker": "373220",
+      "name": "LG에너지솔루션",
+      "market": "kospi",
+      "price": 362000,
+      "marketCap": "84조 7,080억원",
+      "changeRate": 0.7
+    },
+    {
+      "ticker": "207940",
+      "name": "삼성바이오로직스",
+      "market": "kospi",
+      "price": 1462000,
+      "marketCap": "67조 6,774억원",
+      "changeRate": -1.68
+    },
+    {
+      "ticker": "005380",
+      "name": "현대차",
+      "market": "kospi",
+      "price": 284000,
+      "marketCap": "57조 7,845억원",
+      "changeRate": 0.71
+    },
+    {
+      "ticker": "105560",
+      "name": "KB금융",
+      "market": "kospi",
+      "price": 152400,
+      "marketCap": "54조 544억원",
+      "changeRate": -1.99
+    },
+    {
+      "ticker": "032830",
+      "name": "삼성생명",
+      "market": "kospi",
+      "price": 268500,
+      "marketCap": "53조 7,000억원",
+      "changeRate": -0.74
+    },
+    {
+      "ticker": "028260",
+      "name": "삼성물산",
+      "market": "kospi",
+      "price": 312000,
+      "marketCap": "50조 5,963억원",
+      "changeRate": 0
+    },
+    {
+      "ticker": "068270",
+      "name": "셀트리온",
+      "market": "kospi",
+      "price": 194000,
+      "marketCap": "45조 221억원",
+      "changeRate": 1.25
+    },
+    {
+      "ticker": "006400",
+      "name": "삼성SDI",
+      "market": "kospi",
+      "price": 539000,
+      "marketCap": "43조 4,356억원",
+      "changeRate": -0.74
+    },
+    {
+      "ticker": "055550",
+      "name": "신한지주",
+      "market": "kospi",
+      "price": 87400,
+      "marketCap": "41조 300억원",
+      "changeRate": -2.46
+    },
+    {
+      "ticker": "000270",
+      "name": "기아",
+      "market": "kospi",
+      "price": 94900,
+      "marketCap": "37조 502억원",
+      "changeRate": -0.73
+    },
+    {
+      "ticker": "012450",
+      "name": "한화에어로스페이스",
+      "market": "kospi",
+      "price": 717000,
+      "marketCap": "36조 9,710억원",
+      "changeRate": 3.02
+    },
+    {
+      "ticker": "034730",
+      "name": "SK",
+      "market": "kospi",
+      "price": 497500,
+      "marketCap": "36조 701억원",
+      "changeRate": -1.09
+    },
+    {
+      "ticker": "034020",
+      "name": "두산에너빌리티",
+      "market": "kospi",
+      "price": 54400,
+      "marketCap": "34조 8,465억원",
+      "changeRate": -0.73
+    },
+    {
+      "ticker": "086790",
+      "name": "하나금융지주",
+      "market": "kospi",
+      "price": 118400,
+      "marketCap": "32조 828억원",
+      "changeRate": -1.74
+    },
+    {
+      "ticker": "012330",
+      "name": "현대모비스",
+      "market": "kospi",
+      "price": 349500,
+      "marketCap": "31조 3,923억원",
+      "changeRate": 4.64
+    },
+    {
+      "ticker": "329180",
+      "name": "HD현대중공업",
+      "market": "kospi",
+      "price": 288750,
+      "marketCap": "30조 3,076억원",
+      "changeRate": 5.38
+    },
+    {
+      "ticker": "000810",
+      "name": "삼성화재",
+      "market": "kospi",
+      "price": 652000,
+      "marketCap": "29조 1,102억원",
+      "changeRate": -1.06
+    },
+    {
+      "ticker": "035420",
+      "name": "NAVER",
+      "market": "kospi",
+      "price": 174600,
+      "marketCap": "26조 5,582억원",
+      "changeRate": 1.33
+    },
+    {
+      "ticker": "066570",
+      "name": "LG전자",
+      "market": "kospi",
+      "price": 151900,
+      "marketCap": "24조 7,422억원",
+      "changeRate": 0.8
+    },
+    {
+      "ticker": "010120",
+      "name": "LS ELECTRIC",
+      "market": "kospi",
+      "price": 156400,
+      "marketCap": "23조 4,600억원",
+      "changeRate": 4.55
+    },
+    {
+      "ticker": "069500",
+      "name": "KODEX 200",
+      "market": "kospi",
+      "price": 90580,
+      "marketCap": "22조 4,367억원",
+      "changeRate": -0.24
+    },
+    {
+      "ticker": "011200",
+      "name": "HMM",
+      "market": "kospi",
+      "price": 23750,
+      "marketCap": "22조 4,019억원",
+      "changeRate": 1.71
+    },
+    {
+      "ticker": "316140",
+      "name": "우리금융지주",
+      "market": "kospi",
+      "price": 30350,
+      "marketCap": "22조 3,615억원",
+      "changeRate": -1.46
+    },
+    {
+      "ticker": "138040",
+      "name": "메리츠금융지주",
+      "market": "kospi",
+      "price": 132400,
+      "marketCap": "22조 1,568억원",
+      "changeRate": -0.6
+    },
+    {
+      "ticker": "096770",
+      "name": "SK이노베이션",
+      "market": "kospi",
+      "price": 130700,
+      "marketCap": "22조 952억원",
+      "changeRate": 0.62
+    },
+    {
+      "ticker": "005490",
+      "name": "POSCO홀딩스",
+      "market": "kospi",
+      "price": 279000,
+      "marketCap": "22조 1,084억원",
+      "changeRate": 2.01
+    },
+    {
+      "ticker": "360750",
+      "name": "TIGER 미국S&P500",
+      "market": "kospi",
+      "price": 25240,
+      "marketCap": "20조 8,962억원",
+      "changeRate": -0.28
+    },
+    {
+      "ticker": "033780",
+      "name": "KT&G",
+      "market": "kospi",
+      "price": 196300,
+      "marketCap": "20조 3,780억원",
+      "changeRate": 0.05
+    },
+    {
+      "ticker": "015760",
+      "name": "한국전력",
+      "market": "kospi",
+      "price": 28800,
+      "marketCap": "18조 4,886억원",
+      "changeRate": 0.7
+    },
+    {
+      "ticker": "010130",
+      "name": "고려아연",
+      "market": "kospi",
+      "price": 880000,
+      "marketCap": "18조 3,682억원",
+      "changeRate": 0.46
+    },
+    {
+      "ticker": "298040",
+      "name": "효성중공업",
+      "market": "kospi",
+      "price": 1934000,
+      "marketCap": "18조 337억원",
+      "changeRate": 6.91
+    },
+    {
+      "ticker": "042700",
+      "name": "한미반도체",
+      "market": "kospi",
+      "price": 188600,
+      "marketCap": "17조 9,759억원",
+      "changeRate": 3.23
+    },
+    {
+      "ticker": "009540",
+      "name": "HD한국조선해양",
+      "market": "kospi",
+      "price": 244500,
+      "marketCap": "17조 3,040억원",
+      "changeRate": 5.62
+    },
+    {
+      "ticker": "051910",
+      "name": "LG화학",
+      "market": "kospi",
+      "price": 240000,
+      "marketCap": "16조 9,422억원",
+      "changeRate": 2.13
+    },
+    {
+      "ticker": "042660",
+      "name": "한화오션",
+      "market": "kospi",
+      "price": 53600,
+      "marketCap": "16조 4,238억원",
+      "changeRate": 7.2
+    },
+    {
+      "ticker": "017670",
+      "name": "SK텔레콤",
+      "market": "kospi",
+      "price": 75900,
+      "marketCap": "16조 3,026억원",
+      "changeRate": 0.66
+    },
+    {
+      "ticker": "018260",
+      "name": "삼성에스디에스",
+      "market": "kospi",
+      "price": 207500,
+      "marketCap": "16조 559억원",
+      "changeRate": 2.22
+    },
+    {
+      "ticker": "267260",
+      "name": "HD현대일렉트릭",
+      "market": "kospi",
+      "price": 443500,
+      "marketCap": "15조 9,869억원",
+      "changeRate": 4.48
+    },
+    {
+      "ticker": "024110",
+      "name": "기업은행",
+      "market": "kospi",
+      "price": 19170,
+      "marketCap": "15조 2,867억원",
+      "changeRate": -1.08
+    },
+    {
+      "ticker": "010140",
+      "name": "삼성중공업",
+      "market": "kospi",
+      "price": 17070,
+      "marketCap": "15조 216억원",
+      "changeRate": 7.49
+    },
+    {
+      "ticker": "086280",
+      "name": "현대글로비스",
+      "market": "kospi",
+      "price": 197100,
+      "marketCap": "14조 7,825억원",
+      "changeRate": 7.24
+    },
+    {
+      "ticker": "003550",
+      "name": "LG",
+      "market": "kospi",
+      "price": 97000,
+      "marketCap": "14조 6,656억원",
+      "changeRate": 0.83
+    },
+    {
+      "ticker": "003670",
+      "name": "포스코퓨처엠",
+      "market": "kospi",
+      "price": 163700,
+      "marketCap": "14조 5,605억원",
+      "changeRate": 0.99
+    },
+    {
+      "ticker": "010950",
+      "name": "S-Oil",
+      "market": "kospi",
+      "price": 123300,
+      "marketCap": "13조 8,815억원",
+      "changeRate": 0.24
+    },
+    {
+      "ticker": "006800",
+      "name": "미래에셋증권",
+      "market": "kospi",
+      "price": 25200,
+      "marketCap": "13조 6,841억원",
+      "changeRate": -1.18
+    },
+    {
+      "ticker": "035720",
+      "name": "카카오",
+      "market": "kospi",
+      "price": 29350,
+      "marketCap": "13조 21억원",
+      "changeRate": -0.34
+    },
+    {
+      "ticker": "000150",
+      "name": "두산",
+      "market": "kospi",
+      "price": 897000,
+      "marketCap": "12조 7,710억원",
+      "changeRate": 0.67
+    },
+    {
+      "ticker": "488770",
+      "name": "KODEX 머니마켓액티브",
+      "market": "kospi",
+      "price": 106022,
+      "marketCap": "12조 7,513억원",
+      "changeRate": 0.01
+    },
+    {
+      "ticker": "028050",
+      "name": "삼성E&A",
+      "market": "kospi",
+      "price": 62100,
+      "marketCap": "12조 1,716억원",
+      "changeRate": 0.65
+    },
+    {
+      "ticker": "005830",
+      "name": "DB손해보험",
+      "market": "kospi",
+      "price": 184100,
+      "marketCap": "12조 586억원",
+      "changeRate": -0.32
+    },
+    {
+      "ticker": "030200",
+      "name": "KT",
+      "market": "kospi",
+      "price": 47250,
+      "marketCap": "11조 9,080억원",
+      "changeRate": 2.05
+    },
+    {
+      "ticker": "272210",
+      "name": "한화시스템",
+      "market": "kospi",
+      "price": 62800,
+      "marketCap": "11조 8,641억원",
+      "changeRate": 3.8
+    },
+    {
+      "ticker": "133690",
+      "name": "TIGER 미국나스닥100",
+      "market": "kospi",
+      "price": 168940,
+      "marketCap": "11조 3,916억원",
+      "changeRate": -0.9
+    },
+    {
+      "ticker": "267250",
+      "name": "HD현대",
+      "market": "kospi",
+      "price": 143600,
+      "marketCap": "11조 3,434억원",
+      "changeRate": 1.99
+    },
+    {
+      "ticker": "379800",
+      "name": "KODEX 미국S&P500",
+      "market": "kospi",
+      "price": 22880,
+      "marketCap": "10조 4,012억원",
+      "changeRate": -0.28
+    },
+    {
+      "ticker": "278470",
+      "name": "에이피알",
+      "market": "kospi",
+      "price": 267500,
+      "marketCap": "10조 147억원",
+      "changeRate": 2.49
+    },
+    {
+      "ticker": "003490",
+      "name": "대한항공",
+      "market": "kospi",
+      "price": 27100,
+      "marketCap": "9조 9,788억원",
+      "changeRate": 2.07
+    },
+    {
+      "ticker": "000720",
+      "name": "현대건설",
+      "market": "kospi",
+      "price": 88500,
+      "marketCap": "9조 8,550억원",
+      "changeRate": 5.86
+    },
+    {
+      "ticker": "379810",
+      "name": "KODEX 미국나스닥100",
+      "market": "kospi",
+      "price": 25235,
+      "marketCap": "9조 6,145억원",
+      "changeRate": -0.9
+    },
+    {
+      "ticker": "047810",
+      "name": "한국항공우주",
+      "market": "kospi",
+      "price": 98400,
+      "marketCap": "9조 5,916억원",
+      "changeRate": 0.61
+    },
+    {
+      "ticker": "323410",
+      "name": "카카오뱅크",
+      "market": "kospi",
+      "price": 19760,
+      "marketCap": "9조 4,279억원",
+      "changeRate": -0.8
+    },
+    {
+      "ticker": "079550",
+      "name": "LIG디펜스앤에어로스페이스",
+      "market": "kospi",
+      "price": 417500,
+      "marketCap": "9조 1,850억원",
+      "changeRate": 0.36
+    },
+    {
+      "ticker": "102110",
+      "name": "TIGER 200",
+      "market": "kospi",
+      "price": 90345,
+      "marketCap": "9조 29억원",
+      "changeRate": -0.33
+    },
+    {
+      "ticker": "003230",
+      "name": "삼양식품",
+      "market": "kospi",
+      "price": 1184000,
+      "marketCap": "8조 9,191억원",
+      "changeRate": 4.04
+    },
+    {
+      "ticker": "005940",
+      "name": "NH투자증권",
+      "market": "kospi",
+      "price": 23950,
+      "marketCap": "8조 8,425억원",
+      "changeRate": -0.42
+    },
+    {
+      "ticker": "047050",
+      "name": "포스코인터내셔널",
+      "market": "kospi",
+      "price": 50300,
+      "marketCap": "8조 8,489억원",
+      "changeRate": 3.39
+    },
+    {
+      "ticker": "064350",
+      "name": "현대로템",
+      "market": "kospi",
+      "price": 78400,
+      "marketCap": "8조 5,568억원",
+      "changeRate": 2.48
+    },
+    {
+      "ticker": "071050",
+      "name": "한국금융지주",
+      "market": "kospi",
+      "price": 149700,
+      "marketCap": "8조 3,422억원",
+      "changeRate": -1.64
+    },
+    {
+      "ticker": "307950",
+      "name": "현대오토에버",
+      "market": "kospi",
+      "price": 304500,
+      "marketCap": "8조 3,506억원",
+      "changeRate": 5.36
+    },
+    {
+      "ticker": "180640",
+      "name": "한진칼",
+      "market": "kospi",
+      "price": 123700,
+      "marketCap": "8조 2,585억원",
+      "changeRate": -0.16
+    },
+    {
+      "ticker": "259960",
+      "name": "크래프톤",
+      "market": "kospi",
+      "price": 181600,
+      "marketCap": "8조 2,596억원",
+      "changeRate": -0.27
+    },
+    {
+      "ticker": "396500",
+      "name": "TIGER 반도체TOP10",
+      "market": "kospi",
+      "price": 30425,
+      "marketCap": "7조 8,649억원",
+      "changeRate": -0.05
+    },
+    {
+      "ticker": "011070",
+      "name": "LG이노텍",
+      "market": "kospi",
+      "price": 325500,
+      "marketCap": "7조 7,036억원",
+      "changeRate": -0.15
+    },
+    {
+      "ticker": "0126Z0",
+      "name": "삼성에피스홀딩스",
+      "market": "kospi",
+      "price": 310500,
+      "marketCap": "7조 7,262억원",
+      "changeRate": 0.32
+    },
+    {
+      "ticker": "090430",
+      "name": "아모레퍼시픽",
+      "market": "kospi",
+      "price": 132200,
+      "marketCap": "7조 7,327억원",
+      "changeRate": 2.4
+    },
+    {
+      "ticker": "078930",
+      "name": "GS",
+      "market": "kospi",
+      "price": 81200,
+      "marketCap": "7조 5,431억원",
+      "changeRate": 0.25
+    },
+    {
+      "ticker": "064400",
+      "name": "LG씨엔에스",
+      "market": "kospi",
+      "price": 77900,
+      "marketCap": "7조 5,474억원",
+      "changeRate": 7.89
+    },
+    {
+      "ticker": "443060",
+      "name": "HD현대마린솔루션",
+      "market": "kospi",
+      "price": 169300,
+      "marketCap": "7조 5,903억원",
+      "changeRate": 3.04
+    },
+    {
+      "ticker": "021240",
+      "name": "코웨이",
+      "market": "kospi",
+      "price": 105000,
+      "marketCap": "7조 4,306억원",
+      "changeRate": 0.96
+    },
+    {
+      "ticker": "000500",
+      "name": "가온전선",
+      "market": "kospi",
+      "price": 238500,
+      "marketCap": "7조 1,020억원",
+      "changeRate": 4.61
+    },
+    {
+      "ticker": "016360",
+      "name": "삼성증권",
+      "market": "kospi",
+      "price": 79600,
+      "marketCap": "7조 1,083억원",
+      "changeRate": -1
+    },
+    {
+      "ticker": "459580",
+      "name": "KODEX CD금리액티브(합성)",
+      "market": "kospi",
+      "price": 1073570,
+      "marketCap": "7조 840억원",
+      "changeRate": 0.01
+    },
+    {
+      "ticker": "161390",
+      "name": "한국타이어앤테크놀로지",
+      "market": "kospi",
+      "price": 57400,
+      "marketCap": "7조 1,104억원",
+      "changeRate": 1.06
+    },
+    {
+      "ticker": "006260",
+      "name": "LS",
+      "market": "kospi",
+      "price": 211000,
+      "marketCap": "6조 5,832억원",
+      "changeRate": 4.2
+    },
+    {
+      "ticker": "278530",
+      "name": "KODEX 200TR",
+      "market": "kospi",
+      "price": 32855,
+      "marketCap": "6조 4,954억원",
+      "changeRate": -0.32
+    },
+    {
+      "ticker": "352820",
+      "name": "하이브",
+      "market": "kospi",
+      "price": 147200,
+      "marketCap": "6조 3,453억원",
+      "changeRate": -6.24
+    },
+    {
+      "ticker": "007660",
+      "name": "이수페타시스",
+      "market": "kospi",
+      "price": 84700,
+      "marketCap": "6조 2,178억원",
+      "changeRate": 0.59
+    },
+    {
+      "ticker": "032640",
+      "name": "LG유플러스",
+      "market": "kospi",
+      "price": 14650,
+      "marketCap": "6조 2,179억원",
+      "changeRate": 2.95
+    },
+    {
+      "ticker": "326030",
+      "name": "SK바이오팜",
+      "market": "kospi",
+      "price": 78100,
+      "marketCap": "6조 1,163억원",
+      "changeRate": 0.51
+    },
+    {
+      "ticker": "353200",
+      "name": "대덕전자",
+      "market": "kospi",
+      "price": 115000,
+      "marketCap": "5조 6,829억원",
+      "changeRate": -3.69
+    },
+    {
+      "ticker": "000100",
+      "name": "유한양행",
+      "market": "kospi",
+      "price": 76900,
+      "marketCap": "5조 6,611억원",
+      "changeRate": 2.4
+    },
+    {
+      "ticker": "039490",
+      "name": "키움증권",
+      "market": "kospi",
+      "price": 209500,
+      "marketCap": "5조 4,948억원",
+      "changeRate": -4.56
+    },
+    {
+      "ticker": "498400",
+      "name": "KODEX 200타겟위클리커버드콜",
+      "market": "kospi",
+      "price": 16710,
+      "marketCap": "5조 3,723억원",
+      "changeRate": -0.33
+    },
+    {
+      "ticker": "128940",
+      "name": "한미약품",
+      "market": "kospi",
+      "price": 418000,
+      "marketCap": "5조 3,550억원",
+      "changeRate": 0.72
+    },
+    {
+      "ticker": "009830",
+      "name": "한화솔루션",
+      "market": "kospi",
+      "price": 23050,
+      "marketCap": "5조 1,838억원",
+      "changeRate": 1.99
+    },
+    {
+      "ticker": "005387",
+      "name": "현대차2우B",
+      "market": "kospi",
+      "price": 149700,
+      "marketCap": "5조 1,283억원",
+      "changeRate": -0.13
+    },
+    {
+      "ticker": "381180",
+      "name": "TIGER 미국필라델피아반도체나스닥",
+      "market": "kospi",
+      "price": 37470,
+      "marketCap": "5조 1,147억원",
+      "changeRate": -2.13
+    },
+    {
+      "ticker": "029780",
+      "name": "삼성카드",
+      "market": "kospi",
+      "price": 42300,
+      "marketCap": "4조 9,008억원",
+      "changeRate": -0.35
+    },
+    {
+      "ticker": "000880",
+      "name": "한화",
+      "market": "kospi",
+      "price": 90900,
+      "marketCap": "4조 8,476억원",
+      "changeRate": 2.48
+    },
+    {
+      "ticker": "175330",
+      "name": "JB금융지주",
+      "market": "kospi",
+      "price": 25850,
+      "marketCap": "4조 8,216억원",
+      "changeRate": -0.19
+    },
+    {
+      "ticker": "062040",
+      "name": "산일전기",
+      "market": "kospi",
+      "price": 155100,
+      "marketCap": "4조 7,527억원",
+      "changeRate": 5.73
+    },
+    {
+      "ticker": "241560",
+      "name": "두산밥캣",
+      "market": "kospi",
+      "price": 49250,
+      "marketCap": "4조 7,209억원",
+      "changeRate": 1.55
+    },
+    {
+      "ticker": "047040",
+      "name": "대우건설",
+      "market": "kospi",
+      "price": 11490,
+      "marketCap": "4조 7,211억원",
+      "changeRate": 5.22
+    },
+    {
+      "ticker": "122630",
+      "name": "KODEX 레버리지",
+      "market": "kospi",
+      "price": 72205,
+      "marketCap": "4조 6,500억원",
+      "changeRate": -0.47
+    },
+    {
+      "ticker": "458730",
+      "name": "TIGER 미국배당다우존스",
+      "market": "kospi",
+      "price": 15190,
+      "marketCap": "4조 6,573억원",
+      "changeRate": 0.1
+    },
+    {
+      "ticker": "088980",
+      "name": "맥쿼리인프라",
+      "market": "kospi",
+      "price": 9700,
+      "marketCap": "4조 6,455억원",
+      "changeRate": 0.83
+    },
+    {
+      "ticker": "091160",
+      "name": "KODEX 반도체",
+      "market": "kospi",
+      "price": 107395,
+      "marketCap": "4조 6,180억원",
+      "changeRate": 0.6
+    },
+    {
+      "ticker": "0167A0",
+      "name": "SOL AI반도체TOP2플러스",
+      "market": "kospi",
+      "price": 14910,
+      "marketCap": "4조 5,662억원",
+      "changeRate": -0.4
+    },
+    {
+      "ticker": "271560",
+      "name": "오리온",
+      "market": "kospi",
+      "price": 116700,
+      "marketCap": "4조 6,130억원",
+      "changeRate": 1.66
+    },
+    {
+      "ticker": "377300",
+      "name": "카카오페이",
+      "market": "kospi",
+      "price": 33750,
+      "marketCap": "4조 5,666억원",
+      "changeRate": -0.3
+    },
+    {
+      "ticker": "036570",
+      "name": "NC",
+      "market": "kospi",
+      "price": 199600,
+      "marketCap": "4조 3,002억원",
+      "changeRate": -0.94
+    },
+    {
+      "ticker": "229200",
+      "name": "KODEX 코스닥150",
+      "market": "kospi",
+      "price": 12000,
+      "marketCap": "4조 1,412억원",
+      "changeRate": 0.76
+    },
+    {
+      "ticker": "138930",
+      "name": "BNK금융지주",
+      "market": "kospi",
+      "price": 13190,
+      "marketCap": "4조 472억원",
+      "changeRate": -0.3
+    },
+    {
+      "ticker": "051900",
+      "name": "LG생활건강",
+      "market": "kospi",
+      "price": 264500,
+      "marketCap": "3조 9,610억원",
+      "changeRate": 1.93
+    },
+    {
+      "ticker": "000990",
+      "name": "DB하이텍",
+      "market": "kospi",
+      "price": 90800,
+      "marketCap": "3조 9,502억원",
+      "changeRate": -1.3
+    },
+    {
+      "ticker": "001440",
+      "name": "대한전선",
+      "market": "kospi",
+      "price": 20200,
+      "marketCap": "3조 9,591억원",
+      "changeRate": 2.07
+    },
+    {
+      "ticker": "360200",
+      "name": "ACE 미국S&P500",
+      "market": "kospi",
+      "price": 25515,
+      "marketCap": "3조 9,140억원",
+      "changeRate": -0.31
+    },
+    {
+      "ticker": "004020",
+      "name": "현대제철",
+      "market": "kospi",
+      "price": 29050,
+      "marketCap": "3조 8,766억원",
+      "changeRate": 12.38
+    },
+    {
+      "ticker": "148020",
+      "name": "RISE 200",
+      "market": "kospi",
+      "price": 90845,
+      "marketCap": "3조 8,109억원",
+      "changeRate": -0.27
+    },
+    {
+      "ticker": "267270",
+      "name": "HD건설기계",
+      "market": "kospi",
+      "price": 80700,
+      "marketCap": "3조 8,330억원",
+      "changeRate": 4.53
+    },
+    {
+      "ticker": "310970",
+      "name": "TIGER MSCI Korea TR",
+      "market": "kospi",
+      "price": 40575,
+      "marketCap": "3조 7,694억원",
+      "changeRate": -0.06
+    },
+    {
+      "ticker": "0162Z0",
+      "name": "RISE 삼성전자SK하이닉스채권혼합50",
+      "market": "kospi",
+      "price": 12375,
+      "marketCap": "3조 7,410억원",
+      "changeRate": -0.24
+    },
+    {
+      "ticker": "357870",
+      "name": "TIGER CD금리투자KIS(합성)",
+      "market": "kospi",
+      "price": 58305,
+      "marketCap": "3조 7,053억원",
+      "changeRate": 0
+    },
+    {
+      "ticker": "001450",
+      "name": "현대해상",
+      "market": "kospi",
+      "price": 43350,
+      "marketCap": "3조 6,955억원",
+      "changeRate": -1.37
+    },
+    {
+      "ticker": "012750",
+      "name": "에스원",
+      "market": "kospi",
+      "price": 97500,
+      "marketCap": "3조 7,049억원",
+      "changeRate": -0.2
+    },
+    {
+      "ticker": "034220",
+      "name": "LG디스플레이",
+      "market": "kospi",
+      "price": 7360,
+      "marketCap": "3조 6,800억원",
+      "changeRate": 0.55
+    },
+    {
+      "ticker": "0043B0",
+      "name": "TIGER 머니마켓액티브",
+      "market": "kospi",
+      "price": 104172,
+      "marketCap": "3조 6,576억원",
+      "changeRate": 0.01
+    },
+    {
+      "ticker": "018880",
+      "name": "한온시스템",
+      "market": "kospi",
+      "price": 3570,
+      "marketCap": "3조 6,637억원",
+      "changeRate": 1.71
+    },
+    {
+      "ticker": "088350",
+      "name": "한화생명",
+      "market": "kospi",
+      "price": 4180,
+      "marketCap": "3조 6,305억원",
+      "changeRate": 1.58
+    },
+    {
+      "ticker": "011790",
+      "name": "SKC",
+      "market": "kospi",
+      "price": 72600,
+      "marketCap": "3조 6,008억원",
+      "changeRate": 1.54
+    },
+    {
+      "ticker": "381170",
+      "name": "TIGER 미국테크TOP10 INDXX",
+      "market": "kospi",
+      "price": 29075,
+      "marketCap": "3조 5,922억원",
+      "changeRate": 0.1
+    },
+    {
+      "ticker": "454910",
+      "name": "두산로보틱스",
+      "market": "kospi",
+      "price": 55400,
+      "marketCap": "3조 5,910억원",
+      "changeRate": 1.84
+    },
+    {
+      "ticker": "423160",
+      "name": "KODEX KOFR금리액티브(합성)",
+      "market": "kospi",
+      "price": 110685,
+      "marketCap": "3조 5,601억원",
+      "changeRate": 0
+    },
+    {
+      "ticker": "411060",
+      "name": "ACE KRX금현물",
+      "market": "kospi",
+      "price": 23425,
+      "marketCap": "3조 5,091억원",
+      "changeRate": -1.74
+    },
+    {
+      "ticker": "036460",
+      "name": "한국가스공사",
+      "market": "kospi",
+      "price": 37150,
+      "marketCap": "3조 4,294억원",
+      "changeRate": -0.13
+    },
+    {
+      "ticker": "002380",
+      "name": "KCC",
+      "market": "kospi",
+      "price": 397500,
+      "marketCap": "3조 4,157억원",
+      "changeRate": 2.05
+    },
+    {
+      "ticker": "005385",
+      "name": "현대차우",
+      "market": "kospi",
+      "price": 148800,
+      "marketCap": "3조 3,984억원",
+      "changeRate": -0.4
+    },
+    {
+      "ticker": "066970",
+      "name": "엘앤에프",
+      "market": "kospi",
+      "price": 83500,
+      "marketCap": "3조 3,974억원",
+      "changeRate": 1.83
+    },
+    {
+      "ticker": "367380",
+      "name": "ACE 미국나스닥100",
+      "market": "kospi",
+      "price": 29055,
+      "marketCap": "3조 3,907억원",
+      "changeRate": -0.89
+    },
+    {
+      "ticker": "395160",
+      "name": "KODEX AI반도체TOP2플러스",
+      "market": "kospi",
+      "price": 33290,
+      "marketCap": "3조 3,623억원",
+      "changeRate": -0.27
+    },
+    {
+      "ticker": "273130",
+      "name": "KODEX 종합채권(AA-이상)액티브",
+      "market": "kospi",
+      "price": 112310,
+      "marketCap": "3조 3,489억원",
+      "changeRate": -0.23
+    },
+    {
+      "ticker": "052690",
+      "name": "한전기술",
+      "market": "kospi",
+      "price": 87600,
+      "marketCap": "3조 3,481억원",
+      "changeRate": 1.51
+    },
+    {
+      "ticker": "010060",
+      "name": "OCI홀딩스",
+      "market": "kospi",
+      "price": 177100,
+      "marketCap": "3조 3,065억원",
+      "changeRate": 6.3
+    },
+    {
+      "ticker": "028670",
+      "name": "팬오션",
+      "market": "kospi",
+      "price": 6020,
+      "marketCap": "3조 2,181억원",
+      "changeRate": 3.26
+    },
+    {
+      "ticker": "001040",
+      "name": "CJ",
+      "market": "kospi",
+      "price": 110400,
+      "marketCap": "3조 2,211억원",
+      "changeRate": -0.54
+    },
+    {
+      "ticker": "455890",
+      "name": "RISE 머니마켓액티브",
+      "market": "kospi",
+      "price": 55792,
+      "marketCap": "3조 1,976억원",
+      "changeRate": 0
+    },
+    {
+      "ticker": "111770",
+      "name": "영원무역",
+      "market": "kospi",
+      "price": 68600,
+      "marketCap": "3조 398억원",
+      "changeRate": -0.72
+    },
+    {
+      "ticker": "031210",
+      "name": "서울보증보험",
+      "market": "kospi",
+      "price": 42900,
+      "marketCap": "2조 9,953억원",
+      "changeRate": -0.46
+    },
+    {
+      "ticker": "102780",
+      "name": "KODEX 삼성그룹",
+      "market": "kospi",
+      "price": 23550,
+      "marketCap": "2조 9,838억원",
+      "changeRate": -0.21
+    },
+    {
+      "ticker": "035250",
+      "name": "강원랜드",
+      "market": "kospi",
+      "price": 13920,
+      "marketCap": "2조 9,781억원",
+      "changeRate": 0.72
+    },
+    {
+      "ticker": "008930",
+      "name": "한미사이언스",
+      "market": "kospi",
+      "price": 42500,
+      "marketCap": "2조 9,066억원",
+      "changeRate": -1.39
+    },
+    {
+      "ticker": "395270",
+      "name": "HANARO Fn K-반도체",
+      "market": "kospi",
+      "price": 47350,
+      "marketCap": "2조 8,812억원",
+      "changeRate": -0.92
+    },
+    {
+      "ticker": "022100",
+      "name": "포스코DX",
+      "market": "kospi",
+      "price": 19010,
+      "marketCap": "2조 8,902억원",
+      "changeRate": 1.77
+    },
+    {
+      "ticker": "192820",
+      "name": "코스맥스",
+      "market": "kospi",
+      "price": 253000,
+      "marketCap": "2조 8,714억원",
+      "changeRate": 2.43
+    },
+    {
+      "ticker": "251270",
+      "name": "넷마블",
+      "market": "kospi",
+      "price": 33400,
+      "marketCap": "2조 7,775억원",
+      "changeRate": -1.04
+    },
+    {
+      "ticker": "026960",
+      "name": "동서",
+      "market": "kospi",
+      "price": 27900,
+      "marketCap": "2조 7,816억원",
+      "changeRate": -1.93
+    },
+    {
+      "ticker": "472150",
+      "name": "TIGER 배당커버드콜액티브",
+      "market": "kospi",
+      "price": 16270,
+      "marketCap": "2조 7,340억원",
+      "changeRate": -0.18
+    },
+    {
+      "ticker": "161890",
+      "name": "한국콜마",
+      "market": "kospi",
+      "price": 115900,
+      "marketCap": "2조 7,358억원",
+      "changeRate": 3.02
+    },
+    {
+      "ticker": "085620",
+      "name": "미래에셋생명",
+      "market": "kospi",
+      "price": 19830,
+      "marketCap": "2조 6,806억원",
+      "changeRate": 0.97
+    },
+    {
+      "ticker": "082740",
+      "name": "한화엔진",
+      "market": "kospi",
+      "price": 32300,
+      "marketCap": "2조 6,953억원",
+      "changeRate": 9.86
+    },
+    {
+      "ticker": "233740",
+      "name": "KODEX 코스닥150레버리지",
+      "market": "kospi",
+      "price": 4855,
+      "marketCap": "2조 6,542억원",
+      "changeRate": 1.46
+    },
+    {
+      "ticker": "103590",
+      "name": "일진전기",
+      "market": "kospi",
+      "price": 55700,
+      "marketCap": "2조 6,561억원",
+      "changeRate": 5.69
+    },
+    {
+      "ticker": "489790",
+      "name": "한화비전",
+      "market": "kospi",
+      "price": 52100,
+      "marketCap": "2조 6,304억원",
+      "changeRate": 1.56
+    },
+    {
+      "ticker": "097950",
+      "name": "CJ제일제당",
+      "market": "kospi",
+      "price": 175600,
+      "marketCap": "2조 6,435억원",
+      "changeRate": 1.39
+    },
+    {
+      "ticker": "017800",
+      "name": "현대엘리베이터",
+      "market": "kospi",
+      "price": 67400,
+      "marketCap": "2조 6,348억원",
+      "changeRate": 0.9
+    },
+    {
+      "ticker": "011780",
+      "name": "금호석유화학",
+      "market": "kospi",
+      "price": 105600,
+      "marketCap": "2조 6,315억원",
+      "changeRate": -1.03
+    },
+    {
+      "ticker": "481050",
+      "name": "KODEX CD1년금리플러스액티브(합성)",
+      "market": "kospi",
+      "price": 1021960,
+      "marketCap": "2조 6,209억원",
+      "changeRate": 0.01
+    },
+    {
+      "ticker": "302440",
+      "name": "SK바이오사이언스",
+      "market": "kospi",
+      "price": 33250,
+      "marketCap": "2조 6,087억원",
+      "changeRate": 1.53
+    },
+    {
+      "ticker": "486290",
+      "name": "TIGER 미국나스닥100타겟데일리커버드콜",
+      "market": "kospi",
+      "price": 9560,
+      "marketCap": "2조 5,200억원",
+      "changeRate": -1.09
+    },
+    {
+      "ticker": "139130",
+      "name": "iM금융지주",
+      "market": "kospi",
+      "price": 15480,
+      "marketCap": "2조 4,515억원",
+      "changeRate": -1.84
+    },
+    {
+      "ticker": "003690",
+      "name": "코리안리",
+      "market": "kospi",
+      "price": 13830,
+      "marketCap": "2조 4,441억원",
+      "changeRate": -0.93
+    },
+    {
+      "ticker": "018670",
+      "name": "SK가스",
+      "market": "kospi",
+      "price": 262000,
+      "marketCap": "2조 4,285억원",
+      "changeRate": 2.34
+    },
+    {
+      "ticker": "004370",
+      "name": "농심",
+      "market": "kospi",
+      "price": 399500,
+      "marketCap": "2조 4,300억원",
+      "changeRate": 0.5
+    },
+    {
+      "ticker": "006360",
+      "name": "GS건설",
+      "market": "kospi",
+      "price": 28200,
+      "marketCap": "2조 4,134억원",
+      "changeRate": 8.46
+    },
+    {
+      "ticker": "383220",
+      "name": "F&F",
+      "market": "kospi",
+      "price": 63000,
+      "marketCap": "2조 4,133억원",
+      "changeRate": 0.64
+    },
+    {
+      "ticker": "023530",
+      "name": "롯데쇼핑",
+      "market": "kospi",
+      "price": 84800,
+      "marketCap": "2조 3,989억원",
+      "changeRate": 3.54
+    },
+    {
+      "ticker": "007340",
+      "name": "DN오토모티브",
+      "market": "kospi",
+      "price": 40500,
+      "marketCap": "2조 3,697억원",
+      "changeRate": 0.62
+    },
+    {
+      "ticker": "282330",
+      "name": "BGF리테일",
+      "market": "kospi",
+      "price": 137100,
+      "marketCap": "2조 3,696억원",
+      "changeRate": 3.16
+    },
+    {
+      "ticker": "487240",
+      "name": "KODEX AI전력핵심설비",
+      "market": "kospi",
+      "price": 25850,
+      "marketCap": "2조 3,549억원",
+      "changeRate": 5.34
+    },
+    {
+      "ticker": "004170",
+      "name": "신세계",
+      "market": "kospi",
+      "price": 248500,
+      "marketCap": "2조 3,471억원",
+      "changeRate": 1.43
+    },
+    {
+      "ticker": "449170",
+      "name": "TIGER KOFR금리액티브(합성)",
+      "market": "kospi",
+      "price": 112320,
+      "marketCap": "2조 2,977억원",
+      "changeRate": 0.01
+    },
+    {
+      "ticker": "385540",
+      "name": "RISE 종합채권(A-이상)액티브",
+      "market": "kospi",
+      "price": 105395,
+      "marketCap": "2조 2,654억원",
+      "changeRate": -0.18
+    },
+    {
+      "ticker": "014680",
+      "name": "한솔케미칼",
+      "market": "kospi",
+      "price": 208000,
+      "marketCap": "2조 2,452억원",
+      "changeRate": -1.65
+    },
+    {
+      "ticker": "005850",
+      "name": "에스엘",
+      "market": "kospi",
+      "price": 48250,
+      "marketCap": "2조 2,411억원",
+      "changeRate": -0.31
+    },
+    {
+      "ticker": "000240",
+      "name": "한국앤컴퍼니",
+      "market": "kospi",
+      "price": 23350,
+      "marketCap": "2조 2,167억원",
+      "changeRate": 1.3
+    },
+    {
+      "ticker": "426030",
+      "name": "TIME 미국나스닥100액티브",
+      "market": "kospi",
+      "price": 39770,
+      "marketCap": "2조 2,136억원",
+      "changeRate": -1.75
+    },
+    {
+      "ticker": "161510",
+      "name": "PLUS 고배당주",
+      "market": "kospi",
+      "price": 22305,
+      "marketCap": "2조 2,008억원",
+      "changeRate": 0.29
+    },
+    {
+      "ticker": "457190",
+      "name": "이수스페셜티케미컬",
+      "market": "kospi",
+      "price": 72600,
+      "marketCap": "2조 1,939억원",
+      "changeRate": -0.68
+    },
+    {
+      "ticker": "004990",
+      "name": "롯데지주",
+      "market": "kospi",
+      "price": 21650,
+      "marketCap": "2조 1,577억원",
+      "changeRate": 0.46
+    },
+    {
+      "ticker": "020150",
+      "name": "롯데에너지머티리얼즈",
+      "market": "kospi",
+      "price": 41050,
+      "marketCap": "2조 1,496억원",
+      "changeRate": -0.97
+    },
+    {
+      "ticker": "375500",
+      "name": "DL이앤씨",
+      "market": "kospi",
+      "price": 55400,
+      "marketCap": "2조 1,436억원",
+      "changeRate": 2.21
+    },
+    {
+      "ticker": "009970",
+      "name": "영원무역홀딩스",
+      "market": "kospi",
+      "price": 169300,
+      "marketCap": "2조 725억원",
+      "changeRate": -0.41
+    },
+    {
+      "ticker": "279570",
+      "name": "케이뱅크",
+      "market": "kospi",
+      "price": 5100,
+      "marketCap": "2조 690억원",
+      "changeRate": 0.2
+    },
+    {
+      "ticker": "005440",
+      "name": "현대지에프홀딩스",
+      "market": "kospi",
+      "price": 11230,
+      "marketCap": "2조 596억원",
+      "changeRate": 2.74
+    },
+    {
+      "ticker": "139260",
+      "name": "TIGER 200 IT",
+      "market": "kospi",
+      "price": 114705,
+      "marketCap": "2조 463억원",
+      "changeRate": 0.21
+    }
+  ],
+  "kosdaq": [
+    {
+      "ticker": "196170",
+      "name": "알테오젠",
+      "market": "kosdaq",
+      "price": 213000,
+      "marketCap": "14조 8,365억원",
+      "changeRate": 0.71
+    },
+    {
+      "ticker": "086520",
+      "name": "에코프로",
+      "market": "kosdaq",
+      "price": 72400,
+      "marketCap": "9조 8,302억원",
+      "changeRate": 0.28
+    },
+    {
+      "ticker": "247540",
+      "name": "에코프로비엠",
+      "market": "kosdaq",
+      "price": 90800,
+      "marketCap": "8조 8,830억원",
+      "changeRate": -0.11
+    },
+    {
+      "ticker": "036930",
+      "name": "주성엔지니어링",
+      "market": "kosdaq",
+      "price": 168700,
+      "marketCap": "7조 8,414억원",
+      "changeRate": 2.24
+    },
+    {
+      "ticker": "277810",
+      "name": "레인보우로보틱스",
+      "market": "kosdaq",
+      "price": 359500,
+      "marketCap": "6조 9,742억원",
+      "changeRate": -0.96
+    },
+    {
+      "ticker": "028300",
+      "name": "HLB",
+      "market": "kosdaq",
+      "price": 40950,
+      "marketCap": "5조 4,578억원",
+      "changeRate": 2.38
+    },
+    {
+      "ticker": "039030",
+      "name": "이오테크닉스",
+      "market": "kosdaq",
+      "price": 391000,
+      "marketCap": "4조 8,169억원",
+      "changeRate": 0.64
+    },
+    {
+      "ticker": "222800",
+      "name": "심텍",
+      "market": "kosdaq",
+      "price": 116700,
+      "marketCap": "4조 5,534억원",
+      "changeRate": 2.82
+    },
+    {
+      "ticker": "240810",
+      "name": "원익IPS",
+      "market": "kosdaq",
+      "price": 89500,
+      "marketCap": "4조 3,930억원",
+      "changeRate": 1.13
+    },
+    {
+      "ticker": "058470",
+      "name": "리노공업",
+      "market": "kosdaq",
+      "price": 56700,
+      "marketCap": "4조 3,212억원",
+      "changeRate": 1.07
+    },
+    {
+      "ticker": "000250",
+      "name": "삼천당제약",
+      "market": "kosdaq",
+      "price": 182600,
+      "marketCap": "4조 2,833억원",
+      "changeRate": -0.05
+    },
+    {
+      "ticker": "031980",
+      "name": "피에스케이홀딩스",
+      "market": "kosdaq",
+      "price": 179600,
+      "marketCap": "3조 8,726억원",
+      "changeRate": -3.34
+    },
+    {
+      "ticker": "108490",
+      "name": "로보티즈",
+      "market": "kosdaq",
+      "price": 251500,
+      "marketCap": "3조 6,898억원",
+      "changeRate": -1.76
+    },
+    {
+      "ticker": "403870",
+      "name": "HPSP",
+      "market": "kosdaq",
+      "price": 42950,
+      "marketCap": "3조 5,348억원",
+      "changeRate": 0.82
+    },
+    {
+      "ticker": "095340",
+      "name": "ISC",
+      "market": "kosdaq",
+      "price": 164400,
+      "marketCap": "3조 4,848억원",
+      "changeRate": 5.52
+    },
+    {
+      "ticker": "319660",
+      "name": "피에스케이",
+      "market": "kosdaq",
+      "price": 112100,
+      "marketCap": "3조 2,472억원",
+      "changeRate": -2.18
+    },
+    {
+      "ticker": "131290",
+      "name": "티에스이",
+      "market": "kosdaq",
+      "price": 225500,
+      "marketCap": "2조 4,944억원",
+      "changeRate": 1.58
+    },
+    {
+      "ticker": "030530",
+      "name": "원익홀딩스",
+      "market": "kosdaq",
+      "price": 30600,
+      "marketCap": "2조 3,635억원",
+      "changeRate": 3.73
+    },
+    {
+      "ticker": "084370",
+      "name": "유진테크",
+      "market": "kosdaq",
+      "price": 103400,
+      "marketCap": "2조 3,695억원",
+      "changeRate": -0.39
+    },
+    {
+      "ticker": "357780",
+      "name": "솔브레인",
+      "market": "kosdaq",
+      "price": 295500,
+      "marketCap": "2조 2,986억원",
+      "changeRate": -1.83
+    },
+    {
+      "ticker": "214450",
+      "name": "파마리서치",
+      "market": "kosdaq",
+      "price": 220500,
+      "marketCap": "2조 2,909억원",
+      "changeRate": 4.01
+    },
+    {
+      "ticker": "141080",
+      "name": "리가켐바이오",
+      "market": "kosdaq",
+      "price": 61500,
+      "marketCap": "2조 2,776억원",
+      "changeRate": 0
+    },
+    {
+      "ticker": "145020",
+      "name": "휴젤",
+      "market": "kosdaq",
+      "price": 181500,
+      "marketCap": "2조 2,715억원",
+      "changeRate": 0.95
+    },
+    {
+      "ticker": "440110",
+      "name": "파두",
+      "market": "kosdaq",
+      "price": 45200,
+      "marketCap": "2조 2,653억원",
+      "changeRate": -2.06
+    },
+    {
+      "ticker": "080220",
+      "name": "제주반도체",
+      "market": "kosdaq",
+      "price": 64900,
+      "marketCap": "2조 2,353억원",
+      "changeRate": 1.25
+    },
+    {
+      "ticker": "067310",
+      "name": "하나마이크론",
+      "market": "kosdaq",
+      "price": 33400,
+      "marketCap": "2조 2,208억원",
+      "changeRate": 0
+    },
+    {
+      "ticker": "087010",
+      "name": "펩트론",
+      "market": "kosdaq",
+      "price": 94400,
+      "marketCap": "2조 2,012억원",
+      "changeRate": 2.28
+    },
+    {
+      "ticker": "298380",
+      "name": "에이비엘바이오",
+      "market": "kosdaq",
+      "price": 39250,
+      "marketCap": "2조 1,975억원",
+      "changeRate": 0.13
+    },
+    {
+      "ticker": "064760",
+      "name": "티씨케이",
+      "market": "kosdaq",
+      "price": 190500,
+      "marketCap": "2조 1,297억원",
+      "changeRate": -1.6
+    },
+    {
+      "ticker": "095610",
+      "name": "테스",
+      "market": "kosdaq",
+      "price": 110000,
+      "marketCap": "2조 1,296억원",
+      "changeRate": 1.38
+    },
+    {
+      "ticker": "226950",
+      "name": "올릭스",
+      "market": "kosdaq",
+      "price": 92300,
+      "marketCap": "2조 1,113억원",
+      "changeRate": -1.81
+    },
+    {
+      "ticker": "010170",
+      "name": "대한광통신",
+      "market": "kosdaq",
+      "price": 13410,
+      "marketCap": "2조 851억원",
+      "changeRate": -2.83
+    },
+    {
+      "ticker": "263750",
+      "name": "펄어비스",
+      "market": "kosdaq",
+      "price": 32400,
+      "marketCap": "2조 361억원",
+      "changeRate": -7.43
+    },
+    {
+      "ticker": "043260",
+      "name": "성호전자",
+      "market": "kosdaq",
+      "price": 26450,
+      "marketCap": "1조 9,957억원",
+      "changeRate": -2.58
+    },
+    {
+      "ticker": "098460",
+      "name": "고영",
+      "market": "kosdaq",
+      "price": 28700,
+      "marketCap": "1조 9,575억원",
+      "changeRate": 0.35
+    },
+    {
+      "ticker": "005290",
+      "name": "동진쎄미켐",
+      "market": "kosdaq",
+      "price": 38400,
+      "marketCap": "1조 9,573억원",
+      "changeRate": -1.03
+    },
+    {
+      "ticker": "310210",
+      "name": "보로노이",
+      "market": "kosdaq",
+      "price": 104500,
+      "marketCap": "1조 9,454억원",
+      "changeRate": -1.51
+    },
+    {
+      "ticker": "319400",
+      "name": "현대무벡스",
+      "market": "kosdaq",
+      "price": 16850,
+      "marketCap": "1조 8,767억원",
+      "changeRate": 2.12
+    },
+    {
+      "ticker": "058610",
+      "name": "에스피지",
+      "market": "kosdaq",
+      "price": 84100,
+      "marketCap": "1조 8,651억원",
+      "changeRate": 1.94
+    },
+    {
+      "ticker": "347850",
+      "name": "디앤디파마텍",
+      "market": "kosdaq",
+      "price": 40550,
+      "marketCap": "1조 8,651억원",
+      "changeRate": -0.73
+    },
+    {
+      "ticker": "257720",
+      "name": "실리콘투",
+      "market": "kosdaq",
+      "price": 28500,
+      "marketCap": "1조 8,689억원",
+      "changeRate": 2.33
+    },
+    {
+      "ticker": "178320",
+      "name": "서진시스템",
+      "market": "kosdaq",
+      "price": 28400,
+      "marketCap": "1조 8,097억원",
+      "changeRate": 0
+    },
+    {
+      "ticker": "131970",
+      "name": "두산테스나",
+      "market": "kosdaq",
+      "price": 90300,
+      "marketCap": "1조 7,452억원",
+      "changeRate": 0.22
+    },
+    {
+      "ticker": "214150",
+      "name": "클래시스",
+      "market": "kosdaq",
+      "price": 26600,
+      "marketCap": "1조 7,353억원",
+      "changeRate": 1.53
+    },
+    {
+      "ticker": "041510",
+      "name": "에스엠",
+      "market": "kosdaq",
+      "price": 75000,
+      "marketCap": "1조 7,171억원",
+      "changeRate": -1.83
+    },
+    {
+      "ticker": "068760",
+      "name": "셀트리온제약",
+      "market": "kosdaq",
+      "price": 36900,
+      "marketCap": "1조 6,384억원",
+      "changeRate": 0.68
+    },
+    {
+      "ticker": "140860",
+      "name": "파크시스템스",
+      "market": "kosdaq",
+      "price": 228500,
+      "marketCap": "1조 6,001억원",
+      "changeRate": 4.1
+    },
+    {
+      "ticker": "140410",
+      "name": "메지온",
+      "market": "kosdaq",
+      "price": 51200,
+      "marketCap": "1조 5,809억원",
+      "changeRate": 0
+    },
+    {
+      "ticker": "032820",
+      "name": "우리기술",
+      "market": "kosdaq",
+      "price": 8970,
+      "marketCap": "1조 5,499억원",
+      "changeRate": 1.7
+    },
+    {
+      "ticker": "096530",
+      "name": "씨젠",
+      "market": "kosdaq",
+      "price": 33050,
+      "marketCap": "1조 5,446억원",
+      "changeRate": -0.6
+    },
+    {
+      "ticker": "323280",
+      "name": "태성",
+      "market": "kosdaq",
+      "price": 49550,
+      "marketCap": "1조 5,132억원",
+      "changeRate": -1.1
+    },
+    {
+      "ticker": "237690",
+      "name": "에스티팜",
+      "market": "kosdaq",
+      "price": 71900,
+      "marketCap": "1조 5,010억원",
+      "changeRate": -0.83
+    },
+    {
+      "ticker": "214370",
+      "name": "케어젠",
+      "market": "kosdaq",
+      "price": 26650,
+      "marketCap": "1조 4,315억원",
+      "changeRate": -19.61
+    },
+    {
+      "ticker": "007390",
+      "name": "네이처셀",
+      "market": "kosdaq",
+      "price": 21950,
+      "marketCap": "1조 4,143억원",
+      "changeRate": 0.69
+    },
+    {
+      "ticker": "078600",
+      "name": "대주전자재료",
+      "market": "kosdaq",
+      "price": 89600,
+      "marketCap": "1조 4,071억원",
+      "changeRate": 0.22
+    },
+    {
+      "ticker": "089030",
+      "name": "테크윙",
+      "market": "kosdaq",
+      "price": 37050,
+      "marketCap": "1조 3,728억원",
+      "changeRate": -0.13
+    },
+    {
+      "ticker": "039200",
+      "name": "오스코텍",
+      "market": "kosdaq",
+      "price": 35900,
+      "marketCap": "1조 3,735억원",
+      "changeRate": -1.51
+    },
+    {
+      "ticker": "060370",
+      "name": "LS마린솔루션",
+      "market": "kosdaq",
+      "price": 26100,
+      "marketCap": "1조 3,634억원",
+      "changeRate": 1.95
+    },
+    {
+      "ticker": "437730",
+      "name": "삼현",
+      "market": "kosdaq",
+      "price": 42500,
+      "marketCap": "1조 3,476억원",
+      "changeRate": 1.8
+    },
+    {
+      "ticker": "035900",
+      "name": "JYP Ent.",
+      "market": "kosdaq",
+      "price": 37100,
+      "marketCap": "1조 3,183억원",
+      "changeRate": -5.84
+    },
+    {
+      "ticker": "036540",
+      "name": "SFA반도체",
+      "market": "kosdaq",
+      "price": 8000,
+      "marketCap": "1조 3,157억원",
+      "changeRate": -1.23
+    },
+    {
+      "ticker": "218410",
+      "name": "RFHIC",
+      "market": "kosdaq",
+      "price": 49350,
+      "marketCap": "1조 3,116억원",
+      "changeRate": -0.3
+    },
+    {
+      "ticker": "083650",
+      "name": "비에이치아이",
+      "market": "kosdaq",
+      "price": 42400,
+      "marketCap": "1조 3,120억원",
+      "changeRate": 2.91
+    },
+    {
+      "ticker": "003380",
+      "name": "하림지주",
+      "market": "kosdaq",
+      "price": 11630,
+      "marketCap": "1조 3,026억원",
+      "changeRate": 2.29
+    },
+    {
+      "ticker": "053800",
+      "name": "안랩",
+      "market": "kosdaq",
+      "price": 115200,
+      "marketCap": "1조 2,818억원",
+      "changeRate": -2.46
+    },
+    {
+      "ticker": "0009K0",
+      "name": "에임드바이오",
+      "market": "kosdaq",
+      "price": 18890,
+      "marketCap": "1조 2,305억원",
+      "changeRate": 0.16
+    },
+    {
+      "ticker": "293490",
+      "name": "카카오게임즈",
+      "market": "kosdaq",
+      "price": 11420,
+      "marketCap": "1조 2,190억원",
+      "changeRate": -3.87
+    },
+    {
+      "ticker": "950160",
+      "name": "코오롱티슈진",
+      "market": "kosdaq",
+      "price": 13990,
+      "marketCap": "1조 1,887억원",
+      "changeRate": 0.5
+    },
+    {
+      "ticker": "183300",
+      "name": "코미코",
+      "market": "kosdaq",
+      "price": 22950,
+      "marketCap": "1조 1,788억원",
+      "changeRate": 1.1
+    },
+    {
+      "ticker": "328130",
+      "name": "루닛",
+      "market": "kosdaq",
+      "price": 15290,
+      "marketCap": "1조 1,385억원",
+      "changeRate": -2.55
+    },
+    {
+      "ticker": "420770",
+      "name": "기가비스",
+      "market": "kosdaq",
+      "price": 89700,
+      "marketCap": "1조 1,370억원",
+      "changeRate": -3.55
+    },
+    {
+      "ticker": "089970",
+      "name": "브이엠",
+      "market": "kosdaq",
+      "price": 42350,
+      "marketCap": "1조 1,246억원",
+      "changeRate": 3.29
+    },
+    {
+      "ticker": "082920",
+      "name": "비츠로셀",
+      "market": "kosdaq",
+      "price": 24300,
+      "marketCap": "1조 969억원",
+      "changeRate": 1.25
+    },
+    {
+      "ticker": "950260",
+      "name": "인제니아테라퓨틱스(Reg.S)",
+      "market": "kosdaq",
+      "price": 21750,
+      "marketCap": "1조 754억원",
+      "changeRate": -2.68
+    },
+    {
+      "ticker": "425420",
+      "name": "티에프이",
+      "market": "kosdaq",
+      "price": 86200,
+      "marketCap": "1조 643억원",
+      "changeRate": -2.38
+    },
+    {
+      "ticker": "086450",
+      "name": "동국제약",
+      "market": "kosdaq",
+      "price": 23450,
+      "marketCap": "1조 607억원",
+      "changeRate": 0
+    },
+    {
+      "ticker": "241710",
+      "name": "코스메카코리아",
+      "market": "kosdaq",
+      "price": 98100,
+      "marketCap": "1조 477억원",
+      "changeRate": 3.7
+    },
+    {
+      "ticker": "232140",
+      "name": "와이씨",
+      "market": "kosdaq",
+      "price": 12470,
+      "marketCap": "1조 231억원",
+      "changeRate": 3.06
+    },
+    {
+      "ticker": "491000",
+      "name": "리브스메드",
+      "market": "kosdaq",
+      "price": 40500,
+      "marketCap": "1조 228억원",
+      "changeRate": 2.79
+    },
+    {
+      "ticker": "347700",
+      "name": "스피어",
+      "market": "kosdaq",
+      "price": 19060,
+      "marketCap": "9,826억원",
+      "changeRate": -0.78
+    },
+    {
+      "ticker": "252990",
+      "name": "샘씨엔에스",
+      "market": "kosdaq",
+      "price": 15960,
+      "marketCap": "9,611억원",
+      "changeRate": 1.08
+    },
+    {
+      "ticker": "195940",
+      "name": "HK이노엔",
+      "market": "kosdaq",
+      "price": 33800,
+      "marketCap": "9,576억원",
+      "changeRate": -1.31
+    },
+    {
+      "ticker": "204270",
+      "name": "제이앤티씨",
+      "market": "kosdaq",
+      "price": 16460,
+      "marketCap": "9,522억원",
+      "changeRate": -0.42
+    },
+    {
+      "ticker": "166090",
+      "name": "하나머티리얼즈",
+      "market": "kosdaq",
+      "price": 48250,
+      "marketCap": "9,543억원",
+      "changeRate": -0.52
+    },
+    {
+      "ticker": "445680",
+      "name": "큐리옥스바이오시스템즈",
+      "market": "kosdaq",
+      "price": 54800,
+      "marketCap": "9,439억원",
+      "changeRate": 10.93
+    },
+    {
+      "ticker": "035760",
+      "name": "CJ ENM",
+      "market": "kosdaq",
+      "price": 42100,
+      "marketCap": "9,232억원",
+      "changeRate": -0.94
+    },
+    {
+      "ticker": "056190",
+      "name": "SFA",
+      "market": "kosdaq",
+      "price": 25450,
+      "marketCap": "9,139억원",
+      "changeRate": 0.59
+    },
+    {
+      "ticker": "356860",
+      "name": "티엘비",
+      "market": "kosdaq",
+      "price": 36750,
+      "marketCap": "8,710억원",
+      "changeRate": -0.41
+    },
+    {
+      "ticker": "093320",
+      "name": "케이아이엔엑스",
+      "market": "kosdaq",
+      "price": 176100,
+      "marketCap": "8,594억원",
+      "changeRate": -0.4
+    },
+    {
+      "ticker": "458870",
+      "name": "씨어스",
+      "market": "kosdaq",
+      "price": 21900,
+      "marketCap": "8,398억원",
+      "changeRate": -2.23
+    },
+    {
+      "ticker": "101490",
+      "name": "에스앤에스텍",
+      "market": "kosdaq",
+      "price": 37700,
+      "marketCap": "8,043억원",
+      "changeRate": 0.53
+    },
+    {
+      "ticker": "251970",
+      "name": "펌텍코리아",
+      "market": "kosdaq",
+      "price": 64800,
+      "marketCap": "8,035억원",
+      "changeRate": 0.93
+    },
+    {
+      "ticker": "121600",
+      "name": "나노신소재",
+      "market": "kosdaq",
+      "price": 63700,
+      "marketCap": "7,811억원",
+      "changeRate": 3.58
+    },
+    {
+      "ticker": "171090",
+      "name": "선익시스템",
+      "market": "kosdaq",
+      "price": 77000,
+      "marketCap": "7,798억원",
+      "changeRate": -3.75
+    },
+    {
+      "ticker": "014620",
+      "name": "성광벤드",
+      "market": "kosdaq",
+      "price": 29350,
+      "marketCap": "7,795억원",
+      "changeRate": 11.39
+    },
+    {
+      "ticker": "065350",
+      "name": "신성델타테크",
+      "market": "kosdaq",
+      "price": 28150,
+      "marketCap": "7,737억원",
+      "changeRate": -1.4
+    },
+    {
+      "ticker": "092870",
+      "name": "엑시콘",
+      "market": "kosdaq",
+      "price": 59000,
+      "marketCap": "7,700억원",
+      "changeRate": -2.8
+    },
+    {
+      "ticker": "059090",
+      "name": "미코",
+      "market": "kosdaq",
+      "price": 22850,
+      "marketCap": "7,636억원",
+      "changeRate": -1.51
+    },
+    {
+      "ticker": "083450",
+      "name": "GST",
+      "market": "kosdaq",
+      "price": 41500,
+      "marketCap": "7,648억원",
+      "changeRate": 0
+    },
+    {
+      "ticker": "417200",
+      "name": "LS머트리얼즈",
+      "market": "kosdaq",
+      "price": 11180,
+      "marketCap": "7,564억원",
+      "changeRate": 2.29
+    },
+    {
+      "ticker": "036830",
+      "name": "솔브레인홀딩스",
+      "market": "kosdaq",
+      "price": 36600,
+      "marketCap": "7,504억원",
+      "changeRate": -1.35
+    },
+    {
+      "ticker": "295310",
+      "name": "에이치브이엠",
+      "market": "kosdaq",
+      "price": 58800,
+      "marketCap": "7,433억원",
+      "changeRate": -1.34
+    },
+    {
+      "ticker": "032500",
+      "name": "케이엠더블유",
+      "market": "kosdaq",
+      "price": 17590,
+      "marketCap": "7,422억원",
+      "changeRate": 1.68
+    },
+    {
+      "ticker": "031330",
+      "name": "에스에이엠티",
+      "market": "kosdaq",
+      "price": 7350,
+      "marketCap": "7,350억원",
+      "changeRate": -0.94
+    },
+    {
+      "ticker": "023160",
+      "name": "태광",
+      "market": "kosdaq",
+      "price": 28700,
+      "marketCap": "7,307억원",
+      "changeRate": 10.17
+    },
+    {
+      "ticker": "006730",
+      "name": "서부T&D",
+      "market": "kosdaq",
+      "price": 11240,
+      "marketCap": "7,225억원",
+      "changeRate": 0.45
+    },
+    {
+      "ticker": "253590",
+      "name": "네오셈",
+      "market": "kosdaq",
+      "price": 16300,
+      "marketCap": "7,151억원",
+      "changeRate": -4
+    },
+    {
+      "ticker": "281740",
+      "name": "레이크머티리얼즈",
+      "market": "kosdaq",
+      "price": 10900,
+      "marketCap": "7,165억원",
+      "changeRate": -0.64
+    },
+    {
+      "ticker": "122870",
+      "name": "와이지엔터테인먼트",
+      "market": "kosdaq",
+      "price": 37200,
+      "marketCap": "6,953억원",
+      "changeRate": -1.98
+    },
+    {
+      "ticker": "100790",
+      "name": "미래에셋벤처투자",
+      "market": "kosdaq",
+      "price": 13000,
+      "marketCap": "6,906억원",
+      "changeRate": -0.23
+    },
+    {
+      "ticker": "064290",
+      "name": "인텍플러스",
+      "market": "kosdaq",
+      "price": 53000,
+      "marketCap": "6,898억원",
+      "changeRate": -2.93
+    },
+    {
+      "ticker": "388720",
+      "name": "유일로보틱스",
+      "market": "kosdaq",
+      "price": 58300,
+      "marketCap": "6,869억원",
+      "changeRate": 3.37
+    },
+    {
+      "ticker": "074600",
+      "name": "원익QnC",
+      "market": "kosdaq",
+      "price": 25700,
+      "marketCap": "6,756억원",
+      "changeRate": -0.39
+    },
+    {
+      "ticker": "127120",
+      "name": "제이에스링크",
+      "market": "kosdaq",
+      "price": 18170,
+      "marketCap": "6,799억원",
+      "changeRate": -0.33
+    },
+    {
+      "ticker": "290650",
+      "name": "엘앤씨바이오",
+      "market": "kosdaq",
+      "price": 24950,
+      "marketCap": "6,729억원",
+      "changeRate": 4.18
+    },
+    {
+      "ticker": "126340",
+      "name": "비나텍",
+      "market": "kosdaq",
+      "price": 93900,
+      "marketCap": "6,742억원",
+      "changeRate": -0.32
+    },
+    {
+      "ticker": "0158S0",
+      "name": "엘리스",
+      "market": "kosdaq",
+      "price": 60100,
+      "marketCap": "6,688억원",
+      "changeRate": -2.28
+    },
+    {
+      "ticker": "079940",
+      "name": "가비아",
+      "market": "kosdaq",
+      "price": 49700,
+      "marketCap": "6,670억원",
+      "changeRate": -0.3
+    },
+    {
+      "ticker": "253450",
+      "name": "스튜디오드래곤",
+      "market": "kosdaq",
+      "price": 22100,
+      "marketCap": "6,643억원",
+      "changeRate": -2.64
+    },
+    {
+      "ticker": "041960",
+      "name": "코미팜",
+      "market": "kosdaq",
+      "price": 8810,
+      "marketCap": "6,574억원",
+      "changeRate": -2.87
+    },
+    {
+      "ticker": "046890",
+      "name": "서울반도체",
+      "market": "kosdaq",
+      "price": 11020,
+      "marketCap": "6,425억원",
+      "changeRate": -5.33
+    },
+    {
+      "ticker": "033790",
+      "name": "피노",
+      "market": "kosdaq",
+      "price": 7420,
+      "marketCap": "6,382억원",
+      "changeRate": -0.8
+    },
+    {
+      "ticker": "161580",
+      "name": "필옵틱스",
+      "market": "kosdaq",
+      "price": 27100,
+      "marketCap": "6,354억원",
+      "changeRate": 0.56
+    },
+    {
+      "ticker": "032190",
+      "name": "다우데이타",
+      "market": "kosdaq",
+      "price": 16490,
+      "marketCap": "6,316억원",
+      "changeRate": -0.36
+    },
+    {
+      "ticker": "456160",
+      "name": "지투지바이오",
+      "market": "kosdaq",
+      "price": 37750,
+      "marketCap": "6,278억원",
+      "changeRate": 6.04
+    },
+    {
+      "ticker": "225570",
+      "name": "넥슨게임즈",
+      "market": "kosdaq",
+      "price": 9400,
+      "marketCap": "6,191억원",
+      "changeRate": -2.69
+    },
+    {
+      "ticker": "085660",
+      "name": "차바이오텍",
+      "market": "kosdaq",
+      "price": 6660,
+      "marketCap": "6,192억원",
+      "changeRate": -1.33
+    },
+    {
+      "ticker": "041830",
+      "name": "인바디",
+      "market": "kosdaq",
+      "price": 45400,
+      "marketCap": "6,120억원",
+      "changeRate": -2.47
+    },
+    {
+      "ticker": "099320",
+      "name": "쎄트렉아이",
+      "market": "kosdaq",
+      "price": 55400,
+      "marketCap": "6,067억원",
+      "changeRate": 0
+    },
+    {
+      "ticker": "144960",
+      "name": "뉴파워프라즈마",
+      "market": "kosdaq",
+      "price": 13890,
+      "marketCap": "6,069억원",
+      "changeRate": -1.91
+    },
+    {
+      "ticker": "219130",
+      "name": "타이거일렉",
+      "market": "kosdaq",
+      "price": 95700,
+      "marketCap": "6,043억원",
+      "changeRate": 2.9
+    },
+    {
+      "ticker": "137400",
+      "name": "피엔티",
+      "market": "kosdaq",
+      "price": 25700,
+      "marketCap": "6,089억원",
+      "changeRate": -0.77
+    },
+    {
+      "ticker": "115180",
+      "name": "큐리언트",
+      "market": "kosdaq",
+      "price": 16120,
+      "marketCap": "6,051억원",
+      "changeRate": -2.83
+    },
+    {
+      "ticker": "033100",
+      "name": "제룡전기",
+      "market": "kosdaq",
+      "price": 37750,
+      "marketCap": "6,064억원",
+      "changeRate": 3.99
+    },
+    {
+      "ticker": "090710",
+      "name": "휴림로봇",
+      "market": "kosdaq",
+      "price": 5010,
+      "marketCap": "6,009억원",
+      "changeRate": 2.24
+    },
+    {
+      "ticker": "476830",
+      "name": "알지노믹스",
+      "market": "kosdaq",
+      "price": 21300,
+      "marketCap": "6,003억원",
+      "changeRate": 0
+    },
+    {
+      "ticker": "102710",
+      "name": "이엔에프테크놀로지",
+      "market": "kosdaq",
+      "price": 41050,
+      "marketCap": "5,865억원",
+      "changeRate": -1.2
+    },
+    {
+      "ticker": "038500",
+      "name": "삼표시멘트",
+      "market": "kosdaq",
+      "price": 5450,
+      "marketCap": "5,881억원",
+      "changeRate": 0.55
+    },
+    {
+      "ticker": "327260",
+      "name": "RF머트리얼즈",
+      "market": "kosdaq",
+      "price": 32250,
+      "marketCap": "5,801억원",
+      "changeRate": -2.27
+    },
+    {
+      "ticker": "213420",
+      "name": "덕산네오룩스",
+      "market": "kosdaq",
+      "price": 23100,
+      "marketCap": "5,736억원",
+      "changeRate": -0.43
+    },
+    {
+      "ticker": "388210",
+      "name": "씨엠티엑스",
+      "market": "kosdaq",
+      "price": 59400,
+      "marketCap": "5,735억원",
+      "changeRate": 2.24
+    },
+    {
+      "ticker": "466100",
+      "name": "클로봇",
+      "market": "kosdaq",
+      "price": 18200,
+      "marketCap": "5,675억원",
+      "changeRate": 1.22
+    },
+    {
+      "ticker": "090360",
+      "name": "로보스타",
+      "market": "kosdaq",
+      "price": 58000,
+      "marketCap": "5,655억원",
+      "changeRate": 0.17
+    },
+    {
+      "ticker": "189300",
+      "name": "인텔리안테크",
+      "market": "kosdaq",
+      "price": 52300,
+      "marketCap": "5,616억원",
+      "changeRate": -0.76
+    },
+    {
+      "ticker": "468530",
+      "name": "프로티나",
+      "market": "kosdaq",
+      "price": 50000,
+      "marketCap": "5,553억원",
+      "changeRate": -7.92
+    },
+    {
+      "ticker": "222080",
+      "name": "SFA넥셀",
+      "market": "kosdaq",
+      "price": 7190,
+      "marketCap": "5,592억원",
+      "changeRate": 1.55
+    },
+    {
+      "ticker": "476060",
+      "name": "온코닉테라퓨틱스",
+      "market": "kosdaq",
+      "price": 12210,
+      "marketCap": "5,544억원",
+      "changeRate": 0.83
+    },
+    {
+      "ticker": "119850",
+      "name": "지엔씨에너지",
+      "market": "kosdaq",
+      "price": 33300,
+      "marketCap": "5,477억원",
+      "changeRate": 4.39
+    },
+    {
+      "ticker": "036810",
+      "name": "에프에스티",
+      "market": "kosdaq",
+      "price": 25250,
+      "marketCap": "5,467억원",
+      "changeRate": -0.39
+    },
+    {
+      "ticker": "089890",
+      "name": "코세스",
+      "market": "kosdaq",
+      "price": 32600,
+      "marketCap": "5,407억원",
+      "changeRate": -3.69
+    }
+  ],
+  "sp500": [
+    {
+      "ticker": "MMM",
+      "name": "3M",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AOS",
+      "name": "A. O. Smith",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ABT",
+      "name": "Abbott Laboratories",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ABBV",
+      "name": "AbbVie",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ACN",
+      "name": "Accenture",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ADBE",
+      "name": "Adobe Inc.",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AMD",
+      "name": "Advanced Micro Devices",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AES",
+      "name": "AES Corporation",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AFL",
+      "name": "Aflac",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "A",
+      "name": "Agilent Technologies",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "APD",
+      "name": "Air Products",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ABNB",
+      "name": "Airbnb",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AKAM",
+      "name": "Akamai Technologies",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ALB",
+      "name": "Albemarle Corporation",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ARE",
+      "name": "Alexandria Real Estate Equities",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ALGN",
+      "name": "Align Technology",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ALLE",
+      "name": "Allegion",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "LNT",
+      "name": "Alliant Energy",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ALL",
+      "name": "Allstate",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MO",
+      "name": "Altria",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AMCR",
+      "name": "Amcor",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AEE",
+      "name": "Ameren",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AEP",
+      "name": "American Electric Power",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AXP",
+      "name": "American Express",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AIG",
+      "name": "American International Group",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AMT",
+      "name": "American Tower",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AWK",
+      "name": "American Water Works",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AMP",
+      "name": "Ameriprise Financial",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AME",
+      "name": "Ametek",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AMGN",
+      "name": "Amgen",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "APH",
+      "name": "Amphenol",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ADI",
+      "name": "Analog Devices",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AON",
+      "name": "Aon plc",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "APA",
+      "name": "APA Corporation",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "APO",
+      "name": "Apollo Global Management",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AAPL",
+      "name": "Apple Inc.",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AMAT",
+      "name": "Applied Materials",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "APP",
+      "name": "AppLovin",
+      "sector": "Communication Services",
+      "market": "sp500"
+    },
+    {
+      "ticker": "APTV",
+      "name": "Aptiv",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ACGL",
+      "name": "Arch Capital Group",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ADM",
+      "name": "Archer Daniels Midland",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ARES",
+      "name": "Ares Management",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ANET",
+      "name": "Arista Networks",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AJG",
+      "name": "Arthur J. Gallagher & Co.",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AIZ",
+      "name": "Assurant",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "T",
+      "name": "AT&T",
+      "sector": "Communication Services",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ATO",
+      "name": "Atmos Energy",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ADSK",
+      "name": "Autodesk",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ADP",
+      "name": "Automatic Data Processing",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AZO",
+      "name": "AutoZone",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AVY",
+      "name": "Avery Dennison",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AXON",
+      "name": "Axon Enterprise",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BKR",
+      "name": "Baker Hughes",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BALL",
+      "name": "Ball Corporation",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BAC",
+      "name": "Bank of America",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BAX",
+      "name": "Baxter International",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BDX",
+      "name": "Becton Dickinson",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BBY",
+      "name": "Best Buy",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TECH",
+      "name": "Bio-Techne",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BIIB",
+      "name": "Biogen",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BLK",
+      "name": "BlackRock",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BX",
+      "name": "Blackstone Inc.",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "XYZ",
+      "name": "Block, Inc.",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BE",
+      "name": "Bloom Energy",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BNY",
+      "name": "BNY Mellon",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BA",
+      "name": "Boeing",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BKNG",
+      "name": "Booking Holdings",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BSX",
+      "name": "Boston Scientific",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BMY",
+      "name": "Bristol Myers Squibb",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "AVGO",
+      "name": "Broadcom",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BR",
+      "name": "Broadridge Financial Solutions",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BRO",
+      "name": "Brown & Brown",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BG",
+      "name": "Bunge Global",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BXP",
+      "name": "BXP, Inc.",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CHRW",
+      "name": "C.H. Robinson",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CDNS",
+      "name": "Cadence Design Systems",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CPT",
+      "name": "Camden Property Trust",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "COF",
+      "name": "Capital One",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CAH",
+      "name": "Cardinal Health",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CCL",
+      "name": "Carnival Corporation",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CARR",
+      "name": "Carrier Global",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CVNA",
+      "name": "Carvana",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CASY",
+      "name": "Casey's",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CAT",
+      "name": "Caterpillar Inc.",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CBRE",
+      "name": "CBRE Group",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CDW",
+      "name": "CDW Corporation",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "COR",
+      "name": "Cencora",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CNC",
+      "name": "Centene Corporation",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CNP",
+      "name": "CenterPoint Energy",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CF",
+      "name": "CF Industries",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CRL",
+      "name": "Charles River Laboratories",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SCHW",
+      "name": "Charles Schwab Corporation",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CHTR",
+      "name": "Charter Communications",
+      "sector": "Communication Services",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CVX",
+      "name": "Chevron Corporation",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CMG",
+      "name": "Chipotle Mexican Grill",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CB",
+      "name": "Chubb Limited",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CHD",
+      "name": "Church & Dwight",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CIEN",
+      "name": "Ciena",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CI",
+      "name": "Cigna",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CINF",
+      "name": "Cincinnati Financial",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CTAS",
+      "name": "Cintas",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CSCO",
+      "name": "Cisco",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "C",
+      "name": "Citigroup",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CFG",
+      "name": "Citizens Financial Group",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CLX",
+      "name": "Clorox",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CME",
+      "name": "CME Group",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CMS",
+      "name": "CMS Energy",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "KO",
+      "name": "Coca-Cola Company (The)",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CTSH",
+      "name": "Cognizant",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "COHR",
+      "name": "Coherent Corp.",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "COIN",
+      "name": "Coinbase",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CL",
+      "name": "Colgate-Palmolive",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CMCSA",
+      "name": "Comcast",
+      "sector": "Communication Services",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FIX",
+      "name": "Comfort Systems USA",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "COP",
+      "name": "ConocoPhillips",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ED",
+      "name": "Consolidated Edison",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "STZ",
+      "name": "Constellation Brands",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CEG",
+      "name": "Constellation Energy",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "COO",
+      "name": "Cooper Companies (The)",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CPRT",
+      "name": "Copart",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "GLW",
+      "name": "Corning Inc.",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CPAY",
+      "name": "Corpay",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CSGP",
+      "name": "CoStar Group",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "COST",
+      "name": "Costco",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CRH",
+      "name": "CRH plc",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CRWD",
+      "name": "CrowdStrike",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CCI",
+      "name": "Crown Castle",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CSX",
+      "name": "CSX Corporation",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CMI",
+      "name": "Cummins",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CVS",
+      "name": "CVS Health",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DHR",
+      "name": "Danaher Corporation",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DRI",
+      "name": "Darden Restaurants",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DDOG",
+      "name": "Datadog",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DVA",
+      "name": "DaVita",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DECK",
+      "name": "Deckers Brands",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DE",
+      "name": "Deere & Company",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DELL",
+      "name": "Dell Technologies",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DAL",
+      "name": "Delta Air Lines",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DVN",
+      "name": "Devon Energy",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DXCM",
+      "name": "Dexcom",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FANG",
+      "name": "Diamondback Energy",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DLR",
+      "name": "Digital Realty",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DG",
+      "name": "Dollar General",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DLTR",
+      "name": "Dollar Tree",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "D",
+      "name": "Dominion Energy",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DPZ",
+      "name": "Domino's",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DASH",
+      "name": "DoorDash",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DOV",
+      "name": "Dover Corporation",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DOW",
+      "name": "Dow Inc.",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DHI",
+      "name": "D. R. Horton",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DTE",
+      "name": "DTE Energy",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DUK",
+      "name": "Duke Energy",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DD",
+      "name": "DuPont",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ETN",
+      "name": "Eaton Corporation",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "EBAY",
+      "name": "eBay Inc.",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ECHO",
+      "name": "EchoStar",
+      "sector": "Communication Services",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ECL",
+      "name": "Ecolab",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "EIX",
+      "name": "Edison International",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "EW",
+      "name": "Edwards Lifesciences",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ELV",
+      "name": "Elevance Health",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "EME",
+      "name": "Emcor",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "EMR",
+      "name": "Emerson Electric",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ETR",
+      "name": "Entergy",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "EOG",
+      "name": "EOG Resources",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "EQT",
+      "name": "EQT Corporation",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "EFX",
+      "name": "Equifax",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "EQIX",
+      "name": "Equinix",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ERIE",
+      "name": "Erie Indemnity",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ESS",
+      "name": "Essex Property Trust",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "EL",
+      "name": "Estée Lauder Companies (The)",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "EG",
+      "name": "Everest Group",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "EVRG",
+      "name": "Evergy",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "P",
+      "name": "Everpure",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ES",
+      "name": "Eversource Energy",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "EXC",
+      "name": "Exelon",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "EXE",
+      "name": "Expand Energy",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "EXPE",
+      "name": "Expedia Group",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "EXPD",
+      "name": "Expeditors International",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "EXR",
+      "name": "Extra Space Storage",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "XOM",
+      "name": "ExxonMobil",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FFIV",
+      "name": "F5, Inc.",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FDS",
+      "name": "FactSet",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FICO",
+      "name": "Fair Isaac",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FAST",
+      "name": "Fastenal",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FRT",
+      "name": "Federal Realty Investment Trust",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FDX",
+      "name": "FedEx",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FDXF",
+      "name": "FedEx Freight",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FERG",
+      "name": "Ferguson Enterprises",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FIS",
+      "name": "Fidelity National Information Services",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FITB",
+      "name": "Fifth Third Bancorp",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FSLR",
+      "name": "First Solar",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FE",
+      "name": "FirstEnergy",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FISV",
+      "name": "Fiserv",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FLEX",
+      "name": "Flex Ltd.",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "F",
+      "name": "Ford Motor Company",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FTNT",
+      "name": "Fortinet",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FTV",
+      "name": "Fortive",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "BEN",
+      "name": "Franklin Resources",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "FCX",
+      "name": "Freeport-McMoRan",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "GRMN",
+      "name": "Garmin",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "IT",
+      "name": "Gartner",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "GE",
+      "name": "GE Aerospace",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "GEHC",
+      "name": "GE HealthCare",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "GEV",
+      "name": "GE Vernova",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "GEN",
+      "name": "Gen Digital",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "GNRC",
+      "name": "Generac",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "GD",
+      "name": "General Dynamics",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "GIS",
+      "name": "General Mills",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "GM",
+      "name": "General Motors",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "GPC",
+      "name": "Genuine Parts Company",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "GILD",
+      "name": "Gilead Sciences",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "GPN",
+      "name": "Global Payments",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "GL",
+      "name": "Globe Life",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "GDDY",
+      "name": "GoDaddy",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "GS",
+      "name": "Goldman Sachs",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HAL",
+      "name": "Halliburton",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HIG",
+      "name": "Hartford (The)",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HAS",
+      "name": "Hasbro",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HCA",
+      "name": "HCA Healthcare",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DOC",
+      "name": "Healthpeak Properties",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HSIC",
+      "name": "Henry Schein",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HSY",
+      "name": "Hershey Company (The)",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HPE",
+      "name": "Hewlett Packard Enterprise",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HLT",
+      "name": "Hilton Worldwide",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HD",
+      "name": "Home Depot (The)",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HONA",
+      "name": "Honeywell Aerospace",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HON",
+      "name": "Honeywell Technologies",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HRL",
+      "name": "Hormel Foods",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HST",
+      "name": "Host Hotels & Resorts",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HWM",
+      "name": "Howmet Aerospace",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HPQ",
+      "name": "HP Inc.",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HUBB",
+      "name": "Hubbell Incorporated",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HUM",
+      "name": "Humana",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HBAN",
+      "name": "Huntington Bancshares",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HII",
+      "name": "Huntington Ingalls Industries",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "IBM",
+      "name": "IBM",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "IEX",
+      "name": "IDEX Corporation",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "IDXX",
+      "name": "Idexx Laboratories",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ITW",
+      "name": "Illinois Tool Works",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ILMN",
+      "name": "Illumina, Inc.",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "INCY",
+      "name": "Incyte",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "IR",
+      "name": "Ingersoll Rand",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PODD",
+      "name": "Insulet Corporation",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "INTC",
+      "name": "Intel",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "IBKR",
+      "name": "Interactive Brokers",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ICE",
+      "name": "Intercontinental Exchange",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "IFF",
+      "name": "International Flavors & Fragrances",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "IP",
+      "name": "International Paper",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "INTU",
+      "name": "Intuit",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ISRG",
+      "name": "Intuitive Surgical",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "IVZ",
+      "name": "Invesco",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "INVH",
+      "name": "Invitation Homes",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "IQV",
+      "name": "IQVIA",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "IRM",
+      "name": "Iron Mountain",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "JBHT",
+      "name": "J.B. Hunt",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "JBL",
+      "name": "Jabil",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "JKHY",
+      "name": "Jack Henry & Associates",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "J",
+      "name": "Jacobs Solutions",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "JNJ",
+      "name": "Johnson & Johnson",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "JCI",
+      "name": "Johnson Controls",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "JPM",
+      "name": "JPMorgan Chase",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "KVUE",
+      "name": "Kenvue",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "KDP",
+      "name": "Keurig Dr Pepper",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "KEY",
+      "name": "KeyCorp",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "KEYS",
+      "name": "Keysight Technologies",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "KMB",
+      "name": "Kimberly-Clark",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "KIM",
+      "name": "Kimco Realty",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "KMI",
+      "name": "Kinder Morgan",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "KKR",
+      "name": "KKR & Co.",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "KLAC",
+      "name": "KLA Corporation",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "KHC",
+      "name": "Kraft Heinz",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "KR",
+      "name": "Kroger",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "LHX",
+      "name": "L3Harris",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "LH",
+      "name": "Labcorp",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "LRCX",
+      "name": "Lam Research",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "LVS",
+      "name": "Las Vegas Sands",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "LDOS",
+      "name": "Leidos",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "LEN",
+      "name": "Lennar",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "LII",
+      "name": "Lennox International",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "LLY",
+      "name": "Lilly (Eli)",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "LIN",
+      "name": "Linde plc",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "LYV",
+      "name": "Live Nation Entertainment",
+      "sector": "Communication Services",
+      "market": "sp500"
+    },
+    {
+      "ticker": "LMT",
+      "name": "Lockheed Martin",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "L",
+      "name": "Loews Corporation",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "LOW",
+      "name": "Lowe's",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "LULU",
+      "name": "Lululemon Athletica",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "LITE",
+      "name": "Lumentum",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "LYB",
+      "name": "LyondellBasell",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MTB",
+      "name": "M&T Bank",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MPC",
+      "name": "Marathon Petroleum",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MAR",
+      "name": "Marriott International",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MRSH",
+      "name": "Marsh McLennan",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MLM",
+      "name": "Martin Marietta Materials",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MRVL",
+      "name": "Marvell Technology",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MAS",
+      "name": "Masco",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MA",
+      "name": "Mastercard",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MKC",
+      "name": "McCormick & Company",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MCD",
+      "name": "McDonald's",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MCK",
+      "name": "McKesson",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MDT",
+      "name": "Medtronic",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MRK",
+      "name": "Merck & Co.",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "META",
+      "name": "Meta Platforms",
+      "sector": "Communication Services",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MET",
+      "name": "MetLife",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MTD",
+      "name": "Mettler Toledo",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MGM",
+      "name": "MGM Resorts",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MCHP",
+      "name": "Microchip Technology",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MU",
+      "name": "Micron Technology",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MAA",
+      "name": "Mid-America Apartment Communities",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MRNA",
+      "name": "Moderna",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MDLZ",
+      "name": "Mondelez International",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MPWR",
+      "name": "Monolithic Power Systems",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MNST",
+      "name": "Monster Beverage",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MCO",
+      "name": "Moody's Corporation",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MS",
+      "name": "Morgan Stanley",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MOS",
+      "name": "Mosaic Company (The)",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MSI",
+      "name": "Motorola Solutions",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "MSCI",
+      "name": "MSCI",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "NDAQ",
+      "name": "Nasdaq, Inc.",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "NTAP",
+      "name": "NetApp",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "NFLX",
+      "name": "Netflix",
+      "sector": "Communication Services",
+      "market": "sp500"
+    },
+    {
+      "ticker": "NEM",
+      "name": "Newmont",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "NEE",
+      "name": "NextEra Energy",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "NKE",
+      "name": "Nike, Inc.",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "NI",
+      "name": "NiSource",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "NDSN",
+      "name": "Nordson Corporation",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "NSC",
+      "name": "Norfolk Southern",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "NTRS",
+      "name": "Northern Trust",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "NOC",
+      "name": "Northrop Grumman",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "NCLH",
+      "name": "Norwegian Cruise Line Holdings",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "NRG",
+      "name": "NRG Energy",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "NUE",
+      "name": "Nucor",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "NVDA",
+      "name": "Nvidia",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "NVR",
+      "name": "NVR, Inc.",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "NXPI",
+      "name": "NXP Semiconductors",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ORLY",
+      "name": "O'Reilly Automotive",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "OXY",
+      "name": "Occidental Petroleum",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ODFL",
+      "name": "Old Dominion",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "OMC",
+      "name": "Omnicom Group",
+      "sector": "Communication Services",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ON",
+      "name": "ON Semiconductor",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "OKE",
+      "name": "Oneok",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ORCL",
+      "name": "Oracle Corporation",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "OTIS",
+      "name": "Otis Worldwide",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PCAR",
+      "name": "Paccar",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PKG",
+      "name": "Packaging Corporation of America",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PLTR",
+      "name": "Palantir Technologies",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PANW",
+      "name": "Palo Alto Networks",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PH",
+      "name": "Parker Hannifin",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PAYX",
+      "name": "Paychex",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PYPL",
+      "name": "PayPal",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PNR",
+      "name": "Pentair",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PEP",
+      "name": "PepsiCo",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PFE",
+      "name": "Pfizer",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PCG",
+      "name": "PG&E Corporation",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PM",
+      "name": "Philip Morris International",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PSX",
+      "name": "Phillips 66",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PNW",
+      "name": "Pinnacle West Capital",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PNC",
+      "name": "PNC Financial Services",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PPG",
+      "name": "PPG Industries",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PPL",
+      "name": "PPL Corporation",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PFG",
+      "name": "Principal Financial Group",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PG",
+      "name": "Procter & Gamble",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PGR",
+      "name": "Progressive Corporation",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PLD",
+      "name": "Prologis",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PRU",
+      "name": "Prudential Financial",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PTC",
+      "name": "PTC Inc.",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PEG",
+      "name": "Public Service Enterprise Group",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PSA",
+      "name": "Public Storage",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PHM",
+      "name": "PulteGroup",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "Q",
+      "name": "Qnity Electronics",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "QCOM",
+      "name": "Qualcomm",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "PWR",
+      "name": "Quanta Services",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DGX",
+      "name": "Quest Diagnostics",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "RL",
+      "name": "Ralph Lauren Corporation",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "RJF",
+      "name": "Raymond James Financial",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "RDDT",
+      "name": "Reddit",
+      "sector": "Communication Services",
+      "market": "sp500"
+    },
+    {
+      "ticker": "O",
+      "name": "Realty Income",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "REG",
+      "name": "Regency Centers",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "REGN",
+      "name": "Regeneron Pharmaceuticals",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "RF",
+      "name": "Regions Financial Corporation",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "RSG",
+      "name": "Republic Services",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "RMD",
+      "name": "ResMed",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "RVTY",
+      "name": "Revvity",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "HOOD",
+      "name": "Robinhood Markets",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ROK",
+      "name": "Rockwell Automation",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ROL",
+      "name": "Rollins, Inc.",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ROP",
+      "name": "Roper Technologies",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ROST",
+      "name": "Ross Stores",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "RCL",
+      "name": "Royal Caribbean Group",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "RTX",
+      "name": "RTX Corporation",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SPGI",
+      "name": "S&P Global",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "CRM",
+      "name": "Salesforce",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SNDK",
+      "name": "Sandisk",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SBAC",
+      "name": "SBA Communications",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SLB",
+      "name": "Schlumberger",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "STX",
+      "name": "Seagate Technology",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SRE",
+      "name": "Sempra",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "NOW",
+      "name": "ServiceNow",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SHW",
+      "name": "Sherwin-Williams",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SPG",
+      "name": "Simon Property Group",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SKYD",
+      "name": "Skydance",
+      "sector": "Communication Services",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SWKS",
+      "name": "Skyworks Solutions",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SJM",
+      "name": "J.M. Smucker Company (The)",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SW",
+      "name": "Smurfit Westrock",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SNA",
+      "name": "Snap-on",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SOLV",
+      "name": "Solventum",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SO",
+      "name": "Southern Company",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "LUV",
+      "name": "Southwest Airlines",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SWK",
+      "name": "Stanley Black & Decker",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SBUX",
+      "name": "Starbucks",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "STT",
+      "name": "State Street Corporation",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "STLD",
+      "name": "Steel Dynamics",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "STE",
+      "name": "Steris",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SYK",
+      "name": "Stryker Corporation",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SMCI",
+      "name": "Supermicro",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SYF",
+      "name": "Synchrony Financial",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SNPS",
+      "name": "Synopsys",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "SYY",
+      "name": "Sysco",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TMUS",
+      "name": "T-Mobile US",
+      "sector": "Communication Services",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TROW",
+      "name": "T. Rowe Price",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TTWO",
+      "name": "Take-Two Interactive",
+      "sector": "Communication Services",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TPR",
+      "name": "Tapestry, Inc.",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TRGP",
+      "name": "Targa Resources",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TGT",
+      "name": "Target Corporation",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TEL",
+      "name": "TE Connectivity",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TDY",
+      "name": "Teledyne Technologies",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TER",
+      "name": "Teradyne",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TSLA",
+      "name": "Tesla, Inc.",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TXN",
+      "name": "Texas Instruments",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TPL",
+      "name": "Texas Pacific Land Corporation",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TXT",
+      "name": "Textron",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TMO",
+      "name": "Thermo Fisher Scientific",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TJX",
+      "name": "TJX Companies",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TKO",
+      "name": "TKO Group Holdings",
+      "sector": "Communication Services",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TSCO",
+      "name": "Tractor Supply",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TT",
+      "name": "Trane Technologies",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TDG",
+      "name": "TransDigm Group",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TRV",
+      "name": "Travelers Companies (The)",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TRMB",
+      "name": "Trimble Inc.",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TFC",
+      "name": "Truist Financial",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TWLO",
+      "name": "Twilio",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TYL",
+      "name": "Tyler Technologies",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "TSN",
+      "name": "Tyson Foods",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "USB",
+      "name": "U.S. Bancorp",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "UBER",
+      "name": "Uber",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "UDR",
+      "name": "UDR, Inc.",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ULTA",
+      "name": "Ulta Beauty",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "UNP",
+      "name": "Union Pacific Corporation",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "UAL",
+      "name": "United Airlines Holdings",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "UPS",
+      "name": "United Parcel Service",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "URI",
+      "name": "United Rentals",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "UNH",
+      "name": "UnitedHealth Group",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "UHS",
+      "name": "Universal Health Services",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "VLO",
+      "name": "Valero Energy",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "VEEV",
+      "name": "Veeva Systems",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "VTR",
+      "name": "Ventas",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "VLTO",
+      "name": "Veralto",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "VRSN",
+      "name": "Verisign",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "VRSK",
+      "name": "Verisk Analytics",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "VZ",
+      "name": "Verizon",
+      "sector": "Communication Services",
+      "market": "sp500"
+    },
+    {
+      "ticker": "VRTX",
+      "name": "Vertex Pharmaceuticals",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "VRT",
+      "name": "Vertiv",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "VTRS",
+      "name": "Viatris",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "VICI",
+      "name": "Vici Properties",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "V",
+      "name": "Visa Inc.",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "VMRK",
+      "name": "Vivmark Residential",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "VMC",
+      "name": "Vulcan Materials Company",
+      "sector": "Materials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "VYLR",
+      "name": "Vylor",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "WRB",
+      "name": "W. R. Berkley Corporation",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "GWW",
+      "name": "W. W. Grainger",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "WAB",
+      "name": "Wabtec",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "WMT",
+      "name": "Walmart",
+      "sector": "Consumer Staples",
+      "market": "sp500"
+    },
+    {
+      "ticker": "DIS",
+      "name": "Walt Disney Company (The)",
+      "sector": "Communication Services",
+      "market": "sp500"
+    },
+    {
+      "ticker": "WM",
+      "name": "Waste Management",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "WAT",
+      "name": "Waters Corporation",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "WEC",
+      "name": "WEC Energy Group",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "WFC",
+      "name": "Wells Fargo",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "WELL",
+      "name": "Welltower",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "WST",
+      "name": "West Pharmaceutical Services",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "WDC",
+      "name": "Western Digital",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "WY",
+      "name": "Weyerhaeuser",
+      "sector": "Real Estate",
+      "market": "sp500"
+    },
+    {
+      "ticker": "WSM",
+      "name": "Williams-Sonoma, Inc.",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "WMB",
+      "name": "Williams Companies",
+      "sector": "Energy",
+      "market": "sp500"
+    },
+    {
+      "ticker": "WTW",
+      "name": "Willis Towers Watson",
+      "sector": "Financials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "WDAY",
+      "name": "Workday, Inc.",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "WYNN",
+      "name": "Wynn Resorts",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "XEL",
+      "name": "Xcel Energy",
+      "sector": "Utilities",
+      "market": "sp500"
+    },
+    {
+      "ticker": "XYL",
+      "name": "Xylem Inc.",
+      "sector": "Industrials",
+      "market": "sp500"
+    },
+    {
+      "ticker": "YUM",
+      "name": "Yum! Brands",
+      "sector": "Consumer Discretionary",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ZBRA",
+      "name": "Zebra Technologies",
+      "sector": "Information Technology",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ZBH",
+      "name": "Zimmer Biomet",
+      "sector": "Health Care",
+      "market": "sp500"
+    },
+    {
+      "ticker": "ZTS",
+      "name": "Zoetis",
+      "sector": "Health Care",
+      "market": "sp500"
+    }
+  ]
+}
