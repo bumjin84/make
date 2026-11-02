@@ -32,27 +32,29 @@ export default function StrategyBar({ selectedStrategy, onSelectStrategy, filter
 
   return (
     <div className="space-y-3">
-      {/* 10대 전략 필터 탭 버튼 가로 스크롤 */}
-      <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
-        {STRATEGY_LIST.map((strategy) => {
-          const Icon = iconMap[strategy.icon];
-          const isSelected = selectedStrategy === strategy.id;
+      {/* 10대 전략 필터 탭 버튼 2줄 배치 & 가로 좌우 스크롤 컨테이너 */}
+      <div className="overflow-x-auto pb-2 -mx-1 px-1 scrollbar-thin scrollbar-thumb-slate-800 scrollbar-track-transparent overscroll-x-contain">
+        <div className="grid grid-rows-2 grid-flow-col auto-cols-max gap-2 min-w-max">
+          {STRATEGY_LIST.map((strategy) => {
+            const Icon = iconMap[strategy.icon];
+            const isSelected = selectedStrategy === strategy.id;
 
-          return (
-            <button
-              key={strategy.id}
-              onClick={() => onSelectStrategy(strategy.id)}
-              className={`flex items-center gap-2 px-3 sm:px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap border transition-all ${
-                isSelected
-                  ? 'bg-slate-100 text-slate-900 border-white shadow-md shadow-white/10'
-                  : 'bg-slate-900/80 text-slate-400 border-slate-800 hover:text-slate-200 hover:border-slate-700'
-              }`}
-            >
-              {Icon && <Icon className={`w-3.5 h-3.5 ${isSelected ? 'text-slate-900' : 'text-slate-400'}`} />}
-              <span>{strategy.name}</span>
-            </button>
-          );
-        })}
+            return (
+              <button
+                key={strategy.id}
+                onClick={() => onSelectStrategy(strategy.id)}
+                className={`flex items-center gap-2 px-3 sm:px-3.5 py-2 rounded-xl text-xs sm:text-sm font-semibold whitespace-nowrap border transition-all ${
+                  isSelected
+                    ? 'bg-slate-100 text-slate-900 border-white shadow-md shadow-white/10 ring-1 ring-white/20'
+                    : 'bg-slate-900/80 text-slate-400 border-slate-800 hover:text-slate-200 hover:border-slate-700 hover:bg-slate-800/60'
+                }`}
+              >
+                {Icon && <Icon className={`w-3.5 h-3.5 shrink-0 ${isSelected ? 'text-slate-900' : 'text-slate-400'}`} />}
+                <span>{strategy.name}</span>
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       {/* 선택된 전략의 투자 철학 및 핵심 기준 하이라이트 배너 */}
