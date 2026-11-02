@@ -96,6 +96,11 @@ export default function StockTable({
                     </div>
                     <div className="flex items-center gap-2 mt-0.5">
                       <span className="font-mono text-[10px] text-emerald-400 font-bold">{stock.ticker}</span>
+                      {stock.isETF && (
+                        <span className="px-1 py-0.2 text-[8px] font-bold rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                          ETF
+                        </span>
+                      )}
                       <span className="text-[10px] text-slate-500">{stock.sector}</span>
                     </div>
                   </div>
@@ -121,12 +126,14 @@ export default function StockTable({
 
                 {/* ROE */}
                 <td className="py-3 px-3 font-mono text-slate-200 whitespace-nowrap">
-                  {stock.roe.toFixed(1)}%
+                  {stock.roe !== null && stock.roe !== undefined ? `${stock.roe.toFixed(1)}%` : '-'}
                 </td>
 
                 {/* 배당수익률 */}
                 <td className="py-3 px-3 font-mono text-slate-200 whitespace-nowrap">
-                  {stock.dividendYield > 0 ? `${stock.dividendYield.toFixed(2)}%` : '-'}
+                  {stock.dividendYield !== null && stock.dividendYield !== undefined && stock.dividendYield > 0
+                    ? `${stock.dividendYield.toFixed(2)}%`
+                    : '-'}
                 </td>
 
                 {/* 추세 / 정배열 상태 */}

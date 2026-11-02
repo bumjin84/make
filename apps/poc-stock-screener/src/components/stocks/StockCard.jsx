@@ -19,6 +19,11 @@ export default function StockCard({ stock, isCompared, onToggleCompare, market }
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2">
               <span className="font-mono text-sm font-bold text-white tracking-wide">{stock.ticker}</span>
+              {stock.isETF && (
+                <span className="px-1.5 py-0.5 text-[9px] font-bold rounded bg-amber-500/20 text-amber-300 border border-amber-500/30">
+                  ETF
+                </span>
+              )}
               <span className="text-[11px] text-slate-400 truncate">{stock.sector}</span>
             </div>
             <h3 className="text-sm font-semibold text-slate-200 truncate mt-0.5" title={stock.name}>

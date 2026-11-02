@@ -1,6 +1,12 @@
 export const ARCHIVES = [
   {
     date: '2026.11.02',
+    category: 'Data Integrity',
+    title: '가짜 데이터(Mock Fallback) 전면 제거, ETF 식별 및 결측치 N/A 안전 표기 체계 구축',
+    desc: '843개 전 종목 유니버스는 온전히 보존하되 임의 난수(Mock) 생성을 완전히 제거하고, ETF 자동 식별 뱃지 부여 및 재무 결측치 N/A(\'-\') 안전 렌더링·전략 필터 널 가드 완비'
+  },
+  {
+    date: '2026.11.02',
     category: 'UI/UX Improvement',
     title: '전략 카테고리 탭 영역 2행 그리드 & 가로 좌우 스크롤 구조 최적화',
     desc: '10대 투자 전략 탭을 2줄(2-Row Grid)로 정돈 배치하여 화면 수직 공간을 절약하고, 모바일 및 좁은 화면에서 매끄러운 터치 스크롤 지원'

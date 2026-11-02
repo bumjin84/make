@@ -2,6 +2,15 @@ import React from 'react';
 import { getReturnColorClass, formatPercent, formatMultiple } from '../../utils/formatters';
 
 export default function MetricBadge({ label, value, type = 'percent' }) {
+  if (value === null || value === undefined) {
+    return (
+      <div className="flex flex-col">
+        <span className="text-[10px] text-slate-500 font-medium uppercase tracking-wider">{label}</span>
+        <span className="text-xs font-mono text-slate-600 font-semibold">-</span>
+      </div>
+    );
+  }
+
   let formattedValue = value;
   let colorClass = 'text-slate-200';
 
@@ -11,7 +20,7 @@ export default function MetricBadge({ label, value, type = 'percent' }) {
   } else if (type === 'multiple') {
     formattedValue = formatMultiple(value);
   } else if (type === 'ratio') {
-    formattedValue = `${value}%`;
+    formattedValue = `${Number(value).toFixed(1)}%`;
   }
 
   return (
@@ -21,4 +30,3 @@ export default function MetricBadge({ label, value, type = 'percent' }) {
     </div>
   );
 }
-

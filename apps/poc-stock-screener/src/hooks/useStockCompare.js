@@ -42,46 +42,62 @@ export function useStockCompare(stocks) {
     if (comparedStocks.length < 2) return null;
     const [a, b] = comparedStocks;
 
+    const formatMetric = (val, suffix = '', sign = false, digits = 1) => {
+      if (val === null || val === undefined) return 'N/A';
+      const prefix = sign && val > 0 ? '+' : '';
+      return `${prefix}${Number(val).toFixed(digits)}${suffix}`;
+    };
+
+    const judgeWinner = (valA, valB, lowerIsBetter = false) => {
+      if (valA === null || valA === undefined) return valB !== null ? b.ticker : 'draw';
+      if (valB === null || valB === undefined) return a.ticker;
+      if (valA === valB) return 'draw';
+      if (lowerIsBetter) {
+        return valA < valB ? a.ticker : b.ticker;
+      }
+      return valA > valB ? a.ticker : b.ticker;
+    };
+
     const categories = [
       {
         name: '수익성 (ROE)',
-        valA: `${a.roe.toFixed(1)}%`,
-        valB: `${b.roe.toFixed(1)}%`,
-        winner: a.roe > b.roe ? a.ticker : b.roe > a.roe ? b.ticker : 'draw',
+        valA: formatMetric(a.roe, '%'),
+        valB: formatMetric(b.roe, '%'),
+        winner: judgeWinner(a.roe, b.roe),
         desc: '자본 투입 대비 순이익 창출 효율성'
       },
       {
         name: '미래 성장성 (컨센서스)',
-        valA: `+${a.consensusGrowth.toFixed(1)}%`,
-        valB: `+${b.consensusGrowth.toFixed(1)}%`,
-        winner: a.consensusGrowth > b.consensusGrowth ? a.ticker : b.consensusGrowth > a.consensusGrowth ? b.ticker : 'draw',
+        valA: formatMetric(a.consensusGrowth, '%', true),
+        valB: formatMetric(b.consensusGrowth, '%', true),
+        winner: judgeWinner(a.consensusGrowth, b.consensusGrowth),
         desc: '차기 예상 영업이익 성장 탄력도'
       },
       {
         name: '밸류에이션 (선행 PER)',
-        valA: `${a.forwardPe.toFixed(1)}배`,
-        valB: `${b.forwardPe.toFixed(1)}배`,
-        winner: a.forwardPe < b.forwardPe ? a.ticker : b.forwardPe < a.forwardPe ? b.ticker : 'draw',
+        valA: formatMetric(a.forwardPe, '배'),
+        valB: formatMetric(b.forwardPe, '배'),
+        winner: judgeWinner(a.forwardPe, b.forwardPe, true),
         desc: '예상 실적 대비 주가 부담도 (낮을수록 저평가)'
       },
       {
         name: '배당 환원 (배당수익률)',
-        valA: `${a.dividendYield.toFixed(2)}%`,
-        valB: `${b.dividendYield.toFixed(2)}%`,
-        winner: a.dividendYield > b.dividendYield ? a.ticker : b.dividendYield > a.dividendYield ? b.ticker : 'draw',
+        valA: formatMetric(a.dividendYield, '%', false, 2),
+        valB: formatMetric(b.dividendYield, '%', false, 2),
+        winner: judgeWinner(a.dividendYield, b.dividendYield),
         desc: '연간 주당 배당금의 현금 환원 매력도'
       },
       {
         name: '단기 모멘텀 (3개월 수익률)',
-        valA: `${a.return3M > 0 ? '+' : ''}${a.return3M.toFixed(1)}%`,
-        valB: `${b.return3M > 0 ? '+' : ''}${b.return3M.toFixed(1)}%`,
-        winner: a.return3M > b.return3M ? a.ticker : b.return3M > a.return3M ? b.ticker : 'draw',
+        valA: formatMetric(a.return3M, '%', true),
+        valB: formatMetric(b.return3M, '%', true),
+        winner: judgeWinner(a.return3M, b.return3M),
         desc: '최근 3개월 시장 자금 유입 및 주가 탄력'
       },
       {
         name: '이평선 추세 (정배열 판정)',
-        valA: a.trendAnalysis?.trendStatus ? a.trendAnalysis.trendStatus.split(' ')[0] : '데이터 없음',
-        valB: b.trendAnalysis?.trendStatus ? b.trendAnalysis.trendStatus.split(' ')[0] : '데이터 없음',
+        valA: a.trendAnalysis?.trendStatus ? a.trendAnalysis.trendStatus.split(' ')[0] : 'N/A',
+        valB: b.trendAnalysis?.trendStatus ? b.trendAnalysis.trendStatus.split(' ')[0] : 'N/A',
         winner: a.trendAnalysis?.isBullishAlignment && !b.trendAnalysis?.isBullishAlignment
           ? a.ticker
           : b.trendAnalysis?.isBullishAlignment && !a.trendAnalysis?.isBullishAlignment

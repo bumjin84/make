@@ -217,7 +217,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0.4,
       "return3M": 23
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AOS",
@@ -437,7 +438,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 3,
       "return3M": 23.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ABT",
@@ -657,7 +659,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 7.4,
       "return3M": 23.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ABBV",
@@ -877,7 +880,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.5,
       "return3M": 22
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ACN",
@@ -1097,7 +1101,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 0.6,
       "return3M": 3.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ADBE",
@@ -1323,7 +1328,9 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 0.4
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "AMD",
@@ -1549,7 +1556,9 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.8
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "AES",
@@ -1769,7 +1778,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.1,
       "return3M": 3.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AFL",
@@ -1989,7 +1999,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 1.4,
       "return3M": -15.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "A",
@@ -2209,7 +2220,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -2.4,
       "return3M": -17
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "APD",
@@ -2429,7 +2441,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.2,
       "return3M": 22.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ABNB",
@@ -2649,7 +2662,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.5,
       "return3M": 22.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AKAM",
@@ -2869,7 +2883,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1,
       "return3M": 23.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ALB",
@@ -3089,7 +3104,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -4.1,
       "return3M": 22.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ARE",
@@ -3309,7 +3325,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 2.5,
       "return3M": 3.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ALGN",
@@ -3529,7 +3546,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 1.9,
       "return3M": 3.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ALLE",
@@ -3749,7 +3767,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.9,
       "return3M": 2.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "LNT",
@@ -3969,7 +3988,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -4.4,
       "return3M": 3.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ALL",
@@ -4189,7 +4209,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -11.4,
       "return3M": -16
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MO",
@@ -4409,7 +4430,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -3.8,
       "return3M": -16.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AMZN",
@@ -4635,7 +4657,9 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -4.4
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "AMCR",
@@ -4855,7 +4879,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.6,
       "return3M": 22.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AEE",
@@ -5075,7 +5100,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -7.5,
       "return3M": 23
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AEP",
@@ -5295,7 +5321,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 9.4,
       "return3M": 23.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AXP",
@@ -5515,7 +5542,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 2.9,
       "return3M": 3.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AIG",
@@ -5735,7 +5763,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.4,
       "return3M": 3.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AMT",
@@ -5955,7 +5984,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.3,
       "return3M": 3.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AWK",
@@ -6175,7 +6205,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 0.9,
       "return3M": 2.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AMP",
@@ -6395,7 +6426,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -11.2,
       "return3M": -15.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AME",
@@ -6615,7 +6647,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -2,
       "return3M": -16.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AMGN",
@@ -6835,7 +6868,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.5,
       "return3M": 23
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "APH",
@@ -7055,7 +7089,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.2,
       "return3M": 23.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ADI",
@@ -7275,7 +7310,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0.9,
       "return3M": 22.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AON",
@@ -7495,7 +7531,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.1,
       "return3M": 22.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "APA",
@@ -7715,7 +7752,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.1,
       "return3M": 2.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "APO",
@@ -7935,7 +7973,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -1.1,
       "return3M": 3.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AAPL",
@@ -8161,7 +8200,9 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.2
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "AMAT",
@@ -8381,7 +8422,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.2,
       "return3M": 2.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "APP",
@@ -8601,7 +8643,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -7.1,
       "return3M": -16.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "APTV",
@@ -8821,7 +8864,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -11.5,
       "return3M": -15.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ACGL",
@@ -9041,7 +9085,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 11.7,
       "return3M": 22.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ADM",
@@ -9261,7 +9306,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.4,
       "return3M": 22.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ARES",
@@ -9481,7 +9527,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0.8,
       "return3M": 22.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ANET",
@@ -9701,7 +9748,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 3.6,
       "return3M": 22.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AJG",
@@ -9921,7 +9969,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 2.9,
       "return3M": 1.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AIZ",
@@ -10141,7 +10190,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 2.2,
       "return3M": 3.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "T",
@@ -10361,7 +10411,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -6.7,
       "return3M": 3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ATO",
@@ -10581,7 +10632,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 1.7,
       "return3M": 3.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ADSK",
@@ -10801,7 +10853,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -5.9,
       "return3M": -16.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ADP",
@@ -11021,7 +11074,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 0.3,
       "return3M": -16.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AZO",
@@ -11241,7 +11295,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.2,
       "return3M": 22.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AVY",
@@ -11461,7 +11516,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.2,
       "return3M": 21.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AXON",
@@ -11681,7 +11737,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2,
       "return3M": 22.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "BKR",
@@ -11901,7 +11958,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 5.6,
       "return3M": 23
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "BALL",
@@ -12121,7 +12179,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.2,
       "return3M": 3.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "BAC",
@@ -12347,7 +12406,9 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -1.9
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "BAX",
@@ -12567,7 +12628,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -9.1,
       "return3M": 2.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "BDX",
@@ -12787,7 +12849,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.5,
       "return3M": 3.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "BBY",
@@ -13007,7 +13070,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 4.4,
       "return3M": -15.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TECH",
@@ -13227,7 +13291,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 1.2,
       "return3M": -15.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "BIIB",
@@ -13447,7 +13512,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0.1,
       "return3M": 23.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "BLK",
@@ -13667,7 +13733,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.5,
       "return3M": 23.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "BX",
@@ -13887,7 +13954,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.3,
       "return3M": 23
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "XYZ",
@@ -14107,7 +14175,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.5,
       "return3M": 23.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "BE",
@@ -14327,7 +14396,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.1,
       "return3M": 3.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "BNY",
@@ -14547,7 +14617,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -5.3,
       "return3M": 2.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "BA",
@@ -14767,7 +14838,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -5.4,
       "return3M": 2.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "BKNG",
@@ -14987,7 +15059,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.2,
       "return3M": 3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "BSX",
@@ -15207,7 +15280,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -5.4,
       "return3M": -16.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "BMY",
@@ -15427,7 +15501,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -4.5,
       "return3M": -16.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "AVGO",
@@ -15653,7 +15728,9 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -0.6
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "BR",
@@ -15873,7 +15950,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.5,
       "return3M": 23.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "BRO",
@@ -16093,7 +16171,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.9,
       "return3M": 22.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "BG",
@@ -16313,7 +16392,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.9,
       "return3M": 22.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "BXP",
@@ -16533,7 +16613,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 0.8,
       "return3M": 2.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CHRW",
@@ -16753,7 +16834,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 0.8,
       "return3M": 3.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CDNS",
@@ -16973,7 +17055,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.6,
       "return3M": 3.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CPT",
@@ -17193,7 +17276,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 4.7,
       "return3M": 3.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "COF",
@@ -17413,7 +17497,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -10.7,
       "return3M": -17
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CAH",
@@ -17633,7 +17718,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -9.2,
       "return3M": -15.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CCL",
@@ -17853,7 +17939,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.4,
       "return3M": 22.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CARR",
@@ -18073,7 +18160,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.4,
       "return3M": 22.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CVNA",
@@ -18293,7 +18381,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.7,
       "return3M": 23.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CASY",
@@ -18513,7 +18602,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 6.8,
       "return3M": 23.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CAT",
@@ -18739,7 +18829,9 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -14.3
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "CBRE",
@@ -18959,7 +19051,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.3,
       "return3M": 2.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CDW",
@@ -19179,7 +19272,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.3,
       "return3M": 2.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "COR",
@@ -19399,7 +19493,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.6,
       "return3M": 3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CNC",
@@ -19619,7 +19714,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -8.3,
       "return3M": -16.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CNP",
@@ -19839,7 +19935,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -4.5,
       "return3M": -16.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CF",
@@ -20059,7 +20156,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 5.4,
       "return3M": 23.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CRL",
@@ -20279,7 +20377,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0.3,
       "return3M": 23.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SCHW",
@@ -20499,7 +20598,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1,
       "return3M": 23.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CHTR",
@@ -20719,7 +20819,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2,
       "return3M": 22.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CVX",
@@ -20939,7 +21040,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 1.7,
       "return3M": 3.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CMG",
@@ -21159,7 +21261,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.2,
       "return3M": 2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CB",
@@ -21379,7 +21482,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.8,
       "return3M": 3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CHD",
@@ -21599,7 +21703,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 4.4,
       "return3M": 2.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CIEN",
@@ -21819,7 +21924,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -4.3,
       "return3M": -15.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CI",
@@ -22039,7 +22145,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -5.6,
       "return3M": -16.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CINF",
@@ -22259,7 +22366,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -4.6,
       "return3M": 22.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CTAS",
@@ -22479,7 +22587,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0.8,
       "return3M": 22
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CSCO",
@@ -22699,7 +22808,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 4.3,
       "return3M": 22.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "C",
@@ -22919,7 +23029,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.9,
       "return3M": 23.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CFG",
@@ -23139,7 +23250,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.6,
       "return3M": 1.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CLX",
@@ -23359,7 +23471,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 1.3,
       "return3M": 2.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CME",
@@ -23579,7 +23692,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.1,
       "return3M": 2.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CMS",
@@ -23799,7 +23913,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.6,
       "return3M": 3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "KO",
@@ -24025,7 +24140,9 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.4
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "CTSH",
@@ -24245,7 +24362,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -0.7,
       "return3M": -16.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "COHR",
@@ -24465,7 +24583,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 3.3,
       "return3M": 23.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "COIN",
@@ -24685,7 +24804,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 7.4,
       "return3M": 21.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CL",
@@ -24905,7 +25025,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 4.2,
       "return3M": 23.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CMCSA",
@@ -25125,7 +25246,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.3,
       "return3M": 22
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FIX",
@@ -25345,7 +25467,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.7,
       "return3M": 3.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "COP",
@@ -25565,7 +25688,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -6.8,
       "return3M": 2.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ED",
@@ -25785,7 +25909,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 1.4,
       "return3M": 2.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "STZ",
@@ -26005,7 +26130,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -5,
       "return3M": 2.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CEG",
@@ -26225,7 +26351,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 1.5,
       "return3M": -15.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "COO",
@@ -26445,7 +26572,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -9.4,
       "return3M": -15.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CPRT",
@@ -26665,7 +26793,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3,
       "return3M": 21.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "GLW",
@@ -26885,7 +27014,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0.5,
       "return3M": 24
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CPAY",
@@ -27105,7 +27235,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.2,
       "return3M": 24
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CSGP",
@@ -27325,7 +27456,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.3,
       "return3M": 22.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "COST",
@@ -27551,7 +27683,9 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 2.3
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "CRH",
@@ -27771,7 +27905,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -8.1,
       "return3M": 2.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CRWD",
@@ -27991,7 +28126,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.5,
       "return3M": 2.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CCI",
@@ -28211,7 +28347,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -6.2,
       "return3M": 3.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CSX",
@@ -28431,7 +28568,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -4,
       "return3M": -15.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CMI",
@@ -28651,7 +28789,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -8.5,
       "return3M": -16.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CVS",
@@ -28871,7 +29010,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.4,
       "return3M": 22.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DHR",
@@ -29091,7 +29231,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0.1,
       "return3M": 23.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DRI",
@@ -29311,7 +29452,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.6,
       "return3M": 21.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DDOG",
@@ -29531,7 +29673,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 5.4,
       "return3M": 23.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DVA",
@@ -29751,7 +29894,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 4.7,
       "return3M": 3.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DECK",
@@ -29971,7 +30115,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.7,
       "return3M": 2.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DE",
@@ -30191,7 +30336,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -5,
       "return3M": 2.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DELL",
@@ -30411,7 +30557,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -10.2,
       "return3M": 3.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DAL",
@@ -30631,7 +30778,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -5.8,
       "return3M": -17
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DVN",
@@ -30851,7 +30999,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -5.2,
       "return3M": -17
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DXCM",
@@ -31071,7 +31220,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 3.6,
       "return3M": 24
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FANG",
@@ -31291,7 +31441,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.1,
       "return3M": 21.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DLR",
@@ -31511,7 +31662,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -4.5,
       "return3M": 23.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DG",
@@ -31731,7 +31883,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0,
       "return3M": 22.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DLTR",
@@ -31951,7 +32104,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.1,
       "return3M": 3.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "D",
@@ -32171,7 +32325,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -0.6,
       "return3M": 2.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DPZ",
@@ -32391,7 +32546,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 4.2,
       "return3M": 2.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DASH",
@@ -32611,7 +32767,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.9,
       "return3M": 3.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DOV",
@@ -32831,7 +32988,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -1,
       "return3M": -16.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DOW",
@@ -33051,7 +33209,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -2.4,
       "return3M": -16.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DHI",
@@ -33271,7 +33430,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.6,
       "return3M": 22.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DTE",
@@ -33491,7 +33651,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 4.2,
       "return3M": 22.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DUK",
@@ -33711,7 +33872,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0,
       "return3M": 22.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DD",
@@ -33931,7 +34093,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.4,
       "return3M": 22.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ETN",
@@ -34151,7 +34314,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 2.9,
       "return3M": 3.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "EBAY",
@@ -34371,7 +34535,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 0.2,
       "return3M": 3.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ECHO",
@@ -34591,7 +34756,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -10.7,
       "return3M": 2.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ECL",
@@ -34811,7 +34977,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 2.6,
       "return3M": 2.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "EIX",
@@ -35031,7 +35198,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -2.9,
       "return3M": -15.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "EW",
@@ -35251,7 +35419,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -2.3,
       "return3M": -15.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ELV",
@@ -35471,7 +35640,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.6,
       "return3M": 23.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "EME",
@@ -35691,7 +35861,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.7,
       "return3M": 21.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "EMR",
@@ -35911,7 +36082,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 4.1,
       "return3M": 23.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ETR",
@@ -36131,7 +36303,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -4,
       "return3M": 23.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "EOG",
@@ -36351,7 +36524,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 4.4,
       "return3M": 3.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "EQT",
@@ -36571,7 +36745,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.4,
       "return3M": 2.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "EFX",
@@ -36791,7 +36966,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.3,
       "return3M": 3.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "EQIX",
@@ -37011,7 +37187,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 3.3,
       "return3M": 3.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ERIE",
@@ -37231,7 +37408,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 2.2,
       "return3M": -15.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ESS",
@@ -37451,7 +37629,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -5.4,
       "return3M": -15.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "EL",
@@ -37671,7 +37850,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 3.8,
       "return3M": 22.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "EG",
@@ -37891,7 +38071,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3,
       "return3M": 22.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "EVRG",
@@ -38111,7 +38292,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.9,
       "return3M": 22.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "P",
@@ -38331,7 +38513,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 4.6,
       "return3M": 21.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ES",
@@ -38551,7 +38734,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -5.4,
       "return3M": 2.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "EXC",
@@ -38771,7 +38955,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -5.1,
       "return3M": 2.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "EXE",
@@ -38991,7 +39176,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.1,
       "return3M": 2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "EXPE",
@@ -39211,7 +39397,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.5,
       "return3M": 2.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "EXPD",
@@ -39431,7 +39618,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -4.2,
       "return3M": -16.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "EXR",
@@ -39651,7 +39839,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -2.8,
       "return3M": -16.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "XOM",
@@ -39871,7 +40060,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 4.5,
       "return3M": 23.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FFIV",
@@ -40091,7 +40281,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 5,
       "return3M": 24
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FDS",
@@ -40311,7 +40502,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 8.3,
       "return3M": 23.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FICO",
@@ -40531,7 +40723,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -4.3,
       "return3M": 22.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FAST",
@@ -40751,7 +40944,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.3,
       "return3M": 2.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FRT",
@@ -40971,7 +41165,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -6.1,
       "return3M": 2.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FDX",
@@ -41191,7 +41386,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.5,
       "return3M": 2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FDXF",
@@ -41411,7 +41607,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 0,
       "return3M": 2.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FERG",
@@ -41631,7 +41828,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -5.2,
       "return3M": -15.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FIS",
@@ -41851,7 +42049,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -13.3,
       "return3M": -16.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FITB",
@@ -42071,7 +42270,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -5,
       "return3M": 22
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FSLR",
@@ -42291,7 +42491,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.2,
       "return3M": 23.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FE",
@@ -42511,7 +42712,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.3,
       "return3M": 22.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FISV",
@@ -42731,7 +42933,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0.4,
       "return3M": 23.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FLEX",
@@ -42951,7 +43154,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.5,
       "return3M": 3.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "F",
@@ -43171,7 +43375,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.2,
       "return3M": 3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FTNT",
@@ -43391,7 +43596,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 5.2,
       "return3M": 3.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FTV",
@@ -43611,7 +43817,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 1.9,
       "return3M": 1.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "BEN",
@@ -43831,7 +44038,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 1.6,
       "return3M": -15.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "FCX",
@@ -44051,7 +44259,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -1.4,
       "return3M": -15.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "GRMN",
@@ -44271,7 +44480,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 4.7,
       "return3M": 23.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "IT",
@@ -44491,7 +44701,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 5.8,
       "return3M": 22.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "GE",
@@ -44717,7 +44928,9 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 3
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "GEHC",
@@ -44937,7 +45150,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.3,
       "return3M": 22.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "GEV",
@@ -45157,7 +45371,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.7,
       "return3M": 2.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "GEN",
@@ -45377,7 +45592,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -4.9,
       "return3M": 2.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "GNRC",
@@ -45597,7 +45813,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.3,
       "return3M": 2.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "GD",
@@ -45817,7 +46034,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -1.4,
       "return3M": 2.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "GIS",
@@ -46037,7 +46255,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -8.5,
       "return3M": -15.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "GM",
@@ -46257,7 +46476,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -5.2,
       "return3M": -15.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "GPC",
@@ -46477,7 +46697,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.3,
       "return3M": 22.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "GILD",
@@ -46697,7 +46918,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 3.2,
       "return3M": 22.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "GPN",
@@ -46917,7 +47139,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 5.3,
       "return3M": 24
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "GL",
@@ -47137,7 +47360,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.1,
       "return3M": 22.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "GDDY",
@@ -47357,7 +47581,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -5.9,
       "return3M": 2.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "GS",
@@ -47577,7 +47802,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 1.4,
       "return3M": 3.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HAL",
@@ -47797,7 +48023,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 0.7,
       "return3M": 2.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HIG",
@@ -48017,7 +48244,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.7,
       "return3M": 2.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HAS",
@@ -48237,7 +48465,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -4.9,
       "return3M": -15.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HCA",
@@ -48457,7 +48686,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -4.1,
       "return3M": -15.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DOC",
@@ -48677,7 +48907,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 5,
       "return3M": 23.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HSIC",
@@ -48897,7 +49128,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.2,
       "return3M": 23.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HSY",
@@ -49117,7 +49349,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.9,
       "return3M": 23.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HPE",
@@ -49337,7 +49570,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -5.4,
       "return3M": 21.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HLT",
@@ -49557,7 +49791,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 3.4,
       "return3M": 2.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HD",
@@ -49783,7 +50018,9 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 8
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "HONA",
@@ -50003,7 +50240,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.9,
       "return3M": 2.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HON",
@@ -50223,7 +50461,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.2,
       "return3M": 2.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HRL",
@@ -50443,7 +50682,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -5.5,
       "return3M": -15.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HST",
@@ -50663,7 +50903,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -6.7,
       "return3M": -15.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HWM",
@@ -50883,7 +51124,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.5,
       "return3M": 21.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HPQ",
@@ -51103,7 +51345,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 0,
       "return3M": 22.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HUBB",
@@ -51323,7 +51566,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.6,
       "return3M": 21.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HUM",
@@ -51543,7 +51787,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 6.4,
       "return3M": 22.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HBAN",
@@ -51763,7 +52008,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.2,
       "return3M": 2.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HII",
@@ -51983,7 +52229,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.4,
       "return3M": 3.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "IBM",
@@ -52209,7 +52456,9 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 8.9
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "IEX",
@@ -52429,7 +52678,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 1.6,
       "return3M": 3.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "IDXX",
@@ -52649,7 +52899,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -6.8,
       "return3M": -17.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ITW",
@@ -52869,7 +53120,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -0.9,
       "return3M": -16
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ILMN",
@@ -53089,7 +53341,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 6.1,
       "return3M": 23.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "INCY",
@@ -53309,7 +53562,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.6,
       "return3M": 23.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "IR",
@@ -53529,7 +53783,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.6,
       "return3M": 22.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PODD",
@@ -53749,7 +54004,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.4,
       "return3M": 22.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "INTC",
@@ -53969,7 +54225,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.4,
       "return3M": 2.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "IBKR",
@@ -54189,7 +54446,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -6.5,
       "return3M": 3.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ICE",
@@ -54409,7 +54667,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.9,
       "return3M": 2.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "IFF",
@@ -54629,7 +54888,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -4.8,
       "return3M": 3.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "IP",
@@ -54849,7 +55109,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -7.1,
       "return3M": -16.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "INTU",
@@ -55069,7 +55330,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -7.1,
       "return3M": -16.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ISRG",
@@ -55289,7 +55551,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 3.6,
       "return3M": 21.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "IVZ",
@@ -55509,7 +55772,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 3.4,
       "return3M": 23.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "INVH",
@@ -55729,7 +55993,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 7.6,
       "return3M": 22.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "IQV",
@@ -55949,7 +56214,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.6,
       "return3M": 22
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "IRM",
@@ -56169,7 +56435,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.3,
       "return3M": 2.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "JBHT",
@@ -56389,7 +56656,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 0.6,
       "return3M": 2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "JBL",
@@ -56609,7 +56877,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 0.5,
       "return3M": 2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "JKHY",
@@ -56829,7 +57098,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 1.4,
       "return3M": 2.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "J",
@@ -57049,7 +57319,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 0.4,
       "return3M": -16.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "JNJ",
@@ -57275,7 +57546,9 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 5.9
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "JCI",
@@ -57495,7 +57768,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.2,
       "return3M": 22.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "JPM",
@@ -57721,7 +57995,9 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 2.7
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "KVUE",
@@ -57941,7 +58217,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.4,
       "return3M": 22.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "KDP",
@@ -58161,7 +58438,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 3,
       "return3M": 23.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "KEY",
@@ -58381,7 +58659,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 5.8,
       "return3M": 3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "KEYS",
@@ -58601,7 +58880,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 5.9,
       "return3M": 3.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "KMB",
@@ -58821,7 +59101,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.1,
       "return3M": 2.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "KIM",
@@ -59041,7 +59322,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.1,
       "return3M": 3.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "KMI",
@@ -59261,7 +59543,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -4.7,
       "return3M": -16.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "KKR",
@@ -59481,7 +59764,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -13,
       "return3M": -15.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "KLAC",
@@ -59701,7 +59985,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.2,
       "return3M": 21.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "KHC",
@@ -59921,7 +60206,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.7,
       "return3M": 23.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "KR",
@@ -60141,7 +60427,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.5,
       "return3M": 22.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "LHX",
@@ -60361,7 +60648,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.7,
       "return3M": 22.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "LH",
@@ -60581,7 +60869,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1,
       "return3M": 3.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "LRCX",
@@ -60801,7 +61090,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 2,
       "return3M": 3.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "LVS",
@@ -61021,7 +61311,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.3,
       "return3M": 2.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "LDOS",
@@ -61241,7 +61532,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.6,
       "return3M": 3.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "LEN",
@@ -61461,7 +61753,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -4.5,
       "return3M": -16.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "LII",
@@ -61681,7 +61974,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -6.3,
       "return3M": -15.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "LLY",
@@ -61907,7 +62201,9 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 11.5
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "LIN",
@@ -62127,7 +62423,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0.4,
       "return3M": 22.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "LYV",
@@ -62347,7 +62644,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 6.2,
       "return3M": 21.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "LMT",
@@ -62567,7 +62865,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.4,
       "return3M": 22.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "L",
@@ -62787,7 +63086,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.8,
       "return3M": 2.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "LOW",
@@ -63007,7 +63307,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.7,
       "return3M": 2.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "LULU",
@@ -63227,7 +63528,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.3,
       "return3M": 2.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "LITE",
@@ -63447,7 +63749,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -7.5,
       "return3M": 2.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "LYB",
@@ -63667,7 +63970,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 3,
       "return3M": -16.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MTB",
@@ -63887,7 +64191,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -3.5,
       "return3M": -15.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MPC",
@@ -64107,7 +64412,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 9.4,
       "return3M": 23.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MAR",
@@ -64327,7 +64633,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 4.9,
       "return3M": 22.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MRSH",
@@ -64547,7 +64854,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.9,
       "return3M": 21.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MLM",
@@ -64767,7 +65075,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.3,
       "return3M": 22.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MRVL",
@@ -64987,7 +65296,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.5,
       "return3M": 2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MAS",
@@ -65207,7 +65517,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.3,
       "return3M": 2.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MA",
@@ -65427,7 +65738,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 4.4,
       "return3M": 2.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MKC",
@@ -65647,7 +65959,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -6.1,
       "return3M": 3.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MCD",
@@ -65873,7 +66186,9 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 6.3
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "MCK",
@@ -66093,7 +66408,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -1.1,
       "return3M": -16.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MDT",
@@ -66313,7 +66629,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 6.5,
       "return3M": 24.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MRK",
@@ -66533,7 +66850,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.5,
       "return3M": 22.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "META",
@@ -66759,7 +67077,9 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -10.4
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "MET",
@@ -66979,7 +67299,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 6.2,
       "return3M": 23.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MTD",
@@ -67199,7 +67520,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.4,
       "return3M": 3.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MGM",
@@ -67419,7 +67741,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.9,
       "return3M": 3.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MCHP",
@@ -67639,7 +67962,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.9,
       "return3M": 3.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MU",
@@ -67859,7 +68183,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.3,
       "return3M": 3.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MSFT",
@@ -68085,7 +68410,9 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.1
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "MAA",
@@ -68305,7 +68632,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -5.3,
       "return3M": -17
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MRNA",
@@ -68525,7 +68853,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 4.7,
       "return3M": 23.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MDLZ",
@@ -68745,7 +69074,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 3.5,
       "return3M": 23.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MPWR",
@@ -68965,7 +69295,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 7,
       "return3M": 23.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MNST",
@@ -69185,7 +69516,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 4.3,
       "return3M": 22.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MCO",
@@ -69405,7 +69737,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 0.2,
       "return3M": 3.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MS",
@@ -69625,7 +69958,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -5.2,
       "return3M": 2.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MOS",
@@ -69845,7 +70179,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -4.9,
       "return3M": 2.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MSI",
@@ -70065,7 +70400,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -6,
       "return3M": 3.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "MSCI",
@@ -70285,7 +70621,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -4.9,
       "return3M": -17
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "NDAQ",
@@ -70505,7 +70842,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -10.8,
       "return3M": -16.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "NTAP",
@@ -70725,7 +71063,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -4,
       "return3M": 22.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "NFLX",
@@ -70951,7 +71290,9 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -8.5
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "NEM",
@@ -71171,7 +71512,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.1,
       "return3M": 21.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "NEE",
@@ -71391,7 +71733,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 8.3,
       "return3M": 21.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "NKE",
@@ -71611,7 +71954,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -6,
       "return3M": 2.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "NI",
@@ -71831,7 +72175,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.4,
       "return3M": 2.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "NDSN",
@@ -72051,7 +72396,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.6,
       "return3M": 3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "NSC",
@@ -72271,7 +72617,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 2.3,
       "return3M": 3.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "NTRS",
@@ -72491,7 +72838,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -2.6,
       "return3M": -15.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "NOC",
@@ -72711,7 +73059,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -9.1,
       "return3M": -16.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "NCLH",
@@ -72931,7 +73280,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.1,
       "return3M": 22.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "NRG",
@@ -73151,7 +73501,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 11.7,
       "return3M": 23.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "NUE",
@@ -73371,7 +73722,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0.4,
       "return3M": 23
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "NVDA",
@@ -73597,7 +73949,9 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -4.2
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "NVR",
@@ -73817,7 +74171,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.1,
       "return3M": 3.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "NXPI",
@@ -74037,7 +74392,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.1,
       "return3M": 3.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ORLY",
@@ -74257,7 +74613,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 1.8,
       "return3M": 2.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "OXY",
@@ -74477,7 +74834,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 2.1,
       "return3M": 2.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ODFL",
@@ -74697,7 +75055,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -3.1,
       "return3M": -15.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "OMC",
@@ -74917,7 +75276,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -9.7,
       "return3M": -16.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ON",
@@ -75137,7 +75497,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0.6,
       "return3M": 22.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "OKE",
@@ -75357,7 +75718,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0.8,
       "return3M": 23.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ORCL",
@@ -75583,7 +75945,9 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 3.1
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "OTIS",
@@ -75803,7 +76167,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.7,
       "return3M": 23.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PCAR",
@@ -76023,7 +76388,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.8,
       "return3M": 3.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PKG",
@@ -76243,7 +76609,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.7,
       "return3M": 3.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PLTR",
@@ -76463,7 +76830,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -5.9,
       "return3M": 2.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PANW",
@@ -76683,7 +77051,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.9,
       "return3M": 2.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PH",
@@ -76903,7 +77272,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -8.5,
       "return3M": -15.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PAYX",
@@ -77123,7 +77493,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -3.8,
       "return3M": -16.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PYPL",
@@ -77343,7 +77714,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.4,
       "return3M": 21.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PNR",
@@ -77563,7 +77935,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.2,
       "return3M": 23.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PEP",
@@ -77789,7 +78162,9 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 2.5
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "PFE",
@@ -78009,7 +78384,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.5,
       "return3M": 22.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PCG",
@@ -78229,7 +78605,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -4.1,
       "return3M": 2.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PM",
@@ -78449,7 +78826,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.5,
       "return3M": 3.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PSX",
@@ -78669,7 +79047,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -9.3,
       "return3M": 2.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PNW",
@@ -78889,7 +79268,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 1.3,
       "return3M": 3.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PNC",
@@ -79109,7 +79489,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -7.6,
       "return3M": -16.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PPG",
@@ -79329,7 +79710,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -8.2,
       "return3M": -17
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PPL",
@@ -79549,7 +79931,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 5.8,
       "return3M": 23.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PFG",
@@ -79769,7 +80152,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 3,
       "return3M": 23.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PG",
@@ -79995,7 +80379,9 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 3.4
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "PGR",
@@ -80215,7 +80601,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.9,
       "return3M": 22.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PLD",
@@ -80435,7 +80822,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 12,
       "return3M": 3.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PRU",
@@ -80655,7 +81043,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 4.5,
       "return3M": 3.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PTC",
@@ -80875,7 +81264,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.4,
       "return3M": 3.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PEG",
@@ -81095,7 +81485,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.4,
       "return3M": 3.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PSA",
@@ -81315,7 +81706,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -6.5,
       "return3M": -15.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "PHM",
@@ -81535,7 +81927,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -9.8,
       "return3M": -15.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "Q",
@@ -81755,7 +82148,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.8,
       "return3M": 23.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "QCOM",
@@ -81981,7 +82375,9 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 4.2
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "PWR",
@@ -82201,7 +82597,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.2,
       "return3M": 23.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "DGX",
@@ -82421,7 +82818,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.8,
       "return3M": 23.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "RL",
@@ -82641,7 +83039,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.2,
       "return3M": 2.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "RJF",
@@ -82861,7 +83260,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.6,
       "return3M": 2.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "RDDT",
@@ -83081,7 +83481,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.2,
       "return3M": 3.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "O",
@@ -83301,7 +83702,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -5.6,
       "return3M": 3.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "REG",
@@ -83521,7 +83923,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -1.4,
       "return3M": -16.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "REGN",
@@ -83741,7 +84144,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -10.2,
       "return3M": -16.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "RF",
@@ -83961,7 +84365,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0.8,
       "return3M": 24
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "RSG",
@@ -84181,7 +84586,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 3.5,
       "return3M": 22.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "RMD",
@@ -84401,7 +84807,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1,
       "return3M": 22
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "RVTY",
@@ -84621,7 +85028,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 0,
       "return3M": 22.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "HOOD",
@@ -84841,7 +85249,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.8,
       "return3M": 2.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ROK",
@@ -85061,7 +85470,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.1,
       "return3M": 3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ROL",
@@ -85281,7 +85691,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 1.2,
       "return3M": 2.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ROP",
@@ -85501,7 +85912,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 1.7,
       "return3M": 2.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ROST",
@@ -85721,7 +86133,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -4.8,
       "return3M": -16.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "RCL",
@@ -85941,7 +86354,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -4.8,
       "return3M": -15.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "RTX",
@@ -86161,7 +86575,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.8,
       "return3M": 22
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SPGI",
@@ -86381,7 +86796,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 4.9,
       "return3M": 22.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "CRM",
@@ -86607,7 +87023,9 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.8
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "SNDK",
@@ -86827,7 +87245,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 3.3,
       "return3M": 21.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SBAC",
@@ -87047,7 +87466,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.7,
       "return3M": 3.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SLB",
@@ -87267,7 +87687,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 3.9,
       "return3M": 3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "STX",
@@ -87487,7 +87908,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 6.9,
       "return3M": 3.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SRE",
@@ -87707,7 +88129,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 0.3,
       "return3M": 3.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "NOW",
@@ -87927,7 +88350,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -5.7,
       "return3M": -15.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SHW",
@@ -88147,7 +88571,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -11.7,
       "return3M": -16.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SPG",
@@ -88367,7 +88792,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 7.9,
       "return3M": 23.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SKYD",
@@ -88587,7 +89013,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 4.7,
       "return3M": 22.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SWKS",
@@ -88807,7 +89234,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.7,
       "return3M": 23.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SJM",
@@ -89027,7 +89455,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 8.7,
       "return3M": 24
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SW",
@@ -89247,7 +89676,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 5,
       "return3M": 2.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SNA",
@@ -89467,7 +89897,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -8.4,
       "return3M": 2.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SOLV",
@@ -89687,7 +90118,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.7,
       "return3M": 2.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SO",
@@ -89907,7 +90339,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.5,
       "return3M": 2.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "LUV",
@@ -90127,7 +90560,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -6.5,
       "return3M": -17
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SWK",
@@ -90347,7 +90781,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -6.1,
       "return3M": -15.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SBUX",
@@ -90567,7 +91002,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 6.1,
       "return3M": 23
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "STT",
@@ -90787,7 +91223,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.9,
       "return3M": 21.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "STLD",
@@ -91007,7 +91444,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.1,
       "return3M": 23.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "STE",
@@ -91227,7 +91665,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 5.3,
       "return3M": 22.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SYK",
@@ -91447,7 +91886,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -8.6,
       "return3M": 2.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SMCI",
@@ -91667,7 +92107,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.6,
       "return3M": 3.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SYF",
@@ -91887,7 +92328,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 4.6,
       "return3M": 3.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SNPS",
@@ -92107,7 +92549,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 0.5,
       "return3M": 2.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "SYY",
@@ -92327,7 +92770,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -6.2,
       "return3M": -16.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TMUS",
@@ -92547,7 +92991,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 1.8,
       "return3M": -15.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TROW",
@@ -92767,7 +93212,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.4,
       "return3M": 21.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TTWO",
@@ -92987,7 +93433,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.7,
       "return3M": 22.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TPR",
@@ -93207,7 +93654,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -4.8,
       "return3M": 23.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TRGP",
@@ -93427,7 +93875,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2,
       "return3M": 23.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TGT",
@@ -93647,7 +94096,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 3.6,
       "return3M": 3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TEL",
@@ -93867,7 +94317,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 3.8,
       "return3M": 2.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TDY",
@@ -94087,7 +94538,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 1.2,
       "return3M": 2.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TER",
@@ -94307,7 +94759,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.3,
       "return3M": 4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TSLA",
@@ -94533,7 +94986,9 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 6.3
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "TXN",
@@ -94753,7 +95208,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -3.3,
       "return3M": -15.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TPL",
@@ -94973,7 +95429,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 3.7,
       "return3M": 23.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TXT",
@@ -95193,7 +95650,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.6,
       "return3M": 23.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TMO",
@@ -95419,7 +95877,9 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 4.7
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "TJX",
@@ -95639,7 +96099,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 6.4,
       "return3M": 22.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TKO",
@@ -95859,7 +96320,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 1.2,
       "return3M": 2.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TSCO",
@@ -96079,7 +96541,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -8,
       "return3M": 2.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TT",
@@ -96299,7 +96762,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3,
       "return3M": 3.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TDG",
@@ -96519,7 +96983,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.3,
       "return3M": 3.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TRV",
@@ -96739,7 +97204,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -5.3,
       "return3M": -16.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TRMB",
@@ -96959,7 +97425,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -3.2,
       "return3M": -16
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TFC",
@@ -97179,7 +97646,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 4.9,
       "return3M": 22.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TWLO",
@@ -97399,7 +97867,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 4.4,
       "return3M": 22.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TYL",
@@ -97619,7 +98088,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.7,
       "return3M": 21.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "TSN",
@@ -97839,7 +98309,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.7,
       "return3M": 22.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "USB",
@@ -98059,7 +98530,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.3,
       "return3M": 2.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "UBER",
@@ -98279,7 +98751,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -6.6,
       "return3M": 2.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "UDR",
@@ -98499,7 +98972,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.6,
       "return3M": 1.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ULTA",
@@ -98719,7 +99193,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.5,
       "return3M": 3.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "UNP",
@@ -98939,7 +99414,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -12,
       "return3M": -16.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "UAL",
@@ -99159,7 +99635,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -0.3,
       "return3M": -15.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "UPS",
@@ -99379,7 +99856,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.3,
       "return3M": 22.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "URI",
@@ -99599,7 +100077,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 4.2,
       "return3M": 24
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "UNH",
@@ -99819,7 +100298,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -0.8,
       "return3M": 23.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "UHS",
@@ -100039,7 +100519,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 6,
       "return3M": 23.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "VLO",
@@ -100259,7 +100740,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 6.2,
       "return3M": 2.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "VEEV",
@@ -100479,7 +100961,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 5.1,
       "return3M": 2.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "VTR",
@@ -100699,7 +101182,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.8,
       "return3M": 2.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "VLTO",
@@ -100919,7 +101403,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.6,
       "return3M": 3.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "VRSN",
@@ -101139,7 +101624,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -5.5,
       "return3M": -15.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "VRSK",
@@ -101359,7 +101845,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -5.1,
       "return3M": -15.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "VZ",
@@ -101579,7 +102066,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0.6,
       "return3M": 22.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "VRTX",
@@ -101799,7 +102287,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.6,
       "return3M": 23.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "VRT",
@@ -102019,7 +102508,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 3,
       "return3M": 22.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "VTRS",
@@ -102239,7 +102729,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -3.9,
       "return3M": 23.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "VICI",
@@ -102459,7 +102950,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 1.1,
       "return3M": 3.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "V",
@@ -102685,7 +103177,9 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 4.3
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "VMRK",
@@ -102905,7 +103399,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 0.2,
       "return3M": 2.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "VMC",
@@ -103125,7 +103620,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.7,
       "return3M": 2.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "VYLR",
@@ -103345,7 +103841,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -6,
       "return3M": -15.8
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "WRB",
@@ -103565,7 +104062,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -6,
       "return3M": -16
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "GWW",
@@ -103785,7 +104283,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.5,
       "return3M": 23.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "WAB",
@@ -104005,7 +104504,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 3.6,
       "return3M": 22.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "WMT",
@@ -104231,7 +104731,9 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 5.4
     },
-    "subMarket": "sp500"
+    "subMarket": "sp500",
+    "market": "us",
+    "isETF": false
   },
   {
     "ticker": "DIS",
@@ -104451,7 +104953,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 1.9,
       "return3M": 22.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "WM",
@@ -104671,7 +105174,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 2.5,
       "return3M": 3.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "WAT",
@@ -104891,7 +105395,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -4.2,
       "return3M": 3.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "WEC",
@@ -105111,7 +105616,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 2.9,
       "return3M": 2.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "WFC",
@@ -105331,7 +105837,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -12.3,
       "return3M": 2.2
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "WELL",
@@ -105551,7 +106058,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -10.6,
       "return3M": -17
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "WST",
@@ -105771,7 +106279,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 0.4,
       "return3M": -15.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "WDC",
@@ -105991,7 +106500,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0.5,
       "return3M": 23.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "WY",
@@ -106211,7 +106721,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 0.7,
       "return3M": 21.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "WSM",
@@ -106431,7 +106942,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 4.4,
       "return3M": 23.6
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "WMB",
@@ -106651,7 +107163,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2,
       "return3M": 21.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "WTW",
@@ -106871,7 +107384,8 @@
       "trendStatus": "단기 정배열 (Bull Trend 📈)",
       "disparity20": 0.2,
       "return3M": 3.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "WDAY",
@@ -107091,7 +107605,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": 2.7,
       "return3M": 2.9
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "WYNN",
@@ -107311,7 +107826,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.4,
       "return3M": 2.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "XEL",
@@ -107531,7 +108047,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -2.9,
       "return3M": 3.3
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "XYL",
@@ -107751,7 +108268,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -5.6,
       "return3M": -16.5
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "YUM",
@@ -107971,7 +108489,8 @@
       "trendStatus": "역배열 하락세 (Bearish ⚠️)",
       "disparity20": -6.2,
       "return3M": -17.1
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ZBRA",
@@ -108191,7 +108710,8 @@
       "trendStatus": "완전 정배열 (Strong Bull 🔥)",
       "disparity20": 2.1,
       "return3M": 23.4
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ZBH",
@@ -108411,7 +108931,8 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.7,
       "return3M": 21.7
-    }
+    },
+    "isETF": false
   },
   {
     "ticker": "ZTS",
@@ -108631,6 +109152,7 @@
       "trendStatus": "혼조/횡보 (Neutral)",
       "disparity20": -1.1,
       "return3M": 23.2
-    }
+    },
+    "isETF": false
   }
 ]
