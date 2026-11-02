@@ -235,3 +235,4 @@ const metadata = {
 
 fs.writeFileSync(metadataPath, JSON.stringify(metadata, null, 2), 'utf8');
 console.log(`🎉 [Success] Generated 843 stocks (KR: ${enrichedKR.length}, US: ${enrichedUS.length})!`);
+

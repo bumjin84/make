@@ -1,12 +1,27 @@
 import React from 'react';
-import { Crown, Rocket, TrendingUp, ShieldCheck } from 'lucide-react';
+import {
+  Crown,
+  Rocket,
+  TrendingUp,
+  ShieldCheck,
+  Percent,
+  Zap,
+  Gem,
+  ArrowDownCircle,
+  Coins
+} from 'lucide-react';
 import { STRATEGIES } from '../../utils/strategies';
 
 const iconMap = {
   Crown,
   Rocket,
   TrendingUp,
-  ShieldCheck
+  ShieldCheck,
+  Percent,
+  Zap,
+  Gem,
+  ArrowDownCircle,
+  Coins
 };
 
 export default function StrategyBadge({ strategyKey }) {
@@ -25,4 +40,3 @@ export default function StrategyBadge({ strategyKey }) {
     </span>
   );
 }
-
