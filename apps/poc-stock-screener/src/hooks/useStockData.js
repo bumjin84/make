@@ -15,6 +15,8 @@ export function useStockData(market = 'sp500') {
       rawData = krStocks.filter(s => s.subMarket === 'kospi');
     } else if (market === 'kosdaq') {
       rawData = krStocks.filter(s => s.subMarket === 'kosdaq');
+    } else if (market === 'etf') {
+      rawData = krStocks.filter(s => s.isETF);
     } else {
       rawData = usStocks;
       isUS = true;

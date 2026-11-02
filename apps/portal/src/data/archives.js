@@ -1,6 +1,12 @@
 export const ARCHIVES = [
   {
     date: '2026.11.02',
+    category: 'Product Expansion',
+    title: 'ETF 리그 탭 신설 & 절세 전용 2대 추천 전략(연금저축 과세이연, ISA 배당 비과세) 구축',
+    desc: '국내 상장 42개 대표 ETF 전용 탐색 리그를 신설하고, 장기 복리 지수 및 안전자산 중심의 연금저축 PICK, 배당소득세(15.4%) 비과세를 공략하는 ISA 절세 PICK 2대 전략 신설'
+  },
+  {
+    date: '2026.11.02',
     category: 'Data Pipeline Upgrade',
     title: '크론 수집기 고도화: 네이버 금융 실시간 재무 API 연동 & 실측 데이터 파이프라인 구축',
     desc: '기존 난수 생성을 전면 폐기하고, 네이버 금융 모바일 공식 API(/integration, /finance/annual)를 직접 연동하여 350개 국내 상장사의 실제 PER, 선행 PER, ROE, 배당률, 부채비율 및 60일 실시간 일봉·이평선 수집 체계 완성'

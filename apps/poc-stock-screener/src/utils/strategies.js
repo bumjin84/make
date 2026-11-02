@@ -20,7 +20,9 @@ export const STRATEGIES = {
     badgeClass: 'bg-rose-500/10 text-rose-300 border-rose-500/30',
     description: '일별 종가 기준 20일선 > 60일선 > 120일선 정배열 상태로 기관 수급이 유입 중인 초강세주',
     filter: (stock) => {
-      if (stock.isETF || !stock.trendAnalysis) return false;
+      if (!stock.trendAnalysis) return false;
+      // MMF/단기금리 상품은 제외 (기술적 주가 추세가 아니므로)
+      if (stock.isETF && /머니마켓|CD금리|KOFR/i.test(stock.name)) return false;
       return Boolean(stock.trendAnalysis.isBullishAlignment || stock.trendAnalysis.isShortTermBullish);
     }
   },
@@ -125,6 +127,34 @@ export const STRATEGIES = {
     filter: (stock) => {
       if (stock.isETF || stock.dividendYield === null) return false;
       return stock.dividendYield >= 3.0;
+    }
+  },
+  pension: {
+    id: 'pension',
+    name: '🏦 연금저축 추천 (과세이연)',
+    shortName: '연금저축 PICK',
+    icon: 'Landmark',
+    badgeClass: 'bg-indigo-500/10 text-indigo-300 border-indigo-500/30',
+    description: '연금저축/IRP 계좌의 과세이연 혜택을 극대화하는 장기 복리 지수 ETF(S&P500·나스닥100) 및 우량 배당성장 자산',
+    filter: (stock) => {
+      if (stock.isETF) {
+        return /S&P500|나스닥|배당다우존스|200|테크|반도체|채권|머니마켓|CD금리|KOFR|금현물/i.test(stock.name);
+      }
+      return (stock.roe || 0) >= 12 && (stock.debtRatio !== null && stock.debtRatio <= 110) && (stock.dividendYield || 0) >= 2.0;
+    }
+  },
+  isa: {
+    id: 'isa',
+    name: '💼 ISA 절세 추천 (비과세)',
+    shortName: 'ISA 절세 PICK',
+    icon: 'Wallet',
+    badgeClass: 'bg-emerald-500/10 text-emerald-300 border-emerald-500/30',
+    description: '배당소득세(15.4%) 비과세 한도를 공략하는 연 3.5% 이상 고배당 우량주 및 월배당·커버드콜·해외 지수 ETF',
+    filter: (stock) => {
+      if (stock.isETF) {
+        return /배당|커버드콜|S&P500|나스닥|고배당/i.test(stock.name);
+      }
+      return (stock.dividendYield || 0) >= 3.5 && (stock.debtRatio === null || stock.debtRatio <= 200);
     }
   }
 };

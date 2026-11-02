@@ -442,6 +442,7 @@ async function main() {
     kospiCount: universe.kospiCount,
     kosdaqCount: universe.kosdaqCount,
     sp500Count: universe.sp500Count,
+    etfCount: enrichedKR.filter(s => s.isETF).length,
     cronSchedule: '하루 4회 (06:15, 12:15, 16:15, 23:15 KST)',
     status: 'Operational'
   };

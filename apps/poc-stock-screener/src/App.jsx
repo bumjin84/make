@@ -44,7 +44,8 @@ export default function App() {
   const marketCounts = {
     sp500: metadata.sp500Count || 493,
     kospi: metadata.kospiCount || 200,
-    kosdaq: metadata.kosdaqCount || 150
+    kosdaq: metadata.kosdaqCount || 150,
+    etf: metadata.etfCount || 42
   };
 
   return (

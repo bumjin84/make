@@ -10,7 +10,9 @@ import {
   Gem,
   ArrowDownCircle,
   Coins,
-  Sparkles
+  Sparkles,
+  Landmark,
+  Wallet
 } from 'lucide-react';
 import { STRATEGY_LIST, STRATEGIES } from '../../utils/strategies';
 
@@ -24,7 +26,9 @@ const iconMap = {
   Zap,
   Gem,
   ArrowDownCircle,
-  Coins
+  Coins,
+  Landmark,
+  Wallet
 };
 
 export default function StrategyBar({ selectedStrategy, onSelectStrategy, filteredCount }) {

@@ -19,6 +19,12 @@ export default function MarketSelector({ market, onChange, counts = {} }) {
       flag: '🚀',
       name: '코스닥 150',
       count: counts.kosdaq || 150,
+    },
+    {
+      id: 'etf',
+      flag: '⚡',
+      name: 'ETF 리그',
+      count: counts.etf || 42,
     }
   ];
 
