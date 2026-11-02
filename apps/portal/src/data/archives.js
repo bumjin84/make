@@ -1,6 +1,12 @@
 export const ARCHIVES = [
   {
     date: '2026.11.02',
+    category: 'Data Pipeline Upgrade',
+    title: '크론 수집기 고도화: 네이버 금융 실시간 재무 API 연동 & 실측 데이터 파이프라인 구축',
+    desc: '기존 난수 생성을 전면 폐기하고, 네이버 금융 모바일 공식 API(/integration, /finance/annual)를 직접 연동하여 350개 국내 상장사의 실제 PER, 선행 PER, ROE, 배당률, 부채비율 및 60일 실시간 일봉·이평선 수집 체계 완성'
+  },
+  {
+    date: '2026.11.02',
     category: 'Data Integrity',
     title: '가짜 데이터(Mock Fallback) 전면 제거, ETF 식별 및 결측치 N/A 안전 표기 체계 구축',
     desc: '843개 전 종목 유니버스는 온전히 보존하되 임의 난수(Mock) 생성을 완전히 제거하고, ETF 자동 식별 뱃지 부여 및 재무 결측치 N/A(\'-\') 안전 렌더링·전략 필터 널 가드 완비'
