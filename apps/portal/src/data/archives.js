@@ -1,5 +1,11 @@
 export const ARCHIVES = [
   {
+    date: '2026.11.02',
+    category: 'UX Architecture',
+    title: '1:1 맞대결 반응형 오버레이 UX 개편 (PC 정중앙 팝업 & 모바일 풀스크린)',
+    desc: '하단 드로어의 시선 분산 문제를 해결하고, PC에서는 딤 블러 정중앙 모달, 모바일에서는 100% 풀스크린 뷰 및 하단 플로팅 런처 칩(ComparePill)으로 전면 리팩토링'
+  },
+  {
     date: '2026.10.30',
     category: 'Automation',
     title: 'GitHub Actions 기반 1일 4회 자동 크론 스케줄러 & 즉시 수동 갱신 파이프라인 구축',

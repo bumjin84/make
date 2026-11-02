@@ -2,21 +2,34 @@ import { useState, useMemo } from 'react';
 
 export function useStockCompare(stocks) {
   const [selectedTickers, setSelectedTickers] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   const toggleStock = (ticker) => {
     setSelectedTickers(prev => {
+      let next;
       if (prev.includes(ticker)) {
-        return prev.filter(t => t !== ticker);
+        next = prev.filter(t => t !== ticker);
+      } else if (prev.length >= 2) {
+        next = [prev[1], ticker];
+      } else {
+        next = [...prev, ticker];
       }
-      if (prev.length >= 2) {
-        // 이미 2개가 차있으면 두 번째 것을 교체하거나 새로 추가
-        return [prev[1], ticker];
+
+      // 2개가 채워지면 자동으로 모달 오픈
+      if (next.length === 2) {
+        setIsModalOpen(true);
       }
-      return [...prev, ticker];
+      return next;
     });
   };
 
-  const clearCompare = () => setSelectedTickers([]);
+  const clearCompare = () => {
+    setSelectedTickers([]);
+    setIsModalOpen(false);
+  };
 
   const comparedStocks = useMemo(() => {
     return selectedTickers
@@ -137,7 +150,10 @@ export function useStockCompare(stocks) {
     clearCompare,
     comparedStocks,
     comparisonResults,
-    isCompareReady: comparedStocks.length === 2
+    isCompareReady: comparedStocks.length === 2,
+    isModalOpen,
+    openModal,
+    closeModal
   };
 }
 

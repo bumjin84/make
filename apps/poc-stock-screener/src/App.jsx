@@ -3,7 +3,8 @@ import Header from './components/layout/Header';
 import MarketSelector from './components/layout/MarketSelector';
 import StrategyBar from './components/strategy/StrategyBar';
 import StockList from './components/stocks/StockList';
-import CompareDrawer from './components/compare/CompareDrawer';
+import ComparePill from './components/compare/ComparePill';
+import CompareModal from './components/compare/CompareModal';
 import { useStockData } from './hooks/useStockData';
 import { useStockFilter } from './hooks/useStockFilter';
 import { useStockCompare } from './hooks/useStockCompare';
@@ -28,7 +29,10 @@ export default function App() {
     toggleStock,
     clearCompare,
     comparedStocks,
-    comparisonResults
+    comparisonResults,
+    isModalOpen,
+    openModal,
+    closeModal
   } = useStockCompare(stocks);
 
   const handleMarketChange = (nextMarket) => {
@@ -66,14 +70,20 @@ export default function App() {
         />
       </main>
 
-      {/* 1:1 맞대결 비교 플로팅 드로어 */}
-      <CompareDrawer
+      {/* 하단 플로팅 맞대결 런처 칩 */}
+      <ComparePill
         comparedStocks={comparedStocks}
-        comparisonResults={comparisonResults}
+        onOpenModal={openModal}
         onClear={clearCompare}
-        onRemoveTicker={toggleStock}
+      />
+
+      {/* 1:1 맞대결 반응형 모달 (PC: 중앙 팝업, 모바일: 풀스크린) */}
+      <CompareModal
+        isOpen={isModalOpen}
+        comparisonResults={comparisonResults}
+        onClose={closeModal}
+        onClear={clearCompare}
       />
     </div>
   );
 }
-
