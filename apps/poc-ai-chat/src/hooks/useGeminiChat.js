@@ -6,7 +6,14 @@ const MAX_HISTORY = 30;
 
 export function useGeminiChat() {
   const [apiKey, setApiKey] = useState(() => localStorage.getItem('gemini_api_key') || '');
-  const [selectedModel, setSelectedModel] = useState(() => localStorage.getItem('gemini_chat_model') || DEFAULT_MODEL);
+  const [selectedModel, setSelectedModel] = useState(() => {
+    const saved = localStorage.getItem('gemini_chat_model');
+    if (saved === 'gemini-2.5-pro') {
+      try { localStorage.setItem('gemini_chat_model', 'gemini-3.1-pro-preview'); } catch {}
+      return 'gemini-3.1-pro-preview';
+    }
+    return saved || DEFAULT_MODEL;
+  });
   const [tempKey, setTempKey] = useState(apiKey);
   const [showKeyModal, setShowKeyModal] = useState(false);
   const [showConfirmChange, setShowConfirmChange] = useState(false);
